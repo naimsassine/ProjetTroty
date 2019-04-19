@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Ellipse fill="#383e43" layoutX="321.0" layoutY="221.0" radiusX="203.0" radiusY="155.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fill="WHITE" layoutX="178.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+            <Text fill="WHITE" layoutX="173.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit card Details" wrappingWidth="133.26416015625" />
+            <Text fill="#fffefe" layoutX="178.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="62.26416015625" />
+            <TextField layoutX="306.0" layoutY="128.0" />
+            <TextField layoutX="306.0" layoutY="285.0" />
+            <TextField layoutX="306.0" layoutY="200.0" />
+            <Text layoutX="146.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a New User" textAlignment="CENTER" wrappingWidth="349.0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4c5054" height="53.0" layoutX="22.0" layoutY="323.0" stroke="BLACK" strokeType="INSIDE" width="111.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#525557" height="53.0" layoutX="503.0" layoutY="323.0" stroke="BLACK" strokeType="INSIDE" width="111.0" />
+            <Text fill="#ebebeb" layoutX="32.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Back" textAlignment="CENTER" wrappingWidth="90.26416015625" />
+            <Text fill="WHITE" layoutX="517.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lets ride!" textAlignment="CENTER" wrappingWidth="83.611328125" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
