@@ -9,12 +9,15 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    Stage window;
+
     @Override
     public void start(Stage primaryStage) throws Exception{
+        window = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("../Controller/acceuilpage.fxml"));
-        primaryStage.setTitle("Troty");
-        primaryStage.setScene(new Scene(root, 750, 500));
-        primaryStage.show();
+        window.setTitle("Troty");
+        window.setScene(new Scene(root, 750, 500));
+        window.show();
     }
 
 
