@@ -23,5 +23,25 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+        DBConnect connect = new DBConnect();
+        connect.getData();
+
+        /*Connection con;
+        Statement st;
+        ResultSet rs;
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/giraffe","root","03331655");
+            st = con.createStatement();
+            rs = st.executeQuery("SELECT * from Employee");
+
+            while(rs.next()){
+                System.out.println("lol");
+            }
+        }
+        catch (Exception e){
+                System.out.print("Error " + e.getMessage());}*/
+
     }
 }
