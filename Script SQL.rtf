@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 CREATE TABLE Trotinette (\
+    T_ID int PRIMARY KEY,\
+    Mise_en_service TIMESTAMP,\
+    Model VARCHAR(14),\
+    Batterie int,\
+    \'c9tat Varchar(6)\
+);\
+\
+\
+CREATE TABLE Utilisateur (\
+    U_ID int PRIMARY KEY,\
+    Mot_De_Passe VARCHAR(15),\
+    Numero_Carte VARCHAR(15)\
+);\
+\
+\
+CREATE TABLE Utilisateur_Recharge (\
+    U_ID int,\
+    Nom VARCHAR(20),\
+    Prenom VARCHAR(20),\
+    Numero_Telephone int,\
+    FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
+    Adresse_City VARCHAR(15),\
+    Adresse_Cp int,\
+    Adresse_Street VARCHAR(30),\
+    Adresse_Number int\
+);\
+\
+Create Table Recharge (\
+    U_ID int,\
+    FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
+    T_ID int,\
+    FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),\
+    T_i TIMESTAMP PRIMARY KEY,\
+    T_f TIMESTAMP,\
+    Charge_i int,\
+    Charge_f int,\
+    Source_x DECIMAL(6,6),\
+    Source_y DECIMAL(6,6),\
+    Destination_x DECIMAL(6,6),\
+    Destination_y DECIMAL(6,6)\
+);\
+\
+\
+Create Table Voyage (\
+    U_ID int,\
+    FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
+    T_ID int,\
+    FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),\
+    T_i TIMESTAMP PRIMARY KEY,\
+    T_f TIMESTAMP,\
+    Source_x DECIMAL(6,6),\
+    Source_y DECIMAL(6,6),\
+    Destination_x DECIMAL(6,6),\
+    Destination_y DECIMAL(6,6)\
+);\
+\
+\
+CREATE TABLE Technicien (\
+    Numero int PRIMARY KEY,\
+    Nom VARCHAR(20),\
+    Prenom VARCHAR(20),\
+    Mot_de_Pass int,\
+    Numero_Telephone int,\
+    Adresse_City VARCHAR(15),\
+    Adresse_Cp int,\
+    Adresse_Street VARCHAR(30),\
+    Adresse_Number int,\
+    Date_Embauche DATE,\
+    Bank_Account int\
+);\
+\
+\
+\
+Create Table Reparation (\
+    U_ID int,\
+    FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
+    T_ID int,\
+    FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),\
+    Numero int,\
+    FOREIGN KEY (Numero) REFERENCES Technicien(Numero),\
+    Date_Plainte TIMESTAMP PRIMARY KEY,\
+    Date_Reparation TIMESTAMP,\
+    Note int\
+);\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
