@@ -25,7 +25,7 @@ public class Main extends Application {
         launch(args);
         DBConnect connect = new DBConnect();
         connect.getData();
-        connect.insertDataUtilisateur();
+        connect.insertDataMecaniciens();
 
 
 

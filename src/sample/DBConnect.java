@@ -89,4 +89,58 @@ public class DBConnect {
         }
 
     }
+
+
+
+
+    public void insertDataMecaniciens() {
+        try{
+            DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
+            Document doc = docBuilder.parse (new File("./data2019/mecaniciens.xml"));
+            doc.getDocumentElement().normalize();
+            System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
+            NodeList listOfMecanics = doc.getElementsByTagName("mechanic");
+            for(int s=0; s<listOfMecanics.getLength(); s++){
+                Node firstMecanicNode = listOfMecanics.item(s);
+                if(firstMecanicNode.getNodeType() == Node.ELEMENT_NODE){
+                    Element firstMecanicElement = (Element)firstMecanicNode;
+                    NodeList nameList = firstMecanicElement.getElementsByTagName("mechanicID");
+                    Element nameElement = (Element)nameList.item(0);
+
+                    NodeList IDList = nameElement.getChildNodes();
+                    String ID = ((Node)IDList.item(0)).getNodeValue().trim();
+                    String city = "   ";
+
+
+
+                    NodeList listOfAddresses = doc.getElementsByTagName("address");
+                    for(int t=0; t<listOfAddresses.getLength(); t++){
+                        Node firstAddressNode = listOfAddresses.item(s);
+                        if(firstAddressNode.getNodeType() == Node.ELEMENT_NODE){
+                            Element firstAddressElement = (Element)firstAddressNode;
+                            NodeList addressList = firstAddressElement.getElementsByTagName("city");
+                            Element addressElement = (Element)addressList.item(0);
+
+                            NodeList cityList = addressElement.getChildNodes();
+                            city = ((Node)cityList.item(0)).getNodeValue().trim();
+
+                        }
+
+                    }
+
+                    int i = st.executeUpdate("insert into Technicien(Numero, Nom, Prenom, Mot_de_Pass, Numero_Telephone, Adresse_City, Adresse_Cp, Adresse_Street, Adresse_Number, Date_Embauche, Bank_Account) values('"+ID+"','"+city+"','"+ " "+"')");
+
+
+
+
+                }
+            }
+            System.out.println("Data is successfully inserted!");
+        }
+        catch (Exception err) {
+            System.out.println(" " + err.getMessage());
+        }
+
+    }
 }
