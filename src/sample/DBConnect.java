@@ -110,29 +110,80 @@ public class DBConnect {
 
                     NodeList IDList = nameElement.getChildNodes();
                     String ID = ((Node)IDList.item(0)).getNodeValue().trim();
-                    String city = "   ";
+
+
+                    NodeList nomList = firstMecanicElement.getElementsByTagName("lastname");
+                    Element nomElement = (Element)nomList.item(0);
+
+                    NodeList namesList = nomElement.getChildNodes();
+                    String name = ((Node)namesList.item(0)).getNodeValue().trim();
 
 
 
-                    NodeList listOfAddresses = doc.getElementsByTagName("address");
-                    for(int t=0; t<listOfAddresses.getLength(); t++){
-                        Node firstAddressNode = listOfAddresses.item(s);
-                        if(firstAddressNode.getNodeType() == Node.ELEMENT_NODE){
-                            Element firstAddressElement = (Element)firstAddressNode;
-                            NodeList addressList = firstAddressElement.getElementsByTagName("city");
-                            Element addressElement = (Element)addressList.item(0);
+                    NodeList prenomList = firstMecanicElement.getElementsByTagName("firstname");
+                    Element prenomElement = (Element)prenomList.item(0);
 
-                            NodeList cityList = addressElement.getChildNodes();
-                            city = ((Node)cityList.item(0)).getNodeValue().trim();
+                    NodeList prenomsList = prenomElement.getChildNodes();
+                    String prenom = ((Node)prenomsList.item(0)).getNodeValue().trim();
 
-                        }
+                    NodeList PasswordList = firstMecanicElement.getElementsByTagName("password");
+                    Element PasswordElement = (Element)PasswordList.item(0);
 
-                    }
+                    NodeList textLNList = PasswordElement.getChildNodes();
+                    String password = ((Node)textLNList.item(0)).getNodeValue().trim();
 
-                    int i = st.executeUpdate("insert into Technicien(Numero, Nom, Prenom, Mot_de_Pass, Numero_Telephone, Adresse_City, Adresse_Cp, Adresse_Street, Adresse_Number, Date_Embauche, Bank_Account) values('"+ID+"','"+city+"','"+ " "+"')");
+                    NodeList PhoneList = firstMecanicElement.getElementsByTagName("phone");
+                    Element PhoneElement = (Element)PhoneList.item(0);
+
+                    NodeList PhonesList = PhoneElement.getChildNodes();
+                    String phone = ((Node)PhonesList.item(0)).getNodeValue().trim();
 
 
 
+                    NodeList addressList = firstMecanicElement.getElementsByTagName("city");
+                    Element addressElement = (Element)addressList.item(0);
+
+                    NodeList cityList = addressElement.getChildNodes();
+                    String city = ((Node)cityList.item(0)).getNodeValue().trim();
+
+
+                    NodeList addresscpList = firstMecanicElement.getElementsByTagName("cp");
+                    Element addresscpElement = (Element)addresscpList.item(0);
+
+                    NodeList cpList = addresscpElement.getChildNodes();
+                    String cp = ((Node)cpList.item(0)).getNodeValue().trim();
+
+
+                    NodeList adresseStreetList = firstMecanicElement.getElementsByTagName("street");
+                    Element streetElement = (Element)adresseStreetList.item(0);
+
+                    NodeList streetList = streetElement.getChildNodes();
+                    String street = ((Node)streetList.item(0)).getNodeValue().trim();
+
+
+                    NodeList addressNumberList = firstMecanicElement.getElementsByTagName("number");
+                    Element addressNumberElement = (Element)addressNumberList.item(0);
+
+                    NodeList numberList = addressNumberElement.getChildNodes();
+                    String number = ((Node)numberList.item(0)).getNodeValue().trim();
+
+
+
+                    NodeList hireDateList = firstMecanicElement.getElementsByTagName("hireDate");
+                    Element hireDateElement = (Element)hireDateList.item(0);
+
+                    NodeList HDList = hireDateElement.getChildNodes();
+                    String HireDate = ((Node)HDList.item(0)).getNodeValue().trim();
+
+
+
+                    NodeList bankAccountList = firstMecanicElement.getElementsByTagName("bankaccount");
+                    Element BAElement = (Element)bankAccountList.item(0);
+
+                    NodeList BAList = BAElement.getChildNodes();
+                    String bankAccount = ((Node)BAList.item(0)).getNodeValue().trim();
+
+                    int i = st.executeUpdate("insert into Technicien values('"+ID+"','"+name+"','"+prenom+"','"+password+"','"+phone+"','"+city+"','"+cp+"','"+street+"','"+number+"','"+HireDate+"','"+bankAccount+"')");
 
                 }
             }
@@ -143,4 +194,134 @@ public class DBConnect {
         }
 
     }
+
+
+
+
+    public void insertDataUtilisateurRecharge(){
+
+        try{
+            DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
+            Document doc = docBuilder.parse (new File("./data2019/registeredUsers.xml"));
+            doc.getDocumentElement().normalize();
+            System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
+            NodeList listOfUsers = doc.getElementsByTagName("user");
+            for(int s=0; s<listOfUsers.getLength(); s++){
+                Node firstUserNode = listOfUsers.item(s);
+                if(firstUserNode.getNodeType() == Node.ELEMENT_NODE){
+                    Element firstUserElement = (Element)firstUserNode;
+                    NodeList nameList = firstUserElement.getElementsByTagName("ID");
+                    Element nameElement = (Element)nameList.item(0);
+
+                    NodeList IDList = nameElement.getChildNodes();
+                    String ID = ((Node)IDList.item(0)).getNodeValue().trim();
+
+
+                    NodeList nomList = firstUserElement.getElementsByTagName("lastname");
+                    Element nomElement = (Element)nomList.item(0);
+
+                    NodeList namesList = nomElement.getChildNodes();
+                    String name = ((Node)namesList.item(0)).getNodeValue().trim();
+
+                    name = checkApostrophe(name);
+
+
+
+                    NodeList prenomList = firstUserElement.getElementsByTagName("firstname");
+                    Element prenomElement = (Element)prenomList.item(0);
+
+                    NodeList prenomsList = prenomElement.getChildNodes();
+                    String prenom = ((Node)prenomsList.item(0)).getNodeValue().trim();
+
+                    prenom = checkApostrophe(prenom);
+
+                    NodeList PasswordList = firstUserElement.getElementsByTagName("password");
+                    Element PasswordElement = (Element)PasswordList.item(0);
+
+                    NodeList textLNList = PasswordElement.getChildNodes();
+                    String password = ((Node)textLNList.item(0)).getNodeValue().trim();
+
+                    password = checkApostrophe(password);
+
+                    NodeList PhoneList = firstUserElement.getElementsByTagName("phone");
+                    Element PhoneElement = (Element)PhoneList.item(0);
+
+                    NodeList PhonesList = PhoneElement.getChildNodes();
+                    String phone = ((Node)PhonesList.item(0)).getNodeValue().trim();
+
+                    phone = checkApostrophe(phone);
+
+
+
+                    NodeList addressList = firstUserElement.getElementsByTagName("city");
+                    Element addressElement = (Element)addressList.item(0);
+
+                    NodeList cityList = addressElement.getChildNodes();
+                    String city = ((Node)cityList.item(0)).getNodeValue().trim();
+
+                    city = checkApostrophe(city);
+
+
+                    NodeList addresscpList = firstUserElement.getElementsByTagName("cp");
+                    Element addresscpElement = (Element)addresscpList.item(0);
+
+                    NodeList cpList = addresscpElement.getChildNodes();
+                    String cp = ((Node)cpList.item(0)).getNodeValue().trim();
+
+
+                    NodeList adresseStreetList = firstUserElement.getElementsByTagName("street");
+                    Element streetElement = (Element)adresseStreetList.item(0);
+
+                    NodeList streetList = streetElement.getChildNodes();
+                    String street = ((Node)streetList.item(0)).getNodeValue().trim();
+
+                    street = checkApostrophe(street);
+
+
+                    NodeList addressNumberList = firstUserElement.getElementsByTagName("number");
+                    Element addressNumberElement = (Element)addressNumberList.item(0);
+
+                    NodeList numberList = addressNumberElement.getChildNodes();
+                    String number = ((Node)numberList.item(0)).getNodeValue().trim();
+
+
+                    NodeList bankAccountList = firstUserElement.getElementsByTagName("bankaccount");
+                    Element BAElement = (Element)bankAccountList.item(0);
+
+                    NodeList BAList = BAElement.getChildNodes();
+                    String bankAccount = ((Node)BAList.item(0)).getNodeValue().trim();
+
+                    int i = st.executeUpdate("insert into Utilisateur values('"+ID+"','"+password+"','"+bankAccount+"')");
+
+
+                    int j = st.executeUpdate("insert into Utilisateur_Recharge values('"+ID+"','"+name+"','"+prenom+"','"+phone+"','"+city+"','"+cp+"','"+street+"','"+number+"')");
+
+                }
+            }
+            System.out.println("Data is successfully inserted!");
+        }
+        catch (Exception err) {
+            System.out.println(" " + err.getMessage());
+        }
+
+    }
+
+
+
+
+    public static String checkApostrophe(String s){
+        String t = "";
+        if (s.contains("'"))
+    {
+             t = s.replace("'","''"); }
+        else {
+             t = s;
+        }
+        return t;
+
+    }
+
 }
+
+

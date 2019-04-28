@@ -1199,7 +1199,7 @@
     </column>
     <column id="301" parent="278" name="Numero">
       <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="302" parent="278" name="Date_Plainte">
@@ -1255,7 +1255,7 @@
     </foreign-key>
     <column id="312" parent="279" name="Numero">
       <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1306,7 +1306,7 @@
     </column>
     <column id="322" parent="279" name="Bank_Account">
       <Position>11</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="323" parent="279" name="PRIMARY">
@@ -1358,7 +1358,7 @@
     </column>
     <column id="332" parent="281" name="Numero_Carte">
       <Position>3</Position>
-      <DataType>varchar(15)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="333" parent="281" name="PRIMARY">
@@ -1386,22 +1386,22 @@
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="338" parent="282" name="AdresseCity">
+    <column id="338" parent="282" name="Adresse_City">
       <Position>5</Position>
-      <DataType>varchar(15)|0s</DataType>
+      <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="339" parent="282" name="AdresseCp">
+    <column id="339" parent="282" name="Adresse_Cp">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="282" name="AdresseStreet">
+    <column id="340" parent="282" name="Adresse_Street">
       <Position>7</Position>
-      <DataType>varchar(30)|0s</DataType>
+      <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="341" parent="282" name="AdresseNumber">
+    <column id="341" parent="282" name="Adresse_Number">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>

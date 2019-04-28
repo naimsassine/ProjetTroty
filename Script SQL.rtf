@@ -17,7 +17,7 @@
 CREATE TABLE Utilisateur (\
     U_ID int PRIMARY KEY,\
     Mot_De_Passe VARCHAR(15),\
-    Numero_Carte VARCHAR(15)\
+    Numero_Carte VARCHAR(20)\
 );\
 \
 \
@@ -27,9 +27,9 @@ CREATE TABLE Utilisateur_Recharge (\
     Prenom VARCHAR(20),\
     Numero_Telephone int,\
     FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
-    Adresse_City VARCHAR(15),\
+    Adresse_City VARCHAR(30),\
     Adresse_Cp int,\
-    Adresse_Street VARCHAR(30),\
+    Adresse_Street VARCHAR(50),\
     Adresse_Number int\
 );\
 \
@@ -64,7 +64,7 @@ Create Table Voyage (\
 \
 \
 CREATE TABLE Technicien (\
-    Numero int PRIMARY KEY,\
+    Numero real PRIMARY KEY,\
     Nom VARCHAR(20),\
     Prenom VARCHAR(20),\
     Mot_de_Pass int,\
@@ -74,7 +74,7 @@ CREATE TABLE Technicien (\
     Adresse_Street VARCHAR(30),\
     Adresse_Number int,\
     Date_Embauche DATE,\
-    Bank_Account int\
+    Bank_Account real\
 );\
 \
 \
@@ -84,12 +84,14 @@ Create Table Reparation (\
     FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
     T_ID int,\
     FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),\
-    Numero int,\
+    Numero real,\
     FOREIGN KEY (Numero) REFERENCES Technicien(Numero),\
     Date_Plainte TIMESTAMP PRIMARY KEY,\
     Date_Reparation TIMESTAMP,\
     Note int\
 );\
+\
+\
 \
 \
 \
