@@ -1,10 +1,14 @@
 package sample;
-import java.io.*;
-import java.sql.*;
-import org.w3c.dom.*;
-import org.xml.sax.SAXException;
+import com.opencsv.CSVReader;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
-import javax.xml.parsers.*;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
+import java.io.FileReader;
 import java.sql.*;
 
 public class DBConnect {
@@ -319,6 +323,44 @@ public class DBConnect {
              t = s;
         }
         return t;
+
+    }
+
+
+
+    public void insertDataReloads(){
+        try (CSVReader reader = new CSVReader(new FileReader("./data2019/reloads.csv"), ','))
+        {
+            String insertQuery = "Insert into Recharge values (?,?,?,?,?,?,?,?,?,?)";
+            PreparedStatement pstmt = con.prepareStatement(insertQuery);
+            String[] rowData = null;
+            int i = 0;
+            int iteration = 0;
+            while(((rowData = reader.readNext())) != null){
+                if(iteration == 0) {
+                    iteration++;
+                    continue;
+                }
+
+                for (String data : rowData)
+                {
+
+                    pstmt.setString((i % 10) + 1, data);
+
+                    if (++i % 10 == 0)
+                        pstmt.addBatch();// add batch
+
+                    if (i % 30 == 0)// insert when the batch size is 10
+                        pstmt.executeBatch();
+                }}
+            System.out.println("Data Successfully Uploaded");
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+
 
     }
 

@@ -3,18 +3,13 @@
 //java -cp .;jdbc.jar App
 package sample;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import com.opencsv.CSVReader;
+
+import java.io.FileReader;
+import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.net.*;
-import java.io.*;
-import java.util.regex.*;
-import java.util.*;
-import au.com.bytecode.opencsv.*;
+
 
 
 public class App {

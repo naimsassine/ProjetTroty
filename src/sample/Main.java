@@ -25,6 +25,7 @@ public class Main extends Application {
         launch(args);
 
         DBConnect connect = new DBConnect();
+        connect.insertDataReloads();
 
     }
 
