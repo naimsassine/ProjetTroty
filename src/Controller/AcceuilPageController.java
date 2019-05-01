@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-public class AcceuilPage implements Initializable {
+public class AcceuilPageController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -44,7 +44,7 @@ public class AcceuilPage implements Initializable {
 
     @FXML
     public void loadsignup(ActionEvent event) throws IOException{
-        Parent signup = FXMLLoader.load(getClass().getResource("../Controller/signuppage.fxml"));
+        Parent signup = FXMLLoader.load(getClass().getResource("Signuppage.fxml"));
         Scene signupscene = new Scene(signup);
 
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();

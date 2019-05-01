@@ -446,7 +446,7 @@ public class DBConnect {
 
     /*
   La methode suivante fonctionne en principe, mais les clès de references doivent exister dans les tables
-  et y a une faute avec la date 2017-03-26T02:26:14
+  et y a une faute avec la date 2017-03-26T02:40:55
    */
     public void insertDataTrips(){
         try (CSVReader reader = new CSVReader(new FileReader("./data2019/trips.csv"), ','))
@@ -464,7 +464,6 @@ public class DBConnect {
 
                 for (String data : rowData)
                 {
-
                     pstmt.setString((i % 8) + 1, data);
 
                     if (++i % 8 == 0)
