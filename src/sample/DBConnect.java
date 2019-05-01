@@ -364,6 +364,126 @@ public class DBConnect {
 
     }
 
+
+
+    /*
+    La methode suivante fonctionne en principe, mais les clès de references doivent exister dans les tables
+    et y a une faute avec la date 2017-03-26T02:26:14
+     */
+    public void insertDataReparation(){
+        try (CSVReader reader = new CSVReader(new FileReader("./data2019/reparations.csv"), ','))
+        {
+            String insertQuery = "Insert into Reparation values (?,?,?,?,?,null) ";
+            PreparedStatement pstmt = con.prepareStatement(insertQuery);
+            String[] rowData = null;
+            int i = 0;
+            int iteration = 0;
+            while(((rowData = reader.readNext())) != null){
+                if(iteration == 0) {
+                    iteration++;
+                    continue;
+                }
+
+                for (String data : rowData)
+                {
+                    pstmt.setString((i % 5) + 1, data);
+
+                    if (++i % 5 == 0)
+                        pstmt.addBatch();// add batch
+
+                    if (i % 50 == 0)// insert when the batch size is 10
+                        pstmt.executeBatch();
+                }}
+            System.out.println("Data Successfully Uploaded");
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+
+
+    }
+
+
+
+    public void insertDataScooters(){
+        try (CSVReader reader = new CSVReader(new FileReader("./data2019/scooters.csv"), ';'))
+        {
+            String insertQuery = "Insert into Trotinette values (?,?,?,?,?)";
+            PreparedStatement pstmt = con.prepareStatement(insertQuery);
+            String[] rowData = null;
+            int i = 0;
+            int iteration = 0;
+            while(((rowData = reader.readNext())) != null){
+                if(iteration == 0) {
+                    iteration++;
+                    continue;
+                }
+
+                for (String data : rowData)
+                {
+                    pstmt.setString((i % 5) + 1, data);
+
+                    if (++i % 5 == 0)
+                        pstmt.addBatch();// add batch
+
+                    if (i % 30 == 0)// insert when the batch size is 10
+                        pstmt.executeBatch();
+                }}
+            System.out.println("Data Successfully Uploaded");
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+
+
+    }
+
+
+
+    /*
+  La methode suivante fonctionne en principe, mais les clès de references doivent exister dans les tables
+  et y a une faute avec la date 2017-03-26T02:26:14
+   */
+    public void insertDataTrips(){
+        try (CSVReader reader = new CSVReader(new FileReader("./data2019/trips.csv"), ','))
+        {
+            String insertQuery = "Insert into Voyage values (?,?,?,?,?,?,?,?)";
+            PreparedStatement pstmt = con.prepareStatement(insertQuery);
+            String[] rowData = null;
+            int i = 0;
+            int iteration = 0;
+            while(((rowData = reader.readNext())) != null){
+                if(iteration == 0) {
+                    iteration++;
+                    continue;
+                }
+
+                for (String data : rowData)
+                {
+
+                    pstmt.setString((i % 8) + 1, data);
+
+                    if (++i % 8 == 0)
+                        pstmt.addBatch();// add batch
+
+                    if (i % 30 == 0)// insert when the batch size is 10
+                        pstmt.executeBatch();
+                }}
+            System.out.println("Data Successfully Uploaded");
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+    }
+
+
 }
+
 
 
