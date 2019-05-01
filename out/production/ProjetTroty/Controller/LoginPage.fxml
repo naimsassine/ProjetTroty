@@ -8,11 +8,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginPageController">
    <children>
-      <Text layoutX="236.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
-      <Text layoutX="237.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
-      <TextField layoutX="336.0" layoutY="117.0" />
-      <TextField layoutX="336.0" layoutY="202.0" />
-      <Button fx:id="BackButton" layoutX="61.0" layoutY="304.0" mnemonicParsing="false" onAction="#Goback" prefHeight="27.0" prefWidth="69.0" text="Button" />
+      <Text layoutX="201.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" />
+      <Text layoutX="202.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" />
+      <TextField layoutX="287.0" layoutY="117.0" />
+      <TextField layoutX="287.0" layoutY="202.0" />
+      <Button fx:id="BackButton" layoutX="61.0" layoutY="304.0" mnemonicParsing="false" onAction="#Goback" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: gray;" text="Back" textFill="#fffdfd" />
+      <Button fx:id="RideButton" layoutX="467.0" layoutY="304.0" mnemonicParsing="false" onAction="#Ride" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: gray;" text="Let's Ride!" textFill="#fffdfd" />
    </children>
    <effect>
       <Blend />

@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import sample.DBConnect;
 
 import java.io.IOException;
 import java.net.URL;
@@ -23,6 +24,8 @@ public class LoginPageController  implements Initializable {
 
     @FXML
     private Button BackButton;
+    @FXML
+    private Button RideButton;
 
 
     @FXML
@@ -34,5 +37,12 @@ public class LoginPageController  implements Initializable {
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(acceuilscene);
         window.show();
+    }
+
+
+    @FXML
+    public void Ride() {
+        DBConnect connect = new DBConnect();
+        connect.getData();
     }
 }

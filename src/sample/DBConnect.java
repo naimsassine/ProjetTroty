@@ -35,11 +35,11 @@ public class DBConnect {
     public void getData(){
         try{
 
-            String query = "Select * from Trotinette";
+            String query = "Select * from Utilisateur WHERE Utilisateur.U_ID=1";
             rs = st.executeQuery(query);
-            System.out.print("Trotinette from Trotinette");
+            System.out.print("Les Utilisateurs obtenus sont: ");
             while(rs.next()){
-                String name = rs.getString("Model");
+                String name = rs.getString("Numero_carte");
                 System.out.print(name);
                 }
 
