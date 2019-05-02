@@ -16,6 +16,17 @@ public class DBConnect {
     private Connection con;
     private Statement st;
     private ResultSet rs;
+    public static String checkApostrophe(String s){
+        String t = "";
+        if (s.contains("'"))
+        {
+            t = s.replace("'","''"); }
+        else {
+            t = s;
+        }
+        return t;
+
+    }
 
     public DBConnect() {
 
@@ -314,17 +325,6 @@ public class DBConnect {
 
 
 
-    public static String checkApostrophe(String s){
-        String t = "";
-        if (s.contains("'"))
-    {
-             t = s.replace("'","''"); }
-        else {
-             t = s;
-        }
-        return t;
-
-    }
 
 
 
