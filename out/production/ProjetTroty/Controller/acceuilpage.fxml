@@ -21,13 +21,13 @@
 
 <AnchorPane fx:id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="424.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AcceuilPageController">
    <children>
-      <Text layoutX="41.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fast Easy Friendly" textAlignment="CENTER" wrappingWidth="132.65234375">
+      <Text layoutX="41.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fast Easy Friendly" textAlignment="CENTER" wrappingWidth="132.65234375">
          <font>
             <Font size="19.0" />
          </font>
       </Text>
       <Button fx:id="LoginButton" layoutX="460.0" layoutY="135.0" mnemonicParsing="false" onAction="#loadsignin" prefHeight="51.0" prefWidth="154.0" text="Log In" />
-      <Text layoutX="1.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scoot" textAlignment="CENTER" wrappingWidth="212.54256439208984">
+      <Text layoutX="1.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scoot" textAlignment="CENTER" wrappingWidth="212.54256439208984">
          <font>
             <Font name="Andale Mono" size="43.0" />
          </font>
