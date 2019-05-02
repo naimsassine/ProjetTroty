@@ -27,17 +27,17 @@
          </font>
       </Text>
       <Button fx:id="LoginButton" layoutX="460.0" layoutY="135.0" mnemonicParsing="false" onAction="#loadsignin" prefHeight="51.0" prefWidth="154.0" text="Log In" />
-      <Text layoutX="1.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skoot" textAlignment="CENTER" wrappingWidth="212.54256439208984">
+      <Text layoutX="1.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scoot" textAlignment="CENTER" wrappingWidth="212.54256439208984">
          <font>
             <Font name="Andale Mono" size="43.0" />
          </font>
       </Text>
-      <ImageView fitHeight="200.0" fitWidth="207.0" layoutX="207.0" layoutY="123.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="200.0" fitWidth="207.0" layoutX="207.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
          <effect>
             <ColorAdjust brightness="-0.27" contrast="0.21" hue="1.0" saturation="-1.0" />
          </effect>
          <image>
-            <Image url="@../sample/depositphotos_91382576-stock-illustration-boy-riding-a-scooter-sketch.jpg" />
+            <Image url="@../sample/giphy.gif" />
          </image>
       </ImageView>
       <Button fx:id="SignupButton" layoutX="460.0" layoutY="236.0" mnemonicParsing="false" onAction="#loadsignup" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: black;" text="Sign up" textFill="#fff9f9" />
