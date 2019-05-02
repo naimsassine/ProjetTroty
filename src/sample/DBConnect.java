@@ -350,7 +350,7 @@ public class DBConnect {
                     if (++i % 10 == 0)
                         pstmt.addBatch();// add batch
 
-                    if (i % 30 == 0)// insert when the batch size is 10
+                    if (i % 10 == 0)// insert when the batch size is 10
                         pstmt.executeBatch();
                 }}
             System.out.println("Data Successfully Uploaded");
@@ -362,7 +362,7 @@ public class DBConnect {
 
 
 
-    }
+    } // Check en principe
 
 
 
@@ -386,12 +386,13 @@ public class DBConnect {
 
                 for (String data : rowData)
                 {
+                    System.out.print(data + "lol");
                     pstmt.setString((i % 5) + 1, data);
 
                     if (++i % 5 == 0)
                         pstmt.addBatch();// add batch
 
-                    if (i % 50 == 0)// insert when the batch size is 10
+                    if (i % 5 == 0)// insert when the batch size is 10
                         pstmt.executeBatch();
                 }}
             System.out.println("Data Successfully Uploaded");
@@ -428,7 +429,7 @@ public class DBConnect {
                     if (++i % 5 == 0)
                         pstmt.addBatch();// add batch
 
-                    if (i % 30 == 0)// insert when the batch size is 10
+                    if (i % 5 == 0)// insert when the batch size is 10
                         pstmt.executeBatch();
                 }}
             System.out.println("Data Successfully Uploaded");
@@ -440,7 +441,7 @@ public class DBConnect {
 
 
 
-    }
+    } // Check en principe
 
 
 
