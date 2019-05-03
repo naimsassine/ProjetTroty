@@ -28,12 +28,23 @@ public class DBConnect {
 
     }
 
+    public static String checkDateCorrect(String s){
+        String t = "2017-03-26T03";
+        if (s.contains("2017-03-26T02"))
+        {
+            t = s.replace("2017-03-26T02","2017-03-26T03"); }
+        else {
+            t = s;
+        }
+        return t;
+    }
+
     public DBConnect() {
 
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ProjetDbb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","03331655");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ProjetDbb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT","root","03331655");
             st = con.createStatement();
 
         }
@@ -366,10 +377,7 @@ public class DBConnect {
 
 
 
-    /*
-    La methode suivante fonctionne en principe, mais les clès de references doivent exister dans les tables
-    et y a une faute avec la date 2017-03-26T02:26:14
-     */
+
     public void insertDataReparation(){
         try (CSVReader reader = new CSVReader(new FileReader("./data2019/reparations.csv"), ','))
         {
@@ -386,7 +394,6 @@ public class DBConnect {
 
                 for (String data : rowData)
                 {
-                    System.out.print(data + "lol");
                     pstmt.setString((i % 5) + 1, data);
 
                     if (++i % 5 == 0)
@@ -404,7 +411,7 @@ public class DBConnect {
 
 
 
-    }
+    } // Check en principe
 
 
 
@@ -445,10 +452,7 @@ public class DBConnect {
 
 
 
-    /*
-  La methode suivante fonctionne en principe, mais les clès de references doivent exister dans les tables
-  et y a une faute avec la date 2017-03-26T02:40:55
-   */
+
     public void insertDataTrips(){
         try (CSVReader reader = new CSVReader(new FileReader("./data2019/trips.csv"), ','))
         {
@@ -470,7 +474,7 @@ public class DBConnect {
                     if (++i % 8 == 0)
                         pstmt.addBatch();// add batch
 
-                    if (i % 30 == 0)// insert when the batch size is 10
+                    if (i % 8 == 0)// insert when the batch size is 10
                         pstmt.executeBatch();
                 }}
             System.out.println("Data Successfully Uploaded");
@@ -480,7 +484,7 @@ public class DBConnect {
             e.printStackTrace();
         }
 
-    }
+    } // Check en principe
 
 
 }

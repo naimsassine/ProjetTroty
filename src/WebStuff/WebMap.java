@@ -16,7 +16,7 @@ public class WebMap extends Application {
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
 
-        URL urlHello = getClass().getResource("mapfile.html");
+        URL urlHello = getClass().getResource("googlemaps.html");
         webEngine.load(urlHello.toExternalForm());
 
 
