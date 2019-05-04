@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -22,6 +23,24 @@ public class ChargerSignupPageController implements Initializable {
 
     @FXML
     private Button BackButton;
+    @FXML
+    private TextField UserIdTextfield;
+    @FXML
+    private TextField FNTextfield;
+    @FXML
+    private TextField LNTextfield;
+    @FXML
+    private TextField TNTextfield;
+    @FXML
+    private TextField CityTextfield;
+    @FXML
+    private TextField PCTextfield;
+    @FXML
+    private TextField StreetTextfield;
+    @FXML
+    private TextField NumberTextfield;
+
+
 
     @FXML
     public void Goback(ActionEvent event) throws IOException {
@@ -32,5 +51,21 @@ public class ChargerSignupPageController implements Initializable {
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(menuscene);
         window.show();
+    }
+
+
+
+    @FXML
+    public void finish(){
+        if(!UserIdTextfield.getText().isEmpty() && !FNTextfield.getText().isEmpty() && !LNTextfield.getText().isEmpty()
+                && !TNTextfield.getText().isEmpty() && !CityTextfield.getText().isEmpty()
+                && !PCTextfield.getText().isEmpty() && !StreetTextfield.getText().isEmpty()
+                && !NumberTextfield.getText().isEmpty()){
+            System.out.print("LOL");
+
+        }
+        else{
+            System.out.print("hey");
+        }
     }
 }

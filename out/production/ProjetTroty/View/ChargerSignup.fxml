@@ -18,18 +18,18 @@
       <Text layoutX="29.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name : " wrappingWidth="91.0" />
       <Text layoutX="71.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City :" wrappingWidth="41.6748046875" />
       <Text layoutX="323.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel Number :" wrappingWidth="84.92236328125" />
-      <TextField layoutX="113.0" layoutY="94.0" />
-      <TextField layoutX="419.0" layoutY="94.0" />
-      <TextField layoutX="113.0" layoutY="141.0" />
-      <TextField layoutX="113.0" layoutY="187.0" />
-      <TextField layoutX="419.0" layoutY="141.0" />
+      <TextField fx:id="UserIdTextfield" layoutX="113.0" layoutY="94.0" />
+      <TextField fx:id="FNTextfield" layoutX="419.0" layoutY="94.0" />
+      <TextField fx:id="LNTextfield" layoutX="113.0" layoutY="141.0" />
+      <TextField fx:id="CityTextfield" layoutX="113.0" layoutY="187.0" />
+      <TextField fx:id="TNTextfield" layoutX="419.0" layoutY="141.0" />
       <Button fx:id="BackButton" layoutX="46.0" layoutY="317.0" mnemonicParsing="false" onAction="#Goback" prefHeight="41.0" prefWidth="91.0" style="-fx-background-color: Grey;" text="Back" textFill="WHITE" />
-      <Button layoutX="457.0" layoutY="317.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="91.0" style="-fx-background-color: Grey;" text="Finish!" textFill="WHITE" />
+      <Button layoutX="457.0" layoutY="317.0" mnemonicParsing="false" onAction="#finish" prefHeight="41.0" prefWidth="91.0" style="-fx-background-color: Grey;" text="Finish!" textFill="WHITE" />
       <Text layoutX="348.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number : " wrappingWidth="77.54296875" />
       <Text layoutX="61.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street :" wrappingWidth="56.5576171875" />
       <Text layoutX="323.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Code :" wrappingWidth="97.54296875" />
-      <TextField layoutX="113.0" layoutY="241.0" />
-      <TextField layoutX="419.0" layoutY="241.0" />
-      <TextField layoutX="419.0" layoutY="189.0" />
+      <TextField fx:id="StreetTextfield" layoutX="113.0" layoutY="241.0" />
+      <TextField fx:id="NumberTextfield" layoutX="419.0" layoutY="241.0" />
+      <TextField fx:id="PCTextfield" layoutX="419.0" layoutY="189.0" />
    </children>
 </AnchorPane>
