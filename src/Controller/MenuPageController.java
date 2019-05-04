@@ -56,4 +56,15 @@ public class MenuPageController implements Initializable {
         window.setScene(acceuilscene);
         window.show();
     }
+
+    @FXML
+    public void pageCharging(ActionEvent event) throws IOException{
+        Parent SignupCharger = FXMLLoader.load(getClass().getResource("../View/ChargerSignup.fxml"));
+        Scene chargerscene = new Scene(SignupCharger);
+
+        // Lets get the stage
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(chargerscene);
+        window.show();
+    }
 }

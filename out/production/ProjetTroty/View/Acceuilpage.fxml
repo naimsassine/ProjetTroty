@@ -19,13 +19,13 @@
             <Font size="19.0" />
          </font>
       </Text>
-      <Button fx:id="LoginButton" layoutX="460.0" layoutY="135.0" mnemonicParsing="false" onAction="#loadsignin" prefHeight="51.0" prefWidth="154.0" text="Log In" />
+      <Button fx:id="LoginButton" layoutX="460.0" layoutY="111.0" mnemonicParsing="false" onAction="#loadsignin" prefHeight="51.0" prefWidth="154.0" text="Log In" />
       <Text layoutX="1.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scoot" textAlignment="CENTER" wrappingWidth="212.54256439208984">
          <font>
             <Font name="Andale Mono" size="43.0" />
          </font>
       </Text>
-      <Button fx:id="SignupButton" layoutX="460.0" layoutY="236.0" mnemonicParsing="false" onAction="#loadsignup" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: black;" text="Sign up" textFill="#fff9f9" />
+      <Button fx:id="SignupButton" layoutX="460.0" layoutY="187.0" mnemonicParsing="false" onAction="#loadsignup" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: black;" text="Sign up" textFill="#fff9f9" />
       <ImageView fitHeight="196.0" fitWidth="189.0" layoutX="214.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Ressources/giphy.gif" />
