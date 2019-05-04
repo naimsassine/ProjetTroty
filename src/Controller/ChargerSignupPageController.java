@@ -61,7 +61,7 @@ public class ChargerSignupPageController implements Initializable {
                 && !TNTextfield.getText().isEmpty() && !CityTextfield.getText().isEmpty()
                 && !PCTextfield.getText().isEmpty() && !StreetTextfield.getText().isEmpty()
                 && !NumberTextfield.getText().isEmpty()){
-            Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+            Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
             Scene menuscene = new Scene(menu);
 
             // Lets get the stage
