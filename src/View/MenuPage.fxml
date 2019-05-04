@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="128.0" fitWidth="141.0" layoutX="54.0" layoutY="64.0">
+         <image>
+            <Image url="@../../../../../../Downloads/istockphoto-664525248-612x612.jpg" />
+         </image>
+         <effect>
+            <Blend mode="RED" opacity="0.41">
+               <topInput>
+                  <SepiaTone />
+               </topInput>
+            </Blend>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="TrottButton" layoutX="57.0" layoutY="67.0" mnemonicParsing="false" opacity="0.0" prefHeight="122.0" prefWidth="135.0" style="-fx-background-color: White;" />
+      <Text layoutX="79.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trotinettes" textAlignment="CENTER" wrappingWidth="90.48193359375" />
+      <Text layoutX="440.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maps" textAlignment="CENTER" wrappingWidth="33.26171875" />
+      <ImageView fitHeight="122.0" fitWidth="123.0" layoutX="396.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/56494-maps-location-circular-button.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="MapsButton" layoutX="389.0" layoutY="70.0" mnemonicParsing="false" opacity="0.0" prefHeight="116.0" prefWidth="135.0" style="-fx-background-color: White;" />
+   </children>
+</AnchorPane>

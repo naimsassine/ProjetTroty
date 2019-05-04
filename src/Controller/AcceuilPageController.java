@@ -33,7 +33,7 @@ public class AcceuilPageController implements Initializable {
 
     @FXML
     public void loadsignin(ActionEvent event) throws IOException{
-        Parent signin = FXMLLoader.load(getClass().getResource("../Controller/LoginPage.fxml"));
+        Parent signin = FXMLLoader.load(getClass().getResource("../View/LoginPage.fxml"));
         Scene signinscene = new Scene(signin);
 
         // Lets get the stage
@@ -44,7 +44,7 @@ public class AcceuilPageController implements Initializable {
 
     @FXML
     public void loadsignup(ActionEvent event) throws IOException{
-        Parent signup = FXMLLoader.load(getClass().getResource("Signuppage.fxml"));
+        Parent signup = FXMLLoader.load(getClass().getResource("../View/Signuppage.fxml"));
         Scene signupscene = new Scene(signup);
 
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();

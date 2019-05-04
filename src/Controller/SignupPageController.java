@@ -25,7 +25,7 @@ public class SignupPageController implements Initializable {
 
     @FXML
     public void Goback(ActionEvent event) throws IOException{
-        Parent acceuil = FXMLLoader.load(getClass().getResource("Acceuilpage.fxml"));
+        Parent acceuil = FXMLLoader.load(getClass().getResource("../View/Acceuilpage.fxml"));
         Scene acceuilscene = new Scene(acceuil);
 
         // Lets get the stage
