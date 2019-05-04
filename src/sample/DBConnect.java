@@ -14,6 +14,7 @@ import java.sql.*;
 public class DBConnect {
 
     private Connection con;
+    private static Connection conn;
     private Statement st;
     private ResultSet rs;
     public static String checkApostrophe(String s){
@@ -53,6 +54,29 @@ public class DBConnect {
 
     }
 
+    public static Connection connect() throws SQLException{
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+        }catch(ClassNotFoundException cnfe){
+            System.err.println("Error: "+cnfe.getMessage());
+        }catch(InstantiationException ie){
+            System.err.println("Error: "+ie.getMessage());
+        }catch(IllegalAccessException iae){
+            System.err.println("Error: "+iae.getMessage());
+        }
+
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ProjetDbb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT","root","03331655");
+        return conn;
+    }
+
+    public static Connection getConnection() throws SQLException, ClassNotFoundException{
+        if(conn !=null && !conn.isClosed())
+            return conn;
+        connect();
+        return conn;
+
+    }
+
 
     public void getData(){
         try{
@@ -79,7 +103,7 @@ public class DBConnect {
         try{
             DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-            Document doc = docBuilder.parse (new File("./data2019/anonyme_users.xml"));
+            Document doc = docBuilder.parse (new File("Ressources/anonyme_users.xml"));
             doc.getDocumentElement().normalize();
             System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
             NodeList listOfUsers = doc.getElementsByTagName("user");
@@ -123,7 +147,7 @@ public class DBConnect {
         try{
             DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-            Document doc = docBuilder.parse (new File("./data2019/mecaniciens.xml"));
+            Document doc = docBuilder.parse (new File("Ressources/mecaniciens.xml"));
             doc.getDocumentElement().normalize();
             System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
             NodeList listOfMecanics = doc.getElementsByTagName("mechanic");
@@ -229,7 +253,7 @@ public class DBConnect {
         try{
             DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-            Document doc = docBuilder.parse (new File("./data2019/registeredUsers.xml"));
+            Document doc = docBuilder.parse (new File("Ressources/registeredUsers.xml"));
             doc.getDocumentElement().normalize();
             System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
             NodeList listOfUsers = doc.getElementsByTagName("user");
@@ -340,7 +364,7 @@ public class DBConnect {
 
 
     public void insertDataReloads(){
-        try (CSVReader reader = new CSVReader(new FileReader("./data2019/reloads.csv"), ','))
+        try (CSVReader reader = new CSVReader(new FileReader("Ressources/reloads.csv"), ','))
         {
             String insertQuery = "Insert into Recharge values (?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pstmt = con.prepareStatement(insertQuery);
@@ -379,7 +403,7 @@ public class DBConnect {
 
 
     public void insertDataReparation(){
-        try (CSVReader reader = new CSVReader(new FileReader("./data2019/reparations.csv"), ','))
+        try (CSVReader reader = new CSVReader(new FileReader("Ressources/reparations.csv"), ','))
         {
             String insertQuery = "Insert into Reparation values (?,?,?,?,?,null) ";
             PreparedStatement pstmt = con.prepareStatement(insertQuery);
@@ -416,7 +440,7 @@ public class DBConnect {
 
 
     public void insertDataScooters(){
-        try (CSVReader reader = new CSVReader(new FileReader("./data2019/scooters.csv"), ';'))
+        try (CSVReader reader = new CSVReader(new FileReader("Ressources/scooters.csv"), ';'))
         {
             String insertQuery = "Insert into Trotinette values (?,?,?,?,?)";
             PreparedStatement pstmt = con.prepareStatement(insertQuery);
@@ -454,7 +478,7 @@ public class DBConnect {
 
 
     public void insertDataTrips(){
-        try (CSVReader reader = new CSVReader(new FileReader("./data2019/trips.csv"), ','))
+        try (CSVReader reader = new CSVReader(new FileReader("Ressources/trips.csv"), ','))
         {
             String insertQuery = "Insert into Voyage values (?,?,?,?,?,?,?,?)";
             PreparedStatement pstmt = con.prepareStatement(insertQuery);
@@ -485,6 +509,33 @@ public class DBConnect {
         }
 
     } // Check en principe
+
+
+    public String Login(String U_ID) throws SQLException {
+        String selectSQL = "SELECT Mot_De_Passe FROM Utilisateur WHERE U_ID = ?";
+        String password = "No password found";
+
+
+        PreparedStatement pstmt = con.prepareStatement(selectSQL);
+        pstmt.setString(1, U_ID);
+
+        ResultSet rs = pstmt.executeQuery();
+
+        try {
+            while (rs.next()) {
+                password = rs.getString("Mot_De_Passe");
+            }
+
+        } catch (SQLException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        } finally {
+            pstmt.close();
+            con.close();
+        }
+
+        return password;
+    }
 
 
 }

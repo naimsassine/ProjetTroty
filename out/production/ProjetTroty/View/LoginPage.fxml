@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginPageController">
    <children>
-      <Text layoutX="201.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" />
+      <Text layoutX="214.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID :" />
       <Text layoutX="202.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" />
-      <TextField layoutX="287.0" layoutY="117.0" />
-      <TextField layoutX="287.0" layoutY="202.0" />
+      <TextField fx:id="IdTextfield" layoutX="287.0" layoutY="117.0" />
+      <TextField fx:id="PasswordTextfield" layoutX="287.0" layoutY="202.0" />
       <Button fx:id="BackButton" layoutX="61.0" layoutY="304.0" mnemonicParsing="false" onAction="#Goback" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: gray;" text="Back" textFill="#fffdfd" />
       <Button fx:id="RideButton" layoutX="467.0" layoutY="304.0" mnemonicParsing="false" onAction="#Ride" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: gray;" text="Let's Ride!" textFill="#fffdfd" />
    </children>

@@ -12,7 +12,7 @@ public class InsertXMLData{
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ProjetDbb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","03331655");
             DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-            Document doc = docBuilder.parse (new File("./data2019/anonyme_users.xml"));
+            Document doc = docBuilder.parse (new File("./Ressources/anonyme_users.xml"));
             doc.getDocumentElement().normalize();
             System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
             NodeList listOfPersons = doc.getElementsByTagName("user");
