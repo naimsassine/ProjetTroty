@@ -9,8 +9,8 @@
     T_ID int PRIMARY KEY,\
     Mise_en_service TIMESTAMP,\
     Model VARCHAR(14),\
-    Batterie int,\
-    \'c9tat Varchar(6)\
+    \'c9tat Varchar(6),\
+    Batterie int\
 );\
 \
 \
@@ -33,34 +33,24 @@ CREATE TABLE Utilisateur_Recharge (\
     Adresse_Number int\
 );\
 \
+\
 Create Table Recharge (\
-    U_ID int,\
-    FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
     T_ID int,\
     FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),\
-    T_i TIMESTAMP PRIMARY KEY,\
-    T_f TIMESTAMP,\
+    U_ID int,\
+    FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
     Charge_i int,\
     Charge_f int,\
-    Source_x DECIMAL(6,6),\
-    Source_y DECIMAL(6,6),\
-    Destination_x DECIMAL(6,6),\
-    Destination_y DECIMAL(6,6)\
-);\
-\
-\
-Create Table Voyage (\
-    U_ID int,\
-    FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
-    T_ID int,\
-    FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),\
-    T_i TIMESTAMP PRIMARY KEY,\
+    Source_x DECIMAL(12,8),\
+    Source_y DECIMAL(12,8),\
+    Destination_x DECIMAL(12,8),\
+    Destination_y DECIMAL(12,8),\
+    T_i TIMESTAMP,\
     T_f TIMESTAMP,\
-    Source_x DECIMAL(6,6),\
-    Source_y DECIMAL(6,6),\
-    Destination_x DECIMAL(6,6),\
-    Destination_y DECIMAL(6,6)\
+    PRIMARY KEY (T_ID,U_ID,T_i)\
 );\
+\
+\
 \
 \
 CREATE TABLE Technicien (\
@@ -80,20 +70,33 @@ CREATE TABLE Technicien (\
 \
 \
 Create Table Reparation (\
+    T_ID int,\
     U_ID int,\
     FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
-    T_ID int,\
     FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),\
     Numero real,\
     FOREIGN KEY (Numero) REFERENCES Technicien(Numero),\
-    Date_Plainte TIMESTAMP PRIMARY KEY,\
+    Date_Plainte TIMESTAMP,\
     Date_Reparation TIMESTAMP,\
-    Note int\
+    Note int,\
+    PRIMARY KEY (U_ID,T_ID,Date_Plainte,Numero)\
 );\
 \
 \
 \
-\
+Create Table Voyage (\
+    T_ID int,\
+    U_ID int,\
+    FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),\
+    FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),\
+    Source_x DECIMAL(12,7),\
+    Source_y DECIMAL(12,7),\
+    Destimation_x DECIMAL(12,7),\
+    DDestination_y DECIMAL(12,7),\
+    T_i TIMESTAMP,\
+    T_f TIMESTAMP,\
+    PRIMARY KEY (T_ID,U_ID,T_i)\
+);\
 \
 \
 \

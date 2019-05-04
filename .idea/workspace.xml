@@ -1,54 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/MenuPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TrottPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data2019/56494-maps-location-circular-button.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ressources/56494-maps-location-circular-button.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data2019/istockphoto-664525248-612x612.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ressources/istockphoto-664525248-612x612.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/AcceuilPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/AcceuilPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/LoginPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/LoginPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/LoginPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/SignupPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/SignupPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/acceuilpage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/signuppage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/depositphotos_91382576-stock-illustration-boy-riding-a-scooter-sketch.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/giphy.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/MapExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/Paris.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/Roboto-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/Roboto-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/Roboto-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/Roboto-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/Roboto-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/bars_and_pubs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/bars_and_pubs_for_map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/change.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/checkbox_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/checkbox_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/dots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/from.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/hotels.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/hotels_for_map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/main.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/restaurants.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/restaurants_for_map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/search_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JxMaps/res/to.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Acceuilpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Acceuilpage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/LoginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MenuPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/InsertXMLData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/InsertXMLData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/depositphotos_91382576-stock-illustration-boy-riding-a-scooter-sketch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ressources/depositphotos_91382576-stock-illustration-boy-riding-a-scooter-sketch.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/giphy.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ressources/giphy.gif" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -138,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="1320">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
         </entry>
@@ -248,8 +201,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -446,11 +399,12 @@
       <workItem from="1556887971105" duration="254000" />
       <workItem from="1556959259988" duration="610000" />
       <workItem from="1556960075907" duration="9022000" />
+      <workItem from="1556989403308" duration="432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81480000" />
+    <option name="totallyTimeSpent" value="81912000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -465,7 +419,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21647818" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2197092" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -568,12 +522,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="166" selection-start-line="9" selection-start-column="129" selection-end-line="9" selection-end-column="166" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/InsertXMLData.java">
@@ -660,12 +614,12 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Acceuilpage.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -685,12 +639,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Signuppage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -702,20 +656,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Trotinettes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Trotinettes.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -736,12 +677,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/LoginPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -774,20 +715,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/TrotinettesPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/MenuPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MenuPageController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -796,6 +737,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
         </state>
       </provider>
     </entry>
