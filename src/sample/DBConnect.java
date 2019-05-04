@@ -538,6 +538,32 @@ public class DBConnect {
     }
 
 
+    public void signupAnonymeUser(String ID, String Password, String CC){
+        try
+        {
+            // the mysql insert statement
+            String query = " insert into Utilisateur"
+                    + " values (?, ?, ?)";
+
+            // create the mysql insert preparedstatement
+            PreparedStatement preparedStmt = conn.prepareStatement(query);
+            preparedStmt.setString (1, ID);
+            preparedStmt.setString (2,Password);
+            preparedStmt.setString (3,CC);
+
+            // execute the preparedstatement
+            preparedStmt.execute();
+
+            con.close();
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+        }
+    }
+
+
 }
 
 

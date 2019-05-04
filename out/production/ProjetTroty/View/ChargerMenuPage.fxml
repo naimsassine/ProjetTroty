@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ChargerMenuPageController">
     <children>
-        <ImageView fitHeight="104.0" fitWidth="122.0" layoutX="22.0" layoutY="29.0">
+        <ImageView fitHeight="104.0" fitWidth="122.0" layoutX="110.0" layoutY="29.0">
             <image>
                 <Image url="@../Ressources/istockphoto-664525248-612x612.jpg" />
             </image>
@@ -25,16 +25,15 @@
                 <Cursor fx:constant="MOVE" />
             </cursor>
         </ImageView>
-        <Button fx:id="TrottButton" layoutX="22.0" layoutY="29.0" mnemonicParsing="false" onAction="#TrottButtonPressed" opacity="0.0" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: White;" />
-        <Text layoutX="38.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trotinettes" textAlignment="CENTER" wrappingWidth="90.48193359375" />
-        <Text layoutX="283.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maps" textAlignment="CENTER" wrappingWidth="33.26171875" />
-        <ImageView fitHeight="104.0" fitWidth="109.0" layoutX="248.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+        <Button fx:id="TrottButton" layoutX="110.0" layoutY="29.0" mnemonicParsing="false" onAction="#TrottButtonPressed" opacity="0.0" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: White;" />
+        <Text layoutX="126.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trotinettes" textAlignment="CENTER" wrappingWidth="90.48193359375" />
+        <Text layoutX="427.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maps" textAlignment="CENTER" wrappingWidth="33.26171875" />
+        <ImageView fitHeight="104.0" fitWidth="109.0" layoutX="392.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../Ressources/56494-maps-location-circular-button.png" />
             </image>
         </ImageView>
-        <Button fx:id="MapsButton" layoutX="239.0" layoutY="29.0" mnemonicParsing="false" onAction="#MapsButtonPressed" opacity="0.0" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: White;" />
+        <Button fx:id="MapsButton" layoutX="383.0" layoutY="29.0" mnemonicParsing="false" onAction="#MapsButtonPressed" opacity="0.0" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: White;" />
         <Button fx:id="BackButton" layoutX="54.0" layoutY="289.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="#fffefe" />
-        <Text layoutX="452.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start charging!" textAlignment="CENTER" />
     </children>
 </AnchorPane>
