@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ChargerSignupPageController">
    <children>
       <Text layoutX="113.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create new User-Charger" textAlignment="CENTER" wrappingWidth="373.77099609375">
          <font>
@@ -23,7 +23,7 @@
       <TextField layoutX="113.0" layoutY="141.0" />
       <TextField layoutX="113.0" layoutY="187.0" />
       <TextField layoutX="419.0" layoutY="141.0" />
-      <Button layoutX="46.0" layoutY="317.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="91.0" style="-fx-background-color: Grey;" text="Back" textFill="WHITE" />
+      <Button fx:id="BackButton" layoutX="46.0" layoutY="317.0" mnemonicParsing="false" onAction="#Goback" prefHeight="41.0" prefWidth="91.0" style="-fx-background-color: Grey;" text="Back" textFill="WHITE" />
       <Button layoutX="457.0" layoutY="317.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="91.0" style="-fx-background-color: Grey;" text="Finish!" textFill="WHITE" />
       <Text layoutX="348.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number : " wrappingWidth="77.54296875" />
       <Text layoutX="61.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street :" wrappingWidth="56.5576171875" />
