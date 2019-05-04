@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class MenuPageController implements Initializable {
+public class ChargerMenuPageController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -57,14 +57,5 @@ public class MenuPageController implements Initializable {
         window.show();
     }
 
-    @FXML
-    public void pageCharging(ActionEvent event) throws IOException{
-        Parent SignupCharger = FXMLLoader.load(getClass().getResource("../View/ChargerSignup.fxml"));
-        Scene chargerscene = new Scene(SignupCharger);
 
-        // Lets get the stage
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window.setScene(chargerscene);
-        window.show();
-    }
 }

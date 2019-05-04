@@ -51,4 +51,6 @@ public class AcceuilPageController implements Initializable {
         window.setScene(signupscene);
         window.show();
     }
+
+
 }

@@ -5,13 +5,20 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 import sample.DBConnect;
 
+import javafx.event.ActionEvent;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -28,6 +35,8 @@ public class TrottPageController implements Initializable {
     private ObservableList<ObservableList> data;
     @FXML
     private TableView TrottTable;
+    @FXML
+    private Button BackButton;
 
 
     public void buildData() {
@@ -81,5 +90,17 @@ public class TrottPageController implements Initializable {
             System.out.println("Error on Building Data");
         }
     }
+
+    @FXML
+    public void GoBack(ActionEvent event) throws IOException {
+        Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+        Scene menuscene = new Scene(menu);
+
+        // Lets get the stage
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(menuscene);
+        window.show();
+    }
+
 
 }
