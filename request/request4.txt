@@ -1,0 +1,5 @@
+select r1.scooter
+from Reparation r1
+where count(select *
+            form Reparation r2
+            where r1.scooter = r2.scooter  )>=10

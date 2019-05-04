@@ -1,7 +1,8 @@
 <component name="libraryTable">
   <library name="opencsv-3.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/ReadCSVFile/lib/opencsv-3.1.jar!/" />
+      <root url="jar://$USER_HOME$/Pictures/opencsv-3.1.jar!/" />
+      <root url="jar://$USER_HOME$/Pictures/mysql-connector-java-5.1.11-bin.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
