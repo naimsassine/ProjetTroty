@@ -1,0 +1,3 @@
+select distinct u.lastname, u.firstname
+from User u, Reloads r, Trips t
+where u.ID=r.user and r.scooter=t.scooter and u.ID=t.user

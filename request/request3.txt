@@ -1,0 +1,5 @@
+select Max(SUM( select ST_DISTANCE_SPHERE(
+                                          point(t.sourceX,t.sourceY)
+                                          point(t.destinationX,t.destinationY))))
+from Trips t
+group by t.scooter

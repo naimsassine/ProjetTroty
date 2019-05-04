@@ -1,0 +1,5 @@
+select t1.destinationY ,t1 destinationX
+from Trips t1, Trips t2
+where ( t1.scooter=t2.scooter and t1.endTime<CURDATE() and t1.endTime>= (select MAX(t3.endTime)
+                                                                         from Trips t3
+                                                                         where t3.scooter = t2.scooter) )
