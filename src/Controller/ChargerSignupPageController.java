@@ -56,16 +56,23 @@ public class ChargerSignupPageController implements Initializable {
 
 
     @FXML
-    public void finish(){
+    public void finish(ActionEvent event) throws IOException {
         if(!UserIdTextfield.getText().isEmpty() && !FNTextfield.getText().isEmpty() && !LNTextfield.getText().isEmpty()
                 && !TNTextfield.getText().isEmpty() && !CityTextfield.getText().isEmpty()
                 && !PCTextfield.getText().isEmpty() && !StreetTextfield.getText().isEmpty()
                 && !NumberTextfield.getText().isEmpty()){
-            System.out.print("LOL");
+            Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+            Scene menuscene = new Scene(menu);
+
+            // Lets get the stage
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setScene(menuscene);
+            window.show();
+
 
         }
         else{
-            System.out.print("hey");
+            System.out.print("plz fill in all the blanks");
         }
     }
 }
