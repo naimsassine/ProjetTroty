@@ -76,7 +76,7 @@ public class MapsPageController implements Initializable {
                 //Iterate Row
                 ObservableList<String> row = FXCollections.observableArrayList();
                 for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
-                    //Iterate Column
+                    //Iterate Colum
                     row.add(rs.getString(i));
                 }
                 data.add(row);
