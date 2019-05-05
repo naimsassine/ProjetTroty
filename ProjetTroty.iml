@@ -10,5 +10,6 @@
     <orderEntry type="library" name="mysql-connector" level="project" />
     <orderEntry type="library" name="opencsv-3.1" level="project" />
     <orderEntry type="library" name="opencsv-3.11" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.15" level="project" />
   </component>
 </module>
