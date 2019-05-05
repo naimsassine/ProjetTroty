@@ -1336,7 +1336,7 @@ Numero</ColNames>
       <DataType>varchar(14)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="326" parent="281" name="c9tat">
+    <column id="326" parent="281" name="État">
       <Position>4</Position>
       <DataType>varchar(6)|0s</DataType>
       <NotNull>1</NotNull>
