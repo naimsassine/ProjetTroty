@@ -538,7 +538,7 @@ public class DBConnect {
     }
 
 
-    public void signupAnonymeUser(String ID, String Password, String CC){
+    public Boolean signupAnonymeUser(String ID, String Password, String CC){
         try
         {
             // the mysql insert statement
@@ -546,7 +546,7 @@ public class DBConnect {
                     + " values (?, ?, ?)";
 
             // create the mysql insert preparedstatement
-            PreparedStatement preparedStmt = conn.prepareStatement(query);
+            PreparedStatement preparedStmt = con.prepareStatement(query);
             preparedStmt.setString (1, ID);
             preparedStmt.setString (2,Password);
             preparedStmt.setString (3,CC);
@@ -555,12 +555,52 @@ public class DBConnect {
             preparedStmt.execute();
 
             con.close();
+            return  true;
         }
         catch (Exception e)
         {
             System.err.println("Got an exception!");
             System.err.println(e.getMessage());
+            return false;
         }
+    }
+
+    public Boolean signupChargerUser(String ID, String FN, String LN, String TN, String City, String PC,
+                                     String Street, String Number){
+
+        try
+        {
+            // the mysql insert statement
+            String query = " insert into Utilisateur_Recharge"
+                    + " values (?, ?, ?, ?, ?, ?, ?, ?)";
+
+            // create the mysql insert preparedstatement
+            PreparedStatement preparedStmt = con.prepareStatement(query);
+            preparedStmt.setString (1, ID);
+            preparedStmt.setString (2,FN);
+            preparedStmt.setString (3,LN);
+            preparedStmt.setString (4,TN);
+            preparedStmt.setString (5,City);
+            preparedStmt.setString (6,PC);
+            preparedStmt.setString (7,Street);
+            preparedStmt.setString (8,Number);
+
+
+
+            // execute the preparedstatement
+            preparedStmt.execute();
+
+            con.close();
+            return  true;
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+            return false;
+        }
+
+
     }
 
 

@@ -42,14 +42,26 @@ public class SignupPageController implements Initializable {
         window.show();
     }
     @FXML
-    public void signup(){
+    public void signup(ActionEvent event) throws IOException {
         if(!UserIdTextfield.getText().isEmpty() && !PasswordTextfield.getText().isEmpty() &&
                 !CCTextfield.getText().isEmpty()){
             DBConnect connect = new DBConnect();
-            connect.signupAnonymeUser(UserIdTextfield.getText(),PasswordTextfield.getText(),CCTextfield.getText());
+            String ID = UserIdTextfield.getText();
+            String Password = PasswordTextfield.getText();
+            String CC = CCTextfield.getText();
+            Boolean answer = connect.signupAnonymeUser(ID,Password,CC);
+            if(answer){
+                Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+                Scene menuscene = new Scene(menu);
+
+                // Lets get the stage
+                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                window.setScene(menuscene);
+                window.show();
+            }
         }
         else{
-            System.out.print("Plz fill in all the blanks");
+            System.out.print("Please fill in all the blanks");
         }
 
     }

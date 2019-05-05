@@ -48,7 +48,7 @@ public class ChargerMenuPageController implements Initializable {
 
     @FXML
     public void BackButtonPressed(ActionEvent event) throws IOException {
-        Parent login = FXMLLoader.load(getClass().getResource("../View/LoginPage.fxml"));
+        Parent login = FXMLLoader.load(getClass().getResource("../View/Acceuilpage.fxml"));
         Scene acceuilscene = new Scene(login);
 
         // Lets get the stage

@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import sample.DBConnect;
 
 import java.io.IOException;
 import java.net.URL;
@@ -61,15 +62,27 @@ public class ChargerSignupPageController implements Initializable {
                 && !TNTextfield.getText().isEmpty() && !CityTextfield.getText().isEmpty()
                 && !PCTextfield.getText().isEmpty() && !StreetTextfield.getText().isEmpty()
                 && !NumberTextfield.getText().isEmpty()){
-            Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
-            Scene menuscene = new Scene(menu);
+            DBConnect connect = new DBConnect();
+            String ID = UserIdTextfield.getText();
+            String FN = FNTextfield.getText();
+            String LN = LNTextfield.getText();
+            String TN = TNTextfield.getText();
+            String City = CityTextfield.getText();
+            String PC = PCTextfield.getText();
+            String Street = StreetTextfield.getText();
+            String Number = NumberTextfield.getText();
 
-            // Lets get the stage
-            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-            window.setScene(menuscene);
-            window.show();
 
+            Boolean answer = connect.signupChargerUser(ID,FN,LN,TN,City,PC,Street,Number);
+            if(answer){
+                Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
+                Scene menuscene = new Scene(menu);
 
+                // Lets get the stage
+                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                window.setScene(menuscene);
+                window.show();
+            }
         }
         else{
             System.out.print("plz fill in all the blanks");
