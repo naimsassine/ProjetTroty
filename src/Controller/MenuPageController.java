@@ -45,7 +45,15 @@ public class MenuPageController implements Initializable {
 
 
     @FXML
-    public void MapsButtonPressed(){ }
+    public void MapsButtonPressed(ActionEvent event) throws IOException{
+        Parent localisation = FXMLLoader.load(getClass().getResource("../View/MapsPage.fxml"));
+        Scene maps = new Scene(localisation);
+
+        // Lets get the stage
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(maps);
+        window.show();
+    }
 
     @FXML
     public void BackButtonPressed(ActionEvent event) throws IOException {

@@ -2,11 +2,11 @@
   <library name="mysql-connector" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$USER_HOME$/Downloads/mysql-connector-java-8.0.15/mysql-connector-java-8.0.15.jar" />
+        <item url="file://$PROJECT_DIR$/../Downloads/mysql-connector-java-8.0.15/mysql-connector-java-8.0.15.jar" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/mysql-connector-java-8.0.15/mysql-connector-java-8.0.15.jar" />
+      <root url="file://$PROJECT_DIR$/../Documents/library inteliji/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16.jar" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

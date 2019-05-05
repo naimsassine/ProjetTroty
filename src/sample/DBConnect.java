@@ -17,6 +17,8 @@ public class DBConnect {
     private static Connection conn;
     private Statement st;
     private ResultSet rs;
+
+
     public static String checkApostrophe(String s){
         String t = "";
         if (s.contains("'"))
@@ -41,7 +43,6 @@ public class DBConnect {
     }
 
     public DBConnect() {
-
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
 
@@ -96,9 +97,6 @@ public class DBConnect {
             }
         }
 
-
-
-
     public void insertDataUtilisateur() {
         try{
             DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
@@ -139,9 +137,6 @@ public class DBConnect {
         }
 
     }
-
-
-
 
     public void insertDataMecaniciens() {
         try{
@@ -244,9 +239,6 @@ public class DBConnect {
         }
 
     }
-
-
-
 
     public void insertDataUtilisateurRecharge(){
 
@@ -357,12 +349,6 @@ public class DBConnect {
 
     }
 
-
-
-
-
-
-
     public void insertDataReloads(){
         try (CSVReader reader = new CSVReader(new FileReader("Ressources/reloads.csv"), ','))
         {
@@ -399,9 +385,6 @@ public class DBConnect {
 
     } // Check en principe
 
-
-
-
     public void insertDataReparation(){
         try (CSVReader reader = new CSVReader(new FileReader("Ressources/reparations.csv"), ','))
         {
@@ -437,8 +420,6 @@ public class DBConnect {
 
     } // Check en principe
 
-
-
     public void insertDataScooters(){
         try (CSVReader reader = new CSVReader(new FileReader("Ressources/scooters.csv"), ';'))
         {
@@ -473,9 +454,6 @@ public class DBConnect {
 
 
     } // Check en principe
-
-
-
 
     public void insertDataTrips(){
         try (CSVReader reader = new CSVReader(new FileReader("Ressources/trips.csv"), ','))
@@ -536,7 +514,6 @@ public class DBConnect {
 
         return password;
     }
-
 
     public Boolean signupAnonymeUser(String ID, String Password, String CC){
         try
@@ -602,8 +579,6 @@ public class DBConnect {
 
 
     }
-
-
     public Boolean insertComplaint(String T_ID) throws SQLException {
         // Test si la trotinette existe
         String selectSQL = "SELECT T_ID FROM Trotinette WHERE T_ID = ?";
@@ -655,8 +630,6 @@ public class DBConnect {
         }
 
     }
-
-
 }
 
 
