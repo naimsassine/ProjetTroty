@@ -26,6 +26,8 @@ public class MenuPageController implements Initializable {
     private Button TrottButton;
     @FXML
     private Button BackButton;
+    @FXML
+    private Button PlainteButton;
 
 
 
