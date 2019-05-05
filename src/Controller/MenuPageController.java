@@ -17,6 +17,7 @@ import java.util.ResourceBundle;
 public class MenuPageController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        AcceuilPageController.pageoption = 1;
 
     }
 
@@ -65,6 +66,17 @@ public class MenuPageController implements Initializable {
         // Lets get the stage
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(chargerscene);
+        window.show();
+    }
+
+    @FXML
+    public void loadPagePlainte(ActionEvent event) throws IOException{
+        Parent plainte = FXMLLoader.load(getClass().getResource("../View/PlaintePage.fxml"));
+        Scene plaintescene = new Scene(plainte);
+
+        // Lets get the stage
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(plaintescene);
         window.show();
     }
 }

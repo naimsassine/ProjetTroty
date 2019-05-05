@@ -26,7 +26,7 @@
          </cursor>
       </ImageView>
       <Button fx:id="TrottButton" layoutX="22.0" layoutY="29.0" mnemonicParsing="false" onAction="#TrottButtonPressed" opacity="0.0" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: White;" />
-      <Text layoutX="38.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trotinettes" textAlignment="CENTER" wrappingWidth="90.48193359375" />
+      <Text layoutX="38.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scoots" textAlignment="CENTER" wrappingWidth="90.48193359375" />
       <Text layoutX="283.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maps" textAlignment="CENTER" wrappingWidth="33.26171875" />
       <ImageView fitHeight="104.0" fitWidth="109.0" layoutX="248.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -47,7 +47,7 @@
             <Image url="@../Ressources/emoticon-sad-7-512.png" />
          </image>
       </ImageView>
-      <Button fx:id="PlainteButton" layoutX="251.0" layoutY="189.0" mnemonicParsing="false" opacity="0.0" prefHeight="98.0" prefWidth="98.0" />
+      <Button fx:id="PlainteButton" layoutX="251.0" layoutY="189.0" mnemonicParsing="false" onAction="#loadPagePlainte" opacity="0.0" prefHeight="98.0" prefWidth="98.0" />
       <Text layoutX="255.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint" textAlignment="CENTER" wrappingWidth="90.0" />
    </children>
 </AnchorPane>

@@ -34,6 +34,13 @@
             </image>
         </ImageView>
         <Button fx:id="MapsButton" layoutX="383.0" layoutY="29.0" mnemonicParsing="false" onAction="#MapsButtonPressed" opacity="0.0" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: White;" />
-        <Button fx:id="BackButton" layoutX="54.0" layoutY="289.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="#fffefe" />
+        <Button fx:id="BackButton" layoutX="43.0" layoutY="321.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="#fffefe" />
+      <ImageView fitHeight="104.0" fitWidth="122.0" layoutX="262.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ressources/emoticon-sad-7-512.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ComplaintButton" layoutX="262.0" layoutY="165.0" mnemonicParsing="false" onAction="#loadPagePlainte" opacity="0.0" prefHeight="104.0" prefWidth="104.0" />
+      <Text layoutX="283.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint" />
     </children>
 </AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PlaintePageController">
+   <children>
+      <Text layoutX="158.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please insert the Scoot ID you want to make a complaint about : " textAlignment="CENTER" wrappingWidth="284.2060546875" />
+      <TextField fx:id="TrottIdTextfield" layoutX="217.0" layoutY="157.0" />
+      <Button fx:id="BackButton" layoutX="49.0" layoutY="312.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="WHITE" />
+      <Button fx:id="DoneButton" layoutX="463.0" layoutY="312.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Done" textFill="WHITE" />
+   </children>
+</AnchorPane>

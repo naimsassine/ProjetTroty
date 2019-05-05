@@ -28,7 +28,7 @@ public class AcceuilPageController implements Initializable {
     @FXML
     private Button SignupButton;
 
-
+    public static int pageoption = 0;
 
 
     @FXML
