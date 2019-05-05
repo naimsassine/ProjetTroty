@@ -1339,6 +1339,7 @@ Numero</ColNames>
     <column id="326" parent="281" name="c9tat">
       <Position>4</Position>
       <DataType>varchar(6)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="327" parent="281" name="Batterie">
@@ -1349,152 +1350,160 @@ Numero</ColNames>
     <column id="328" parent="281" name="Latitude">
       <Position>6</Position>
       <DataType>decimal(12,9 digit)|0s</DataType>
+      <NotNull>1</NotNull>
       <DefaultExpression>50.813278000</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="329" parent="281" name="Longitude">
       <Position>7</Position>
       <DataType>decimal(12,9 digit)|0s</DataType>
+      <NotNull>1</NotNull>
       <DefaultExpression>4.382202000</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="330" parent="281" name="PRIMARY">
+    <column id="330" parent="281" name="Available">
+      <Position>8</Position>
+      <DataType>varchar(6)|0s</DataType>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="331" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>T_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="331" parent="282" name="U_ID">
+    <column id="332" parent="282" name="U_ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="332" parent="282" name="Mot_De_Passe">
+    <column id="333" parent="282" name="Mot_De_Passe">
       <Position>2</Position>
       <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="333" parent="282" name="Numero_Carte">
+    <column id="334" parent="282" name="Numero_Carte">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="334" parent="282" name="PRIMARY">
+    <key id="335" parent="282" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>U_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="335" parent="283" name="U_ID">
+    <column id="336" parent="283" name="U_ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="336" parent="283" name="Nom">
+    <column id="337" parent="283" name="Nom">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="337" parent="283" name="Prenom">
+    <column id="338" parent="283" name="Prenom">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="338" parent="283" name="Numero_Telephone">
+    <column id="339" parent="283" name="Numero_Telephone">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="339" parent="283" name="Adresse_City">
+    <column id="340" parent="283" name="Adresse_City">
       <Position>5</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="283" name="Adresse_Cp">
+    <column id="341" parent="283" name="Adresse_Cp">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="341" parent="283" name="Adresse_Street">
+    <column id="342" parent="283" name="Adresse_Street">
       <Position>7</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="283" name="Adresse_Number">
+    <column id="343" parent="283" name="Adresse_Number">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="343" parent="283" name="U_ID">
+    <index id="344" parent="283" name="U_ID">
       <ColNames>U_ID</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="344" parent="283" name="utilisateur_recharge_ibfk_1">
+    <foreign-key id="345" parent="283" name="utilisateur_recharge_ibfk_1">
       <ColNames>U_ID</ColNames>
       <RefSchemaName>ProjetDbb</RefSchemaName>
       <RefTableName>Utilisateur</RefTableName>
       <RefColNames>U_ID</RefColNames>
     </foreign-key>
-    <column id="345" parent="284" name="T_ID">
+    <column id="346" parent="284" name="T_ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="346" parent="284" name="U_ID">
+    <column id="347" parent="284" name="U_ID">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="347" parent="284" name="Source_x">
+    <column id="348" parent="284" name="Source_x">
       <Position>3</Position>
       <DataType>decimal(12,7 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="348" parent="284" name="Source_y">
+    <column id="349" parent="284" name="Source_y">
       <Position>4</Position>
       <DataType>decimal(12,7 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="284" name="Destimation_x">
+    <column id="350" parent="284" name="Destimation_x">
       <Position>5</Position>
       <DataType>decimal(12,7 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="350" parent="284" name="DDestination_y">
+    <column id="351" parent="284" name="DDestination_y">
       <Position>6</Position>
       <DataType>decimal(12,7 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="351" parent="284" name="T_i">
+    <column id="352" parent="284" name="T_i">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="352" parent="284" name="T_f">
+    <column id="353" parent="284" name="T_f">
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="353" parent="284" name="U_ID">
+    <index id="354" parent="284" name="U_ID">
       <ColNames>U_ID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="354" parent="284" name="PRIMARY">
+    <key id="355" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>T_ID
 U_ID
 T_i</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="355" parent="284" name="voyage_ibfk_2">
+    <foreign-key id="356" parent="284" name="voyage_ibfk_2">
       <ColNames>T_ID</ColNames>
       <RefSchemaName>ProjetDbb</RefSchemaName>
       <RefTableName>Trotinette</RefTableName>
       <RefColNames>T_ID</RefColNames>
     </foreign-key>
-    <foreign-key id="356" parent="284" name="voyage_ibfk_1">
+    <foreign-key id="357" parent="284" name="voyage_ibfk_1">
       <ColNames>U_ID</ColNames>
       <RefSchemaName>ProjetDbb</RefSchemaName>
       <RefTableName>Utilisateur</RefTableName>
