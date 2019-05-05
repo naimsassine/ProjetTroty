@@ -1364,7 +1364,8 @@ Numero</ColNames>
     <column id="330" parent="281" name="Available">
       <Position>8</Position>
       <DataType>varchar(6)|0s</DataType>
-      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;True&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="331" parent="281" name="PRIMARY">

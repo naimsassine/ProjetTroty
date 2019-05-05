@@ -54,10 +54,15 @@ public class MapsPageController implements Initializable {
              * TABLE COLUMN ADDED DYNAMICALLY *
              *********************************
              */
+            //adding id
+            TableColumn col = new TableColumn(rs.getMetaData().getColumnName(1));
+            col.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<ObservableList, String>, ObservableValue<String>>() {public ObservableValue<String> call(TableColumn.CellDataFeatures<ObservableList, String> param){return new SimpleStringProperty(param.getValue().get(0).toString());}});
+
+            MapTable.getColumns().addAll(col);
             for (int i = 5; i < rs.getMetaData().getColumnCount(); i++) {
                 //We are using non property style for making dynamic table
                 final int j = i;
-                TableColumn col = new TableColumn(rs.getMetaData().getColumnName(i + 1));
+                col = new TableColumn(rs.getMetaData().getColumnName(i + 1));
                 col.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<ObservableList, String>, ObservableValue<String>>() {
                     public ObservableValue<String> call(TableColumn.CellDataFeatures<ObservableList, String> param) {
                         return new SimpleStringProperty(param.getValue().get(j).toString());
