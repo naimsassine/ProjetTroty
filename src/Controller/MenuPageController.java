@@ -42,9 +42,7 @@ public class MenuPageController implements Initializable {
 
 
     @FXML
-    public void MapsButtonPressed(){
-        System.out.print("un Lol par là");
-    }
+    public void MapsButtonPressed(){ }
 
     @FXML
     public void BackButtonPressed(ActionEvent event) throws IOException {

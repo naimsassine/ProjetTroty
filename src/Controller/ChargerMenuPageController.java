@@ -31,7 +31,7 @@ public class ChargerMenuPageController implements Initializable {
 
     @FXML
     public void TrottButtonPressed(ActionEvent event) throws IOException {
-        Parent trott = FXMLLoader.load(getClass().getResource("../View/TrotinettesPage.fxml"));
+        Parent trott = FXMLLoader.load(getClass().getResource("../View/ChargerTrotinettesPage.fxml"));
         Scene trottscene = new Scene(trott);
 
         // Lets get the stage
@@ -43,7 +43,6 @@ public class ChargerMenuPageController implements Initializable {
 
     @FXML
     public void MapsButtonPressed(){
-        System.out.print("un Lol par là");
     }
 
     @FXML
