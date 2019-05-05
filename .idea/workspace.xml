@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/PlaintePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AcceuilPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AcceuilPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MenuPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MenuPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ChargerMenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ChargerMenuPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MenuPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PlaintePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PlaintePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/PlaintePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/PlaintePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DBConnect.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/PlaintePageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="248">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,10 +131,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="615" lean-forward="true" selection-start-line="615" selection-end-line="615" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#checkApostrophe#0;class#DBConnect#0" />
+                <element signature="method#checkDateCorrect#0;class#DBConnect#0" />
+                <element signature="method#DBConnect#0;class#DBConnect#0" />
+                <element signature="method#connect#0;class#DBConnect#0" />
+                <element signature="method#getConnection#0;class#DBConnect#0" />
+                <element signature="method#getData#0;class#DBConnect#0" />
+                <element signature="method#insertDataUtilisateur#0;class#DBConnect#0" />
+                <element signature="method#insertDataMecaniciens#0;class#DBConnect#0" />
+                <element signature="method#insertDataUtilisateurRecharge#0;class#DBConnect#0" />
+                <element signature="method#insertDataReloads#0;class#DBConnect#0" />
+                <element signature="method#insertDataReparation#0;class#DBConnect#0" />
+                <element signature="method#insertDataScooters#0;class#DBConnect#0" />
+                <element signature="method#insertDataTrips#0;class#DBConnect#0" />
+                <element signature="method#Login#0;class#DBConnect#0" />
+                <element signature="method#signupChargerUser#0;class#DBConnect#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="325">
+              <caret line="97" column="19" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -190,16 +213,16 @@
         <option value="$PROJECT_DIR$/src/View/TrotinettesPage.fxml" />
         <option value="$PROJECT_DIR$/src/Controller/TrottPageController.java" />
         <option value="$PROJECT_DIR$/src/View/ChargerMenuPage.fxml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql" />
         <option value="$PROJECT_DIR$/src/Controller/SignupPageController.java" />
-        <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/Controller/ChargerSignupPageController.java" />
         <option value="$PROJECT_DIR$/src/View/ChargerTrotinettesPage.fxml" />
         <option value="$PROJECT_DIR$/src/Controller/ChargerTrottPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/AcceuilPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/MenuPageController.java" />
-        <option value="$PROJECT_DIR$/src/Controller/PlaintePageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql" />
+        <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/Controller/PlaintePageController.java" />
       </list>
     </option>
   </component>
@@ -240,6 +263,12 @@
               <item name="ProjetTroty" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjetTroty" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetTroty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetTroty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -265,9 +294,9 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557046572180" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557047970659" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -449,12 +478,12 @@
       <workItem from="1556960075907" duration="9022000" />
       <workItem from="1556989403308" duration="719000" />
       <workItem from="1557001943670" duration="6065000" />
-      <workItem from="1557038253489" duration="5433000" />
+      <workItem from="1557038253489" duration="6801000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93697000" />
+    <option name="totallyTimeSpent" value="95065000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,7 +498,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.22617124" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.22617124" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -478,7 +507,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29452056" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29452056" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -494,7 +523,7 @@
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32876712" />
       <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32876712" />
-      <window_info anchor="bottom" id="Database Console" order="18" weight="0.34246576" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="18" visible="true" weight="0.34246576" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -715,13 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/ChargerSignup.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor" />
@@ -731,28 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="587" lean-forward="true" selection-start-line="587" selection-end-line="587" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#checkApostrophe#0;class#DBConnect#0" />
-            <element signature="method#checkDateCorrect#0;class#DBConnect#0" />
-            <element signature="method#DBConnect#0;class#DBConnect#0" />
-            <element signature="method#getData#0;class#DBConnect#0" />
-            <element signature="method#insertDataUtilisateur#0;class#DBConnect#0" />
-            <element signature="method#insertDataMecaniciens#0;class#DBConnect#0" />
-            <element signature="method#insertDataUtilisateurRecharge#0;class#DBConnect#0" />
-            <element signature="method#insertDataReloads#0;class#DBConnect#0" />
-            <element signature="method#insertDataReparation#0;class#DBConnect#0" />
-            <element signature="method#insertDataScooters#0;class#DBConnect#0" />
-            <element signature="method#insertDataTrips#0;class#DBConnect#0" />
-            <element signature="method#Login#0;class#DBConnect#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,6 +846,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="615" lean-forward="true" selection-start-line="615" selection-end-line="615" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkApostrophe#0;class#DBConnect#0" />
+            <element signature="method#checkDateCorrect#0;class#DBConnect#0" />
+            <element signature="method#DBConnect#0;class#DBConnect#0" />
+            <element signature="method#connect#0;class#DBConnect#0" />
+            <element signature="method#getConnection#0;class#DBConnect#0" />
+            <element signature="method#getData#0;class#DBConnect#0" />
+            <element signature="method#insertDataUtilisateur#0;class#DBConnect#0" />
+            <element signature="method#insertDataMecaniciens#0;class#DBConnect#0" />
+            <element signature="method#insertDataUtilisateurRecharge#0;class#DBConnect#0" />
+            <element signature="method#insertDataReloads#0;class#DBConnect#0" />
+            <element signature="method#insertDataReparation#0;class#DBConnect#0" />
+            <element signature="method#insertDataScooters#0;class#DBConnect#0" />
+            <element signature="method#insertDataTrips#0;class#DBConnect#0" />
+            <element signature="method#Login#0;class#DBConnect#0" />
+            <element signature="method#signupChargerUser#0;class#DBConnect#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
@@ -860,11 +885,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PlaintePageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="248">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="97" column="19" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
         </state>
       </provider>
     </entry>

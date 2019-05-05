@@ -604,6 +604,32 @@ public class DBConnect {
     }
 
 
+    public Boolean insertComplaint(String T_ID){
+        try
+        {
+            // the mysql insert statement
+            String query = " UPDATE Trotinette SET État = 'True'  WHERE T_ID = ?";
+
+            // create the mysql insert preparedstatement
+            PreparedStatement preparedStmt = con.prepareStatement(query);
+            preparedStmt.setString (1, T_ID);
+
+            // execute the preparedstatement
+            preparedStmt.execute();
+
+            con.close();
+            return  true;
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+            return false;
+        }
+
+    }
+
+
 }
 
 
