@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/libraries/opencsv_3_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/opencsv_3_11.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/LoginPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/LoginPageController.class" afterDir="false" />
@@ -10,6 +11,12 @@
       <change beforePath="$PROJECT_DIR$/src/Controller/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MenuPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MenuPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MenuPage.fxml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetTroty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetTroty.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TrottPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TrottPageController.java" afterDir="false" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,6 +49,7 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="ProjetDbb@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+<<<<<<< HEAD
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="ProjetDbb@localhost" type="feb32156:DbDataSourceImpl" />
@@ -60,6 +68,8 @@
         <item name="ProjetDbb: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="Utilisateur: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
+=======
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
     </expand>
     <select />
   </component>
@@ -109,14 +119,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#519#520#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6496">
+              <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="56" column="65" lean-forward="true" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/Controller/HistoryPageController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="611">
               <caret line="75" column="15" lean-forward="true" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/Controller/MapsPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -172,22 +248,25 @@
         <option value="$PROJECT_DIR$/Script SQL.rtf" />
         <option value="25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Utilisateur.sql" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql" />
         <option value="$PROJECT_DIR$/src/View/TrotinettesPage.fxml" />
         <option value="$PROJECT_DIR$/src/View/MapsPage.fxml" />
-        <option value="$PROJECT_DIR$/src/Controller/TrottPageController.java" />
         <option value="$PROJECT_DIR$/updateDB_1.0.rtf" />
         <option value="$PROJECT_DIR$/src/Controller/MapsPageController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/updateDB_Trotinette_1.0.rtf" />
         <option value="$PROJECT_DIR$/src/View/Acceuilpage.fxml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/Controller/HistoryController.java" />
         <option value="$PROJECT_DIR$/src/View/HistoryPage.fxml" />
         <option value="$PROJECT_DIR$/src/Controller/HistoryPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/MenuPageController.java" />
         <option value="$PROJECT_DIR$/src/View/MenuPage.fxml" />
         <option value="$PROJECT_DIR$/src/Controller/LoginPageController.java" />
+=======
+        <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/Controller/TrottPageController.java" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
       </list>
     </option>
   </component>
@@ -206,6 +285,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,7 +312,10 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -453,7 +536,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="119716000" />
+=======
+    <option name="totallyTimeSpent" value="113865000" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -465,9 +552,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="23" width="2474" height="1335" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24136513" />
+=======
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.26817447" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -476,7 +570,11 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32823813" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.1987128" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.14383562" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -492,12 +590,16 @@
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Terminal" order="16" visible="true" weight="0.32823813" />
       <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32876712" />
-      <window_info anchor="bottom" id="Database Console" order="18" weight="0.3419147" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.3410959" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2494043" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="3" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Database" order="4" sideWeight="0.49942988" visible="true" weight="0.14514802" />
+=======
+      <window_info anchor="right" id="Database" order="4" sideWeight="0.49942988" weight="0.28756058" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Maven" order="7" />
@@ -594,13 +696,7 @@
     <entry file="file://$PROJECT_DIR$/data2019/kisspng-computer-icons-google-maps-location-logo-5ac9ccaee76971.6833361015231745749479.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/projetdbb/table/Reparation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/projetdbb/table/Reparation" />
     <entry file="file://$PROJECT_DIR$/src/Ressources/mecaniciens.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -611,24 +707,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/projetdbb/table/Utilisateur">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/projetdbb/table/Recharge">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/projetdbb/table/Utilisateur" />
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/projetdbb/table/Recharge" />
     <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/trips" />
+<<<<<<< HEAD
     <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Utilisateur.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/src/Ressources/trips.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="285">
+          <caret line="19" column="28" selection-end-line="15183" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Utilisateur.sql" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
     <entry file="file://$PROJECT_DIR$/src/Ressources/registeredUsers.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -638,17 +733,15 @@
     <entry file="file://$PROJECT_DIR$/data2019/anonyme_users.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Utilisateur_Recharge">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Utilisateur_Recharge" />
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Voyage" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
     <entry file="file://$PROJECT_DIR$/src/View/ChargerSignup.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor" />
@@ -680,6 +773,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/Initializable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -690,6 +784,9 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/Initializable.java" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
     <entry file="file://$PROJECT_DIR$/Script SQL.rtf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -697,27 +794,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Technicien">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Reparation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Recharge">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Technicien" />
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Reparation" />
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Recharge" />
     <entry file="file://$PROJECT_DIR$/src/View/MapsPage.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
@@ -727,6 +806,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/updateDB_Trotinette_1.0.rtf">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
@@ -751,6 +831,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
+=======
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
           <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
@@ -809,6 +891,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -835,6 +918,11 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/projetdbb/table/Trotinette" />
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Trotinette" />
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/ProjetDbb/table/Utilisateur" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
     <entry file="file://$PROJECT_DIR$/src/Controller/AcceuilPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -848,6 +936,7 @@
     <entry file="file://$PROJECT_DIR$/src/View/HistoryPage.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="120">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
@@ -872,6 +961,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+=======
+        <state relative-caret-position="825">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -893,18 +986,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/LoginPageController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="611">
           <caret line="57" column="97" selection-start-line="57" selection-start-column="97" selection-end-line="57" selection-end-column="97" />
+=======
+        <state relative-caret-position="-6496">
+          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Controller/HistoryPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="611">
           <caret line="75" column="15" lean-forward="true" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
+=======
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="56" column="65" lean-forward="true" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MapsPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+>>>>>>> c17c90ab6765bb3071762bb3d82d1bd8cc736dba
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -968,6 +1100,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -975,7 +1108,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>opencsv-3.11</last-edited>
+          <last-edited>mysql-connector-java-8.0.15</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

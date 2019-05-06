@@ -54,7 +54,7 @@ public class TrottPageController implements Initializable {
              * TABLE COLUMN ADDED DYNAMICALLY *
              *********************************
              */
-            for (int i = 0; i < rs.getMetaData().getColumnCount()-3; i++) {
+            for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
                 //We are using non property style for making dynamic table
                 final int j = i;
                 TableColumn col = new TableColumn(rs.getMetaData().getColumnName(i + 1));
