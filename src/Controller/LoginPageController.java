@@ -1,5 +1,6 @@
 package Controller;
 
+import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import sample.DBConnect;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.EventObject;
@@ -35,6 +36,7 @@ public class LoginPageController  implements Initializable {
     private TextField PasswordTextfield;
 
 
+
     @FXML
     public void Goback(ActionEvent event) throws IOException {
         Parent acceuil = FXMLLoader.load(getClass().getResource("../View/Acceuilpage.fxml"));
@@ -49,9 +51,15 @@ public class LoginPageController  implements Initializable {
 
     @FXML
     public void Ride(ActionEvent event) throws IOException, SQLException {
-        String UserId = "";
         String PasswordReturned = "";
+        String UserId = "";
         UserId = IdTextfield.getText();
+
+        //saving the actual user in a txt file (each time the code is run, the file is overwrite)
+        PrintWriter bw = new PrintWriter("src/ActualUser.txt");
+        bw.write(UserId);
+        bw.close();
+
         DBConnect connect = new DBConnect();
         PasswordReturned = connect.Login(UserId);
         if (PasswordReturned.equals(PasswordTextfield.getText())){
