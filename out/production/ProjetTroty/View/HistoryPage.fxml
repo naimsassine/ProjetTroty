@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HistoryPageController">
+   <children>
+      <TableView fx:id="HistoryTable" layoutX="32.0" layoutY="22.0" prefHeight="293.0" prefWidth="537.0" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="BackButton" layoutX="32.0" layoutY="337.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="WHITE" AnchorPane.bottomAnchor="22.0" />
+   </children>
+</AnchorPane>
