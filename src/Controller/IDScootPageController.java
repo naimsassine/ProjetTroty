@@ -48,17 +48,22 @@ public class IDScootPageController implements Initializable {
 
     @FXML
     public void RemoveButtonPressed(){
-        DBConnect connect = new DBConnect();
-        String TID = T_IDTextfield.getText();
-        Boolean answer = connect.removeTrotinette(TID);
-        if (answer){
-            T_IDTextfield.clear();
+        if(!T_IDTextfield.getText().isEmpty()){
+            DBConnect connect = new DBConnect();
+            String TID = T_IDTextfield.getText();
+            Boolean answer = connect.removeTrotinette(TID);
+            if (answer){
+                T_IDTextfield.clear();
+            }
+        }
+        else {
+            System.out.print("Please fill in the blanks");
         }
     }
 
     @FXML
     public void BackButtonPressed(ActionEvent event) throws IOException {
-        Parent menuIDScoots = FXMLLoader.load(getClass().getResource("../View/MechanicMenuPageController.fxml"));
+        Parent menuIDScoots = FXMLLoader.load(getClass().getResource("../View/MechanicMenuPage.fxml"));
         Scene menuIDScootsscene = new Scene(menuIDScoots);
 
         // Lets get the stage
@@ -69,6 +74,34 @@ public class IDScootPageController implements Initializable {
 
     @FXML
     public  void AddButtonPressed(){
+
+        if(!T_ID2Textfield.getText().isEmpty() && !DateTextfield.getText().isEmpty() && !ModelTextfield.getText().isEmpty()
+        && !BatteryTextfield.getText().isEmpty() && !ComplaintTextfield.getText().isEmpty() && !DispoTextfield.getText().isEmpty()
+        && !XPosTextfield.getText().isEmpty() && !YPosTextfield.getText().isEmpty()){
+            DBConnect connect = new DBConnect();
+            String TID = T_ID2Textfield.getText();
+            String Date = DateTextfield.getText();
+            String Model = ModelTextfield.getText();
+            String Battery = BatteryTextfield.getText();
+            String Complaint = ComplaintTextfield.getText();
+            String Dispo = DispoTextfield.getText();
+            String Xpos = XPosTextfield.getText();
+            String Ypos = YPosTextfield.getText();
+            Boolean answer = connect.addTrotinette(TID,Model,Date,Battery,Complaint,Dispo,Xpos,Ypos);
+            if (answer){
+                T_ID2Textfield.clear();
+                DateTextfield.clear();
+                ModelTextfield.clear();
+                BatteryTextfield.clear();
+                ComplaintTextfield.clear();
+                DispoTextfield.clear();
+                XPosTextfield.clear();
+                YPosTextfield.clear();
+            }
+        }
+        else {
+            System.out.print("Please fill in the blanks");
+        }
 
     }
 

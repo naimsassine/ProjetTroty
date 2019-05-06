@@ -703,7 +703,35 @@ public class DBConnect {
 
     public Boolean addTrotinette(String TID, String Modele, String Date, String Battery, String Complaint,
                                  String Dispo, String posX, String posY){
-        
+
+        try
+        {
+            // the mysql insert statement
+            String query = " insert into Trotinette"
+                    + " values (?, ?, ?, ?, ?)";
+
+            // create the mysql insert preparedstatement
+            PreparedStatement preparedStmt = con.prepareStatement(query);
+            preparedStmt.setString (1,TID);
+            preparedStmt.setString (2,Date);
+            preparedStmt.setString (3,Modele);
+            preparedStmt.setString (4,Complaint);
+            preparedStmt.setString (5,Battery);
+
+
+
+            // execute the preparedstatement
+            preparedStmt.execute();
+
+            con.close();
+            return  true;
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+            return false;
+        }
     }
 }
 
