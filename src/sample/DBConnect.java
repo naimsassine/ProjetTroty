@@ -142,7 +142,7 @@ public class DBConnect {
         try{
             DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-            Document doc = docBuilder.parse (new File("Ressources/mecaniciens.xml"));
+            Document doc = docBuilder.parse (new File("src/Ressources/mecaniciens.xml"));
             doc.getDocumentElement().normalize();
             System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
             NodeList listOfMecanics = doc.getElementsByTagName("mechanic");
@@ -385,8 +385,10 @@ public class DBConnect {
 
     } // Check en principe
 
+
+    // fonctionne pas a caause d une couille dans la bdd
     public void insertDataReparation(){
-        try (CSVReader reader = new CSVReader(new FileReader("Ressources/reparations.csv"), ','))
+        try (CSVReader reader = new CSVReader(new FileReader("src/Ressources/reparations.csv"), ','))
         {
             String insertQuery = "Insert into Reparation values (?,?,?,?,?,null) ";
             PreparedStatement pstmt = con.prepareStatement(insertQuery);
@@ -401,6 +403,7 @@ public class DBConnect {
 
                 for (String data : rowData)
                 {
+                    System.out.print(data + "LOOl");
                     pstmt.setString((i % 5) + 1, data);
 
                     if (++i % 5 == 0)
@@ -629,6 +632,106 @@ public class DBConnect {
             return false;
         }
 
+    }
+
+    public Boolean checkTechnicien(String MID) throws SQLException {
+        String selectSQL = "SELECT Numero FROM Technicien WHERE Numero = ?";
+        String mechfound = "No Scoots found";
+
+
+        PreparedStatement pstmt = con.prepareStatement(selectSQL);
+        pstmt.setString(1, MID);
+
+        ResultSet rs = pstmt.executeQuery();
+
+        try {
+            while (rs.next()) {
+                mechfound = rs.getString("Numero");
+            }
+
+        } catch (SQLException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+            return false;
+        }
+        // SI la trott existe il va faire un update
+
+        if (MID.equals(mechfound)){
+                return  true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public Boolean removeTrotinette(String TID) {
+        try
+        {
+            String query = "Delete from Reparation Where T_ID = ?";
+            PreparedStatement preparedStmt = con.prepareStatement(query);
+            preparedStmt.setString (1, TID);
+            preparedStmt.execute();
+
+
+            String query1 = "Delete from Recharge Where T_ID = ?";
+            PreparedStatement preparedStmt1 = con.prepareStatement(query1);
+            preparedStmt1.setString (1, TID);
+            preparedStmt1.execute();
+
+            String query2 = "Delete from Voyage Where T_ID = ?";
+            PreparedStatement preparedStmt2 = con.prepareStatement(query2);
+            preparedStmt2.setString (1, TID);
+            preparedStmt2.execute();
+
+            String query3 = "Delete from Trotinette Where T_ID = ?";
+            PreparedStatement preparedStmt3 = con.prepareStatement(query3);
+            preparedStmt3.setString (1, TID);
+            preparedStmt3.execute();
+
+
+            con.close();
+            return  true;
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+            return false;
+        }
+
+    }
+
+    public Boolean addTrotinette(String TID, String Modele, String Date, String Battery, String Complaint,
+                                 String Dispo, String posX, String posY){
+
+        try
+        {
+            // the mysql insert statement
+            String query = " insert into Trotinette"
+                    + " values (?, ?, ?, ?, ?)";
+
+            // create the mysql insert preparedstatement
+            PreparedStatement preparedStmt = con.prepareStatement(query);
+            preparedStmt.setString (1,TID);
+            preparedStmt.setString (2,Date);
+            preparedStmt.setString (3,Modele);
+            preparedStmt.setString (4,Complaint);
+            preparedStmt.setString (5,Battery);
+
+
+
+            // execute the preparedstatement
+            preparedStmt.execute();
+
+            con.close();
+            return  true;
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+            return false;
+        }
     }
 }
 

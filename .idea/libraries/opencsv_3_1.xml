@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="opencsv-3.1">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Documents/library inteliji/opencsv-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/opencsv-3.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

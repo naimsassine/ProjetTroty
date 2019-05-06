@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MechanicMenuPageController">
+   <children>
+      <Text layoutX="218.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the mechanic menu" textAlignment="CENTER">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="IDScoots" layoutX="63.0" layoutY="108.0" mnemonicParsing="false" onAction="#IDScootsButtonPressed" prefHeight="45.0" prefWidth="198.0" text="Insert/Delete Scooters">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="ManageScoots" layoutX="62.0" layoutY="198.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="198.0" text="Manage Scooters">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="ManageComplaints" layoutX="503.0" layoutY="107.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="198.0" text="Manage Complaints">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="ManageUsers" layoutX="502.0" layoutY="199.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="198.0" text="Manage Users">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="Queries" layoutX="285.0" layoutY="319.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="198.0" text="Queries">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
