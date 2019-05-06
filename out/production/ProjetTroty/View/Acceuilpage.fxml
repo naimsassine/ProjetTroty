@@ -26,10 +26,11 @@
          </font>
       </Text>
       <Button fx:id="SignupButton" layoutX="460.0" layoutY="187.0" mnemonicParsing="false" onAction="#loadsignup" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: black;" text="Sign up" textFill="#fff9f9" />
-      <ImageView fitHeight="196.0" fitWidth="189.0" layoutX="214.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="205.0" fitWidth="188.0" layoutX="214.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Ressources/giphy.gif" />
          </image>
       </ImageView>
+      <Button fx:id="TechButton" layoutX="460.0" layoutY="264.0" mnemonicParsing="false" onAction="#loadTech" prefHeight="51.0" prefWidth="154.0" text="Mechanic" />
    </children>
 </AnchorPane>

@@ -142,7 +142,7 @@ public class DBConnect {
         try{
             DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-            Document doc = docBuilder.parse (new File("Ressources/mecaniciens.xml"));
+            Document doc = docBuilder.parse (new File("src/Ressources/mecaniciens.xml"));
             doc.getDocumentElement().normalize();
             System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
             NodeList listOfMecanics = doc.getElementsByTagName("mechanic");
@@ -386,7 +386,7 @@ public class DBConnect {
     } // Check en principe
 
     public void insertDataReparation(){
-        try (CSVReader reader = new CSVReader(new FileReader("Ressources/reparations.csv"), ','))
+        try (CSVReader reader = new CSVReader(new FileReader("src/Ressources/reparations.csv"), ','))
         {
             String insertQuery = "Insert into Reparation values (?,?,?,?,?,null) ";
             PreparedStatement pstmt = con.prepareStatement(insertQuery);
@@ -629,6 +629,38 @@ public class DBConnect {
             return false;
         }
 
+    }
+
+    public Boolean checkTechnicien(String MID) throws SQLException {
+        String selectSQL = "SELECT Numero FROM Technicien WHERE Numero = ?";
+        String mechfound = "No Scoots found";
+
+
+        PreparedStatement pstmt = con.prepareStatement(selectSQL);
+        pstmt.setString(1, MID);
+
+        ResultSet rs = pstmt.executeQuery();
+
+        try {
+            while (rs.next()) {
+                mechfound = rs.getString("Numero");
+            }
+
+        } catch (SQLException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+            return false;
+        }
+        // SI la trott existe il va faire un update
+        System.out.print(MID);
+        System.out.print(mechfound);
+
+        if (MID.equals(mechfound)){
+                return  true;
+        }
+        else {
+            return false;
+        }
     }
 }
 

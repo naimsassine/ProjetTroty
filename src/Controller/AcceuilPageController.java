@@ -27,6 +27,9 @@ public class AcceuilPageController implements Initializable {
     private AnchorPane AnchorPane;
     @FXML
     private Button SignupButton;
+    @FXML
+    private Button TechButton;
+
 
     public static int pageoption = 0;
 
@@ -49,6 +52,16 @@ public class AcceuilPageController implements Initializable {
 
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(signupscene);
+        window.show();
+    }
+
+    @FXML
+    public void loadTech (ActionEvent event) throws IOException{
+        Parent mechanic = FXMLLoader.load(getClass().getResource("../View/MechanicLoginPage.fxml"));
+        Scene mechanicscene = new Scene(mechanic);
+
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(mechanicscene);
         window.show();
     }
 
