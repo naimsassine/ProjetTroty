@@ -385,6 +385,8 @@ public class DBConnect {
 
     } // Check en principe
 
+
+    // fonctionne pas a caause d une couille dans la bdd
     public void insertDataReparation(){
         try (CSVReader reader = new CSVReader(new FileReader("src/Ressources/reparations.csv"), ','))
         {
@@ -401,6 +403,7 @@ public class DBConnect {
 
                 for (String data : rowData)
                 {
+                    System.out.print(data + "LOOl");
                     pstmt.setString((i % 5) + 1, data);
 
                     if (++i % 5 == 0)

@@ -44,13 +44,18 @@ public class MechanicLoginPageController implements Initializable {
     }
 
     @FXML
-    public void LoginButtonPressed() throws SQLException {
+    public void LoginButtonPressed(ActionEvent event) throws SQLException, IOException {
         DBConnect connect = new DBConnect();
         String MID = IDTextField.getText();
         Boolean answer = connect.checkTechnicien(MID);
         if(answer){
+            Parent menuMecanic = FXMLLoader.load(getClass().getResource("../View/MechanicMenuPage.fxml"));
+            Scene menuMecanicscene = new Scene(menuMecanic);
 
-
+            // Lets get the stage
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setScene(menuMecanicscene);
+            window.show();
         }
         else{
             System.out.print("No Mechanic found");
