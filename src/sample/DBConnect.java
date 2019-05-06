@@ -655,8 +655,6 @@ public class DBConnect {
             return false;
         }
         // SI la trott existe il va faire un update
-        System.out.print(MID);
-        System.out.print(mechfound);
 
         if (MID.equals(mechfound)){
                 return  true;
@@ -664,6 +662,48 @@ public class DBConnect {
         else {
             return false;
         }
+    }
+
+    public Boolean removeTrotinette(String TID) {
+        try
+        {
+            String query = "Delete from Reparation Where T_ID = ?";
+            PreparedStatement preparedStmt = con.prepareStatement(query);
+            preparedStmt.setString (1, TID);
+            preparedStmt.execute();
+
+
+            String query1 = "Delete from Recharge Where T_ID = ?";
+            PreparedStatement preparedStmt1 = con.prepareStatement(query1);
+            preparedStmt1.setString (1, TID);
+            preparedStmt1.execute();
+
+            String query2 = "Delete from Voyage Where T_ID = ?";
+            PreparedStatement preparedStmt2 = con.prepareStatement(query2);
+            preparedStmt2.setString (1, TID);
+            preparedStmt2.execute();
+
+            String query3 = "Delete from Trotinette Where T_ID = ?";
+            PreparedStatement preparedStmt3 = con.prepareStatement(query3);
+            preparedStmt3.setString (1, TID);
+            preparedStmt3.execute();
+
+
+            con.close();
+            return  true;
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+            return false;
+        }
+
+    }
+
+    public Boolean addTrotinette(String TID, String Modele, String Date, String Battery, String Complaint,
+                                 String Dispo, String posX, String posY){
+        
     }
 }
 
