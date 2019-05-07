@@ -30,6 +30,8 @@ public class MechanicMenuPageController implements Initializable {
     private Button ManageUsers;
     @FXML
     private Button ManageComplaints;
+    @FXML
+    private Button BackButton;
 
     @FXML
     public void IDScootsButtonPressed(ActionEvent event) throws IOException {
@@ -41,4 +43,25 @@ public class MechanicMenuPageController implements Initializable {
         window.setScene(menuIDScootsscene);
         window.show();
     }
+    @FXML
+    public void BackButtonPressed(ActionEvent event) throws IOException{
+        Parent LoginMecanic = FXMLLoader.load(getClass().getResource("../View/MechanicLoginPage.fxml"));
+        Scene LoginMecanicScene = new Scene(LoginMecanic);
+
+        // Lets get the stage
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(LoginMecanicScene);
+        window.show();
+    }
+    @FXML
+    public void ManageScootsButtonPressed(ActionEvent event) throws IOException{
+        Parent ManageScoot = FXMLLoader.load(getClass().getResource("../View/ManageScootsPage.fxml"));
+        Scene ManageScootScene = new Scene(ManageScoot);
+
+        // Lets get the stage
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(ManageScootScene);
+        window.show();
+    }
+
 }

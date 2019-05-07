@@ -17,7 +17,7 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="ManageScoots" layoutX="62.0" layoutY="198.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="198.0" text="Manage Scooters">
+      <Button fx:id="ManageScoots" layoutX="62.0" layoutY="198.0" mnemonicParsing="false" onAction="#ManageScootsButtonPressed" prefHeight="45.0" prefWidth="198.0" text="Manage Scooters">
          <font>
             <Font size="16.0" />
          </font>
@@ -37,5 +37,6 @@
             <Font size="16.0" />
          </font>
       </Button>
+      <Button fx:id="BackButton" layoutX="62.0" layoutY="454.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="45.0" prefWidth="91.0" style="-fx-background-color: Grey;" text="Back" textFill="#f2efef" />
    </children>
 </AnchorPane>

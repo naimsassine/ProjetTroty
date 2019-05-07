@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageScootsController">
+   <children>
+      <Text layoutX="31.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#Here you can change any attribute of any Scoot by simply indicating the T_ID of the Scoot, the attribute you want to change and the new value of the attriubte" wrappingWidth="538.22998046875" />
+      <TextField fx:id="TIDTextfield" layoutX="31.0" layoutY="144.0" prefHeight="27.0" prefWidth="112.0" promptText="T_ID" />
+      <ChoiceBox fx:id="AttriubteBox" layoutX="159.0" layoutY="144.0" prefWidth="150.0" />
+      <TextField fx:id="NewValueTextfield" layoutX="325.0" layoutY="144.0" promptText="New Value" />
+      <Button fx:id="BackButton" layoutX="31.0" layoutY="287.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="45.0" prefWidth="91.0" style="-fx-background-color: Grey;" text="Back" textFill="WHITE" />
+      <Button fx:id="DoneButton" layoutX="510.0" layoutY="144.0" mnemonicParsing="false" text="Done" />
+   </children>
+</AnchorPane>
