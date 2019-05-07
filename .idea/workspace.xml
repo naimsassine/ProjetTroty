@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4d6456c-60b4-4d54-8238-e8aa6181549b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/View/MenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/View/MenuPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ManageScootsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ManageScootsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MenuPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request/request1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/request/request1.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,20 +45,25 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="130" column="100" selection-start-line="130" selection-start-column="100" selection-end-line="130" selection-end-column="100" />
+            <state relative-caret-position="116">
+              <caret line="126" selection-start-line="126" selection-end-line="131" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/request/request3.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/request/request1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="4" selection-end-column="105" />
+            <state relative-caret-position="75">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -111,6 +112,7 @@
         <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/Controller/ManageScootsController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql" />
+        <option value="$PROJECT_DIR$/request/request1.txt" />
       </list>
     </option>
   </component>
@@ -269,18 +271,18 @@
       <workItem from="1557146569666" duration="6013000" />
       <workItem from="1557156056380" duration="492000" />
       <workItem from="1557214552056" duration="2086000" />
-      <workItem from="1557220358864" duration="1399000" />
+      <workItem from="1557220358864" duration="3062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3665000" />
+    <option name="totallyTimeSpent" value="5328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.29159936" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.29159936" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -320,7 +322,7 @@
       <window_info anchor="right" id="Coverage" order="11" sideWeight="0.5005701" side_tool="true" weight="0.32883242" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.27786753" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.29159936" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -328,33 +330,36 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32823813" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22739726" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32984716" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.32823813" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32739726" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info anchor="bottom" id="Terminal" order="16" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="16" weight="0.32739726" />
+      <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="18" visible="true" weight="0.28630137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2494043" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" sideWeight="0.49942988" weight="0.28756058" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Maven" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Coverage" order="11" sideWeight="0.5005701" side_tool="true" weight="0.32883242" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,13 +389,6 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/request/request1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ManageScootsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -408,10 +406,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/request/request3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="130" column="100" selection-start-line="130" selection-start-column="100" selection-end-line="130" selection-end-column="100" />
+        <state relative-caret-position="116">
+          <caret line="126" selection-start-line="126" selection-end-line="131" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/request/request1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
