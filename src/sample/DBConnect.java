@@ -735,29 +735,109 @@ public class DBConnect {
     }
 
     public Boolean modifyTrotinette(String TID, String VaraModifier, String NouvelleVar){
-        try
-        {
-            // the mysql insert statement
-            String query = "UPDATE Trotinette SET ? = ? WHERE Trotinette.T_ID=?;";
 
-            // create the mysql insert preparedstatement
-            PreparedStatement preparedStmt = con.prepareStatement(query);
-            preparedStmt.setString (1,VaraModifier);
-            preparedStmt.setString (2,NouvelleVar);
-            preparedStmt.setString (3,TID);
+        if(VaraModifier.equals("Batterie")){
+            try
+            {
+                // the mysql insert statement
+                String query = "UPDATE Trotinette SET Batterie = ? WHERE T_ID=?;";
 
-            // execute the preparedstatement
-            preparedStmt.execute();
+                // create the mysql insert preparedstatement
+                PreparedStatement preparedStmt = con.prepareStatement(query);
+                preparedStmt.setString (1,NouvelleVar);
+                preparedStmt.setString (2,TID);
 
-            con.close();
-            return  true;
+                // execute the preparedstatement
+                preparedStmt.execute();
+
+                con.close();
+                return  true;
+            }
+            catch (Exception e)
+            {
+                System.err.println("Got an exception!");
+                System.err.println(e.getMessage());
+                return false;
+            }
         }
-        catch (Exception e)
-        {
-            System.err.println("Got an exception!");
-            System.err.println(e.getMessage());
+        else if(VaraModifier.equals("État")){
+            try
+            {
+                // the mysql insert statement
+                String query = "UPDATE Trotinette SET État = ? WHERE T_ID=?;";
+
+                // create the mysql insert preparedstatement
+                PreparedStatement preparedStmt = con.prepareStatement(query);
+                preparedStmt.setString (1,NouvelleVar);
+                preparedStmt.setString (2,TID);
+
+                // execute the preparedstatement
+                preparedStmt.execute();
+
+                con.close();
+                return  true;
+            }
+            catch (Exception e)
+            {
+                System.err.println("Got an exception!");
+                System.err.println(e.getMessage());
+                return false;
+            }
+        }
+
+        else if(VaraModifier.equals("Model")){
+            try
+            {
+                // the mysql insert statement
+                String query = "UPDATE Trotinette SET Model = ? WHERE T_ID=?;";
+
+                // create the mysql insert preparedstatement
+                PreparedStatement preparedStmt = con.prepareStatement(query);
+                preparedStmt.setString (1,NouvelleVar);
+                preparedStmt.setString (2,TID);
+
+                // execute the preparedstatement
+                preparedStmt.execute();
+
+                con.close();
+                return  true;
+            }
+            catch (Exception e)
+            {
+                System.err.println("Got an exception!");
+                System.err.println(e.getMessage());
+                return false;
+            }
+        }
+
+        else if(VaraModifier.equals("Mise_en_service")){
+            try
+            {
+                // the mysql insert statement
+                String query = "UPDATE Trotinette SET Mise_en_service = ? WHERE T_ID=?;";
+
+                // create the mysql insert preparedstatement
+                PreparedStatement preparedStmt = con.prepareStatement(query);
+                preparedStmt.setString (1,NouvelleVar);
+                preparedStmt.setString (2,TID);
+
+                // execute the preparedstatement
+                preparedStmt.execute();
+
+                con.close();
+                return  true;
+            }
+            catch (Exception e)
+            {
+                System.err.println("Got an exception!");
+                System.err.println(e.getMessage());
+                return false;
+            }
+        }
+        else{
             return false;
         }
+
 
     }
 }

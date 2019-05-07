@@ -63,7 +63,9 @@ public class ManageScootsController implements Initializable {
         String NewValue = NewValueTextfield.getText();
         Boolean answer = connect.modifyTrotinette(TID,Attribute,NewValue);
         if(answer){
-            System.out.print("lol");
+            TIDTextfield.clear();
+            AttributeBox.setSelectionModel(null);
+            NewValueTextfield.clear();
         }
     }
 }
