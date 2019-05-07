@@ -116,4 +116,55 @@ public class QueriesPageController implements Initializable {
     }
 
 
+
+
+
+    @FXML
+    public void Querie2ButtonPressed(ActionEvent event) throws IOException {
+        Connection c;
+        data = FXCollections.observableArrayList();
+        try {
+            c = DBConnect.connect();
+            //SQL FOR SELECTING ALL OF CUSTOMER
+            String SQL = "(select distinct u.Nom, u.Prenom\n" +
+                    "from Utilisateur_Recharge u, Recharge r, Voyage t\n" +
+                    "where u.U_ID=r.U_ID and r.T_ID=t.T_ID and u.U_ID=t.U_ID)" ;
+
+            //ResultSet
+            ResultSet rs = c.createStatement().executeQuery(SQL);
+            /**
+             * ********************************
+             * TABLE COLUMN ADDED DYNAMICALLY *
+             *********************************
+             */
+            setTable(rs);
+
+
+            /**
+             * ******************************
+             * Data added to ObservableList *
+             *******************************
+             */
+            while (rs.next()) {
+                //Iterate Row
+                ObservableList<String> row = FXCollections.observableArrayList();
+                for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
+                    //Iterate Column
+                    row.add(rs.getString(i));
+                }
+                data.add(row);
+
+            }
+
+            //FINALLY ADDED TO TableView
+            QueriesTable.setItems(data);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error on Building Data");
+        }
+    }
+
+
+
+
 }
