@@ -1,6 +1,6 @@
-select t2.DDestination_y ,t2.Destimation_x,t2.T_ID,t2.T_f
-from Voyage t2
-where  t2.T_f>=all
-( select t1.T_f
-from Voyage t1
-where t1.T_ID=t2.T_ID );
+;select t2.DDestination_y ,t2.Destimation_x,t2.T_ID,t2.T_f
+                        from Voyage t2
+                        where  t2.T_f>=all
+                        ( select t1.T_f
+                        from Voyage t1
+                        where t1.T_ID=t2.T_ID )
