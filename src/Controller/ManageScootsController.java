@@ -14,6 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import sample.DBConnect;
 
 import java.io.IOException;
 import java.net.URL;
@@ -52,5 +53,17 @@ public class ManageScootsController implements Initializable {
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(MenuMecanicScene);
         window.show();
+    }
+
+    @FXML
+    public void DoneButtonPressed(){
+        DBConnect connect = new DBConnect();
+        String TID = TIDTextfield.getText();
+        String Attribute = (String) AttributeBox.getSelectionModel().getSelectedItem();
+        String NewValue = NewValueTextfield.getText();
+        Boolean answer = connect.modifyTrotinette(TID,Attribute,NewValue);
+        if(answer){
+            System.out.print("lol");
+        }
     }
 }

@@ -733,6 +733,33 @@ public class DBConnect {
             return false;
         }
     }
+
+    public Boolean modifyTrotinette(String TID, String VaraModifier, String NouvelleVar){
+        try
+        {
+            // the mysql insert statement
+            String query = "UPDATE Trotinette SET ? = ? WHERE Trotinette.T_ID=?;";
+
+            // create the mysql insert preparedstatement
+            PreparedStatement preparedStmt = con.prepareStatement(query);
+            preparedStmt.setString (1,VaraModifier);
+            preparedStmt.setString (2,NouvelleVar);
+            preparedStmt.setString (3,TID);
+
+            // execute the preparedstatement
+            preparedStmt.execute();
+
+            con.close();
+            return  true;
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+            return false;
+        }
+
+    }
 }
 
 

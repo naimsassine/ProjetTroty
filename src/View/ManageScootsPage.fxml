@@ -12,6 +12,6 @@
       <ChoiceBox fx:id="AttributeBox" layoutX="159.0" layoutY="144.0" prefWidth="150.0" />
       <TextField fx:id="NewValueTextfield" layoutX="325.0" layoutY="144.0" promptText="New Value" />
       <Button fx:id="BackButton" layoutX="31.0" layoutY="287.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="45.0" prefWidth="91.0" style="-fx-background-color: Grey;" text="Back" textFill="WHITE" />
-      <Button fx:id="DoneButton" layoutX="510.0" layoutY="144.0" mnemonicParsing="false" text="Done" />
+      <Button fx:id="DoneButton" layoutX="510.0" layoutY="144.0" mnemonicParsing="false" onAction="#DoneButtonPressed" text="Done" />
    </children>
 </AnchorPane>
