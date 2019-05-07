@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ChargerSignupPageController implements Initializable {
+public class TechManagesUsersController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -45,7 +45,7 @@ public class ChargerSignupPageController implements Initializable {
 
     @FXML
     public void Goback(ActionEvent event) throws IOException {
-        Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+        Parent menu = FXMLLoader.load(getClass().getResource("../View/MechanicMenuPage.fxml"));
         Scene menuscene = new Scene(menu);
 
         // Lets get the stage
@@ -75,7 +75,7 @@ public class ChargerSignupPageController implements Initializable {
 
             Boolean answer = connect.signupChargerUser(ID,FN,LN,TN,City,PC,Street,Number);
             if(answer){
-                Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
+                Parent menu = FXMLLoader.load(getClass().getResource("../View/MechanicMenuPage.fxml"));
                 Scene menuscene = new Scene(menu);
 
                 // Lets get the stage

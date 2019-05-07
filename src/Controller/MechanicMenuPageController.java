@@ -64,4 +64,15 @@ public class MechanicMenuPageController implements Initializable {
         window.show();
     }
 
+    @FXML
+    public void ManageUsersButtonPressed(ActionEvent event) throws IOException{
+        Parent ManageUserScoot = FXMLLoader.load(getClass().getResource("../View/TechManagesUsersPage.fxml"));
+        Scene ManageUserScootScene = new Scene(ManageUserScoot);
+
+        // Lets get the stage
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(ManageUserScootScene);
+        window.show();
+    }
+
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="224.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Queries" textAlignment="CENTER" wrappingWidth="151.2060546875">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Button layoutX="58.0" layoutY="78.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="81.0" text="1" />
+      <Button layoutX="260.0" layoutY="78.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="81.0" text="2" />
+      <Button layoutX="456.0" layoutY="78.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="81.0" text="3" />
+      <Button layoutX="362.0" layoutY="167.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="81.0" text="5" />
+      <Button layoutX="159.0" layoutY="167.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="81.0" text="4" />
+      <Button layoutX="29.0" layoutY="317.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>
