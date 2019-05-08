@@ -24,6 +24,8 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+        DBConnect connect = new DBConnect();
+        connect.insertDataTrips();
     }
 
 

@@ -1,5 +1,7 @@
-select Max(SUM( select ST_DISTANCE_SPHERE(
-                                          point(t.sourceX,t.sourceY)
-                                          point(t.destinationX,t.destinationY))))
-from Trips t
-group by t.scooter
+select z.tr,z.ui
+from (    select d.h as tr,SUM(d.g) as ui
+          from(select t.T_ID as h,ST_Distance_Sphere(point(t.Source_x,t.Source_y),point(t.Destimation_x,t.DDestination_y)) as g
+               from Voyage t) as d
+          group by d.h) as z
+order by z.ui desc
+limit 1;

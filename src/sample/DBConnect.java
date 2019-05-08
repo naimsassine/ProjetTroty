@@ -386,7 +386,6 @@ public class DBConnect {
     } // Check en principe
 
 
-    // fonctionne pas a caause d une couille dans la bdd
     public void insertDataReparation(){
         try (CSVReader reader = new CSVReader(new FileReader("src/Ressources/reparations.csv"), ','))
         {
@@ -403,7 +402,9 @@ public class DBConnect {
 
                 for (String data : rowData)
                 {
-                    System.out.print(data + "LOOl");
+                    if (data.contains("2492387079526083017")){
+                        data = "02492387079526083017";
+                    }
                     pstmt.setString((i % 5) + 1, data);
 
                     if (++i % 5 == 0)
@@ -424,7 +425,7 @@ public class DBConnect {
     } // Check en principe
 
     public void insertDataScooters(){
-        try (CSVReader reader = new CSVReader(new FileReader("Ressources/scooters.csv"), ';'))
+        try (CSVReader reader = new CSVReader(new FileReader("src/Ressources/scooters.csv"), ';'))
         {
             String insertQuery = "Insert into Trotinette values (?,?,?,?,?)";
             PreparedStatement pstmt = con.prepareStatement(insertQuery);
@@ -459,7 +460,7 @@ public class DBConnect {
     } // Check en principe
 
     public void insertDataTrips(){
-        try (CSVReader reader = new CSVReader(new FileReader("Ressources/trips.csv"), ','))
+        try (CSVReader reader = new CSVReader(new FileReader("src/Ressources/trips.csv"), ','))
         {
             String insertQuery = "Insert into Voyage values (?,?,?,?,?,?,?,?)";
             PreparedStatement pstmt = con.prepareStatement(insertQuery);
