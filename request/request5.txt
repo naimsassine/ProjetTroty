@@ -1,9 +1,9 @@
-select t1.user ,  count(t1.user),SEC_TO_TIME(AVG(TIME_TO_SEC(TIMEDIFF(t1.endtime,t1.starttime)))), SUM(case
-                                                                                                       when TIME_TO_SEC(TIMEDIFF(t1.endtime,t1.starttime)) > 86400
-                                                                                                       then 1+(6.5*(CEILING(TIME_TO_SEC(TIMEDIFF(t1.endtime,t1.starttime)))/3600))
-                                                                                                       else 1+(36*(CEILING(TIME_TO_SEC(TIMEDIFF(t1.endtime,t1.starttime)))/86400))
-                                                                                                       end
-                                                                                                       ) As TotalAmount
-from Trips t1
-where count(t1.user)>=10
-group by t1.user
+select r3.U_ID,count(*) AS cnt,SEC_TO_TIME(AVG(TIME_TO_SEC(TIMEDIFF(r3.T_f,r3.T_i)))), SUM(case
+                                                                                             when TIME_TO_SEC(TIMEDIFF(r3.T_f,r3.T_i)) > 86400
+                                                                                               then 1+(6.5*(CEILING(TIME_TO_SEC(TIMEDIFF(r3.T_f,r3.T_i)))/3600))
+                                                                                             else 1+(36*(CEILING(TIME_TO_SEC(TIMEDIFF(r3.T_f,r3.T_i)))/86400))
+  end
+  ) As TotalAmount
+from Voyage r3
+group by r3.U_ID
+HAVING cnt>=10;
