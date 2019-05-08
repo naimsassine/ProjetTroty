@@ -50,6 +50,9 @@ public class QueriesPageController implements Initializable {
 
     @FXML
     public void Querie1ButtonPressed(ActionEvent event) throws IOException {
+
+        QueriesTable.getItems().clear();
+        QueriesTable.getColumns().clear();
         Connection c;
         data = FXCollections.observableArrayList();
         try {
@@ -121,6 +124,10 @@ public class QueriesPageController implements Initializable {
 
     @FXML
     public void Querie2ButtonPressed(ActionEvent event) throws IOException {
+
+
+        QueriesTable.getItems().clear();
+        QueriesTable.getColumns().clear();
         Connection c;
         data = FXCollections.observableArrayList();
         try {
@@ -145,7 +152,7 @@ public class QueriesPageController implements Initializable {
              * Data added to ObservableList *
              *******************************
              */
-            while (rs.next()) {
+           while (rs.next()) {
                 //Iterate Row
                 ObservableList<String> row = FXCollections.observableArrayList();
                 for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
