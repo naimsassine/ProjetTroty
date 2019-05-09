@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.DBConnect;
 
@@ -29,6 +30,8 @@ public class MechanicLoginPageController implements Initializable {
     private Button LoginButton;
     @FXML
     private TextField IDTextField;
+    @FXML
+    private Text ErrorText;
 
 
 
@@ -58,8 +61,7 @@ public class MechanicLoginPageController implements Initializable {
             window.show();
         }
         else{
-            System.out.print("No Mechanic found");
-
+            ErrorText.setText("No Mechanic found");
         }
     }
 

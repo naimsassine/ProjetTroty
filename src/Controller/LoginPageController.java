@@ -9,7 +9,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import sample.ActualUser;
 import sample.DBConnect;
 
 import java.io.*;
@@ -33,6 +35,8 @@ public class LoginPageController  implements Initializable {
     private TextField IdTextfield;
     @FXML
     private TextField PasswordTextfield;
+    @FXML
+    private Text ErrorTextfield;
 
 
 
@@ -55,15 +59,17 @@ public class LoginPageController  implements Initializable {
         UserId = IdTextfield.getText();
 
         //saving the actual user in a txt file (each time the code is run, the file is overwrite)
-        PrintWriter bw = new PrintWriter("src/ActualUser.txt");
-        bw.write(UserId);
-        bw.close();
+        ActualUser savedUser = new ActualUser();
+
+
 
         DBConnect connect = new DBConnect();
         PasswordReturned = connect.Login(UserId);
-        if (PasswordReturned.equals(PasswordTextfield.getText())){
+        Boolean answer = connect.checkRecharger(UserId);
 
-            Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+        if (PasswordReturned.equals(PasswordTextfield.getText()) && answer){
+            savedUser.SaveUser(UserId);
+            Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
             Scene menuscene = new Scene(menu);
 
             // Lets get the stage
@@ -72,9 +78,19 @@ public class LoginPageController  implements Initializable {
             window.show();
 
         }
+        else if (PasswordReturned.equals(PasswordTextfield.getText()) && !answer){
+            savedUser.SaveUser(UserId);
+           Parent menu1 = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+            Scene menuscene1 = new Scene(menu1);
+
+            // Lets get the stage
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setScene(menuscene1);
+            window.show();
+        }
         else{
 
-            System.out.print("Wrong Password");
+            ErrorTextfield.setText("User not found");
 
         }
 

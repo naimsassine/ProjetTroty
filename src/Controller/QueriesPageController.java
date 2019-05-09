@@ -152,7 +152,7 @@ public class QueriesPageController implements Initializable {
              * Data added to ObservableList *
              *******************************
              */
-           while (rs.next()) {
+            while (rs.next()) {
                 //Iterate Row
                 ObservableList<String> row = FXCollections.observableArrayList();
                 for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
@@ -171,6 +171,168 @@ public class QueriesPageController implements Initializable {
         }
     }
 
+
+
+    @FXML
+    public void Querie3ButtonPressed(ActionEvent event) throws IOException {
+
+
+        QueriesTable.getItems().clear();
+        QueriesTable.getColumns().clear();
+        Connection c;
+        data = FXCollections.observableArrayList();
+        try {
+            c = DBConnect.connect();
+            //SQL FOR SELECTING ALL OF CUSTOMER
+            String SQL = "(select z.tr,z.ui\n" +
+                    "from (select d.h as tr,SUM(d.g) as ui\n" +
+                    "from(select t.T_ID as h,ST_Distance_Sphere(point(t.Source_x,t.Source_y),point(t.Destimation_x,t.DDestination_y)) as g\n" +
+                    "from Voyage t) as d\n" +
+                    "group by d.h) as z\n" +
+                    "order by z.ui desc\n" +
+                    "limit 1)" ;
+
+            //ResultSet
+            ResultSet rs = c.createStatement().executeQuery(SQL);
+            /**
+             * ********************************
+             * TABLE COLUMN ADDED DYNAMICALLY *
+             *********************************
+             */
+            setTable(rs);
+
+
+            /**
+             * ******************************
+             * Data added to ObservableList *
+             *******************************
+             */
+            while (rs.next()) {
+                //Iterate Row
+                ObservableList<String> row = FXCollections.observableArrayList();
+                for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
+                    //Iterate Column
+                    row.add(rs.getString(i));
+                }
+                data.add(row);
+
+            }
+
+            //FINALLY ADDED TO TableView
+            QueriesTable.setItems(data);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error on Building Data");
+        }
+    }
+
+
+
+    @FXML
+    public void Querie4ButtonPressed(ActionEvent event) throws IOException {
+
+
+        QueriesTable.getItems().clear();
+        QueriesTable.getColumns().clear();
+        Connection c;
+        data = FXCollections.observableArrayList();
+        try {
+            c = DBConnect.connect();
+            //SQL FOR SELECTING ALL OF CUSTOMER
+            String SQL = "(select r3.T_ID,count(*) AS cnt\n" +
+                    "from Reparation r3\n" +
+                    "group by r3.T_ID\n" +
+                    "HAVING cnt>=10)" ;
+
+            //ResultSet
+            ResultSet rs = c.createStatement().executeQuery(SQL);
+            /**
+             * ********************************
+             * TABLE COLUMN ADDED DYNAMICALLY *
+             *********************************
+             */
+            setTable(rs);
+
+
+            /**
+             * ******************************
+             * Data added to ObservableList *
+             *******************************
+             */
+            while (rs.next()) {
+                //Iterate Row
+                ObservableList<String> row = FXCollections.observableArrayList();
+                for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
+                    //Iterate Column
+                    row.add(rs.getString(i));
+                }
+                data.add(row);
+
+            }
+
+            //FINALLY ADDED TO TableView
+            QueriesTable.setItems(data);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error on Building Data");
+        }
+    }
+
+
+    @FXML
+    public void Querie5ButtonPressed(ActionEvent event) throws IOException {
+
+
+        QueriesTable.getItems().clear();
+        QueriesTable.getColumns().clear();
+        Connection c;
+        data = FXCollections.observableArrayList();
+        try {
+            c = DBConnect.connect();
+            //SQL FOR SELECTING ALL OF CUSTOMER
+            String SQL = "(select r3.U_ID,count(*) AS cnt,SEC_TO_TIME(AVG(TIME_TO_SEC(TIMEDIFF(r3.T_f,r3.T_i)))), SUM(case\n" +
+                    "                                                                                             when TIME_TO_SEC(TIMEDIFF(r3.T_f,r3.T_i)) > 86400\n" +
+                    "                                                                                               then 1+(6.5*(CEILING(TIME_TO_SEC(TIMEDIFF(r3.T_f,r3.T_i)))/3600))\n" +
+                    "                                                                                             else 1+(36*(CEILING(TIME_TO_SEC(TIMEDIFF(r3.T_f,r3.T_i)))/86400))\n" +
+                    "  end\n" +
+                    "  ) As TotalAmount\n" +
+                    "from Voyage r3\n" +
+                    "group by r3.U_ID\n" +
+                    "HAVING cnt>=10)" ;
+
+            //ResultSet
+            ResultSet rs = c.createStatement().executeQuery(SQL);
+            /**
+             * ********************************
+             * TABLE COLUMN ADDED DYNAMICALLY *
+             *********************************
+             */
+            setTable(rs);
+
+
+            /**
+             * ******************************
+             * Data added to ObservableList *
+             *******************************
+             */
+            while (rs.next()) {
+                //Iterate Row
+                ObservableList<String> row = FXCollections.observableArrayList();
+                for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
+                    //Iterate Column
+                    row.add(rs.getString(i));
+                }
+                data.add(row);
+
+            }
+
+            //FINALLY ADDED TO TableView
+            QueriesTable.setItems(data);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error on Building Data");
+        }
+    }
 
 
 

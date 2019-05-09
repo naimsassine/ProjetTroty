@@ -1,5 +1,4 @@
-select r1.scooter
-from Reparation r1
-where count(select *
-            form Reparation r2
-            where r1.scooter = r2.scooter  )>=10
+select r3.T_ID,count(*) AS cnt
+from Reparation r3
+group by r3.T_ID
+HAVING cnt>=10 ;
