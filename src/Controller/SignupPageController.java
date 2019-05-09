@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import sample.ActualUser;
 import sample.DBConnect;
 
 import java.io.IOException;
@@ -59,7 +60,7 @@ public class SignupPageController implements Initializable {
                 !CCTextfield.getText().isEmpty()){
             Boolean numeric = true;
 
-
+            ActualUser user = new ActualUser();
             DBConnect connect = new DBConnect();
             String ID = UserIdTextfield.getText();
             numeric = ID.matches("-?\\d+(\\.\\d+)?");
@@ -70,6 +71,8 @@ public class SignupPageController implements Initializable {
                     if (CC.length()<20){
                         Boolean answer = connect.signupAnonymeUser(ID,Password,CC);
                         if(answer){
+
+                            user.SaveUser(ID);
                             Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
                             Scene menuscene = new Scene(menu);
 

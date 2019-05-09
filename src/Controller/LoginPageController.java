@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import sample.ActualUser;
 import sample.DBConnect;
 
 import java.io.*;
@@ -58,9 +59,8 @@ public class LoginPageController  implements Initializable {
         UserId = IdTextfield.getText();
 
         //saving the actual user in a txt file (each time the code is run, the file is overwrite)
-        PrintWriter bw = new PrintWriter("src/ActualUser.txt");
-        bw.write(UserId);
-        bw.close();
+        ActualUser savedUser = new ActualUser();
+
 
 
         DBConnect connect = new DBConnect();
@@ -68,7 +68,7 @@ public class LoginPageController  implements Initializable {
         Boolean answer = connect.checkRecharger(UserId);
 
         if (PasswordReturned.equals(PasswordTextfield.getText()) && answer){
-
+            savedUser.SaveUser(UserId);
             Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
             Scene menuscene = new Scene(menu);
 
@@ -79,7 +79,7 @@ public class LoginPageController  implements Initializable {
 
         }
         else if (PasswordReturned.equals(PasswordTextfield.getText()) && !answer){
-
+            savedUser.SaveUser(UserId);
            Parent menu1 = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
             Scene menuscene1 = new Scene(menu1);
 

@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import sample.ActualUser;
 import sample.DBConnect;
 
 import java.io.IOException;
@@ -66,7 +67,7 @@ public class ChargerSignupPageController implements Initializable {
                 && !PCTextfield.getText().isEmpty() && !StreetTextfield.getText().isEmpty()
                 && !NumberTextfield.getText().isEmpty()){
 
-
+            ActualUser user = new ActualUser();
             DBConnect connect = new DBConnect();
             String ID = UserIdTextfield.getText();
             String FN = FNTextfield.getText();
@@ -85,6 +86,7 @@ public class ChargerSignupPageController implements Initializable {
 
                 Boolean answer = connect.signupChargerUser(ID,FN,LN,TN,City,PC,Street,Number);
                 if(answer){
+                    user.SaveUser(ID);
                     Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
                     Scene menuscene = new Scene(menu);
 
