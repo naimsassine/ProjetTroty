@@ -350,7 +350,7 @@ public class DBConnect {
     }
 
     public void insertDataReloads(){
-        try (CSVReader reader = new CSVReader(new FileReader("Ressources/reloads.csv"), ','))
+        try (CSVReader reader = new CSVReader(new FileReader("src/Ressources/reloads.csv"), ','))
         {
             String insertQuery = "Insert into Recharge values (?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pstmt = con.prepareStatement(insertQuery);
@@ -513,11 +513,40 @@ public class DBConnect {
             e1.printStackTrace();
         } finally {
             pstmt.close();
-            con.close();
         }
 
         return password;
     }
+
+    public Boolean checkRecharger(String MID) throws SQLException {
+        String selectSQL = "SELECT U_ID FROM Utilisateur_Recharge WHERE U_ID = ?";
+        String mechfound = "No Scoots found";
+
+
+        PreparedStatement pstmt = con.prepareStatement(selectSQL);
+        pstmt.setString(1, MID);
+
+        ResultSet rs = pstmt.executeQuery();
+
+        try {
+            while (rs.next()) {
+                mechfound = rs.getString("U_ID");
+            }
+
+        } catch (SQLException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+            return false;
+        }
+
+        if (MID.equals(mechfound)){
+            return  true;
+        }
+        else {
+            return false;
+        }
+    }
+
 
     public Boolean signupAnonymeUser(String ID, String Password, String CC){
         try
@@ -655,7 +684,6 @@ public class DBConnect {
             e1.printStackTrace();
             return false;
         }
-        // SI la trott existe il va faire un update
 
         if (MID.equals(mechfound)){
                 return  true;
