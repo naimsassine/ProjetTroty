@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="21.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#Want to charge a Scoot?" wrappingWidth="174.2060546875" />
+      <TextField layoutX="14.0" layoutY="83.0" prefHeight="27.0" prefWidth="140.0" promptText="Scoot ID" />
+      <TextField layoutX="272.0" layoutY="83.0" prefHeight="27.0" prefWidth="140.0" promptText="PositionX" />
+      <TextField layoutX="446.0" layoutY="83.0" prefHeight="27.0" prefWidth="140.0" promptText="PositionY" />
+      <TextField layoutX="177.0" layoutY="83.0" prefHeight="27.0" prefWidth="61.0" promptText="Battery" />
+      <Text layoutX="21.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#Finished with the charging?" wrappingWidth="197.2060546875" />
+      <TextField layoutX="14.0" layoutY="231.0" prefHeight="27.0" prefWidth="140.0" promptText="Scoot ID" />
+      <TextField layoutX="177.0" layoutY="232.0" prefHeight="27.0" prefWidth="61.0" promptText="Battery" />
+      <TextField layoutX="272.0" layoutY="232.0" prefHeight="27.0" prefWidth="140.0" promptText="PositionX" />
+      <TextField layoutX="446.0" layoutY="232.0" prefHeight="27.0" prefWidth="140.0" promptText="PositionY" />
+      <Button layoutX="271.0" layoutY="128.0" mnemonicParsing="false" style="-fx-background-color: Grey;" text="Done" textFill="WHITE" />
+      <Button layoutX="275.0" layoutY="277.0" mnemonicParsing="false" style="-fx-background-color: Grey;" text="Done" textFill="WHITE" />
+      <Button layoutX="21.0" layoutY="333.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Done" textFill="WHITE" />
+   </children>
+</AnchorPane>
