@@ -4,15 +4,22 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
+import javafx.geometry.Orientation;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebEvent;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 import sample.DBConnect;
@@ -25,10 +32,12 @@ import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 public class MapsPageController implements Initializable {
+    MyBrowser myBrowser;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        myBrowser= new MyBrowser();
 
-        this.buildData();
+        //this.buildData();
 
     }
     @FXML
@@ -37,6 +46,8 @@ public class MapsPageController implements Initializable {
     private TableView MapTable;
     @FXML
     private Button BackButton;
+    @FXML
+    private AnchorPane pane;
 
 
     public void buildData() {
@@ -106,6 +117,52 @@ public class MapsPageController implements Initializable {
         window.setScene(menuscene);
         window.show();
     }
+    class MyBrowser extends Pane {
 
+        WebView webView = new WebView();
+        WebEngine webEngine = webView.getEngine();
+
+        public MyBrowser() {
+            final URL urlGoogleMaps = getClass().getResource("map.html");
+            webEngine.load(urlGoogleMaps.toExternalForm());
+            webEngine.setOnAlert(new EventHandler<WebEvent<String>>() {
+                @Override
+                public void handle(WebEvent<String> e) {
+                    System.out.println(e.toString());
+                }
+            });
+
+            //getChildren().add(webView);
+            final TextField city = new TextField("" + "Guntur");
+            //final TextField latitude = new TextField("" + 17.387140 * 1.00007);
+            //final TextField longitude = new TextField("" + 78.491684 * 1.00007);
+            Button update = new Button("Update");
+            update.setOnAction(new EventHandler<ActionEvent>() {
+
+                @Override
+                public void handle(ActionEvent arg0) {
+                    //  lat = Double.parseDouble(latitude.getText());
+                    //  lon = Double.parseDouble(longitude.getText());
+                    String cityname = city.getText();
+                    /*System.out.printf("%.2f %.2f%n", lat, lon);*/
+                    webEngine.executeScript("getCityname(' " + cityname + " ') ");
+                }
+            });
+
+            SplitPane toolbar = new SplitPane();
+            HBox hb = new HBox();
+
+            hb.setPadding(new Insets(15, 12, 15, 12));
+            hb.setSpacing(10);
+            hb.getChildren().addAll(city, update);
+            toolbar.setOrientation(Orientation.VERTICAL);
+            toolbar.setDividerPositions(new double[] {.1});
+            toolbar.getItems().addAll(hb,webView);
+            hb.getChildren().addAll(toolbar);
+            pane.getChildren().add(toolbar);
+
+
+        }
+    }
 
 }
