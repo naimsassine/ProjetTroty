@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.DBConnect;
 
@@ -33,6 +34,8 @@ public class LoginPageController  implements Initializable {
     private TextField IdTextfield;
     @FXML
     private TextField PasswordTextfield;
+    @FXML
+    private Text ErrorTextfield;
 
 
 
@@ -87,7 +90,7 @@ public class LoginPageController  implements Initializable {
         }
         else{
 
-            System.out.print("Wrong Password");
+            ErrorTextfield.setText("User not found");
 
         }
 

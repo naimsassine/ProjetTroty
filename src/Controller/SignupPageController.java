@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.DBConnect;
 
@@ -30,6 +31,17 @@ public class SignupPageController implements Initializable {
     private TextField PasswordTextfield;
     @FXML
     private TextField CCTextfield;
+    @FXML
+    private Text UIDErrorText;
+    @FXML
+    private Text PasswordErrorText;
+    @FXML
+    private Text CCErrorText;
+    @FXML
+    private Text GeneralErrorText;
+
+
+
 
     @FXML
     public void Goback(ActionEvent event) throws IOException{
@@ -45,24 +57,49 @@ public class SignupPageController implements Initializable {
     public void signup(ActionEvent event) throws IOException {
         if(!UserIdTextfield.getText().isEmpty() && !PasswordTextfield.getText().isEmpty() &&
                 !CCTextfield.getText().isEmpty()){
+            Boolean numeric = true;
+
+
             DBConnect connect = new DBConnect();
             String ID = UserIdTextfield.getText();
-            String Password = PasswordTextfield.getText();
-            String CC = CCTextfield.getText();
-            Boolean answer = connect.signupAnonymeUser(ID,Password,CC);
-            if(answer){
-                Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
-                Scene menuscene = new Scene(menu);
+            numeric = ID.matches("-?\\d+(\\.\\d+)?");
+            if (numeric){
+                String Password = PasswordTextfield.getText();
+                if (Password.length()<15){
+                    String CC = CCTextfield.getText();
+                    if (CC.length()<20){
+                        Boolean answer = connect.signupAnonymeUser(ID,Password,CC);
+                        if(answer){
+                            Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+                            Scene menuscene = new Scene(menu);
 
-                // Lets get the stage
-                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-                window.setScene(menuscene);
-                window.show();
+                            // Lets get the stage
+                            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                            window.setScene(menuscene);
+                            window.show();
+                        }
+                        else {
+                            GeneralErrorText.setText("Error with signup");
+                        }
+                    }
+                    else{
+                        CCErrorText.setText("length must be < 20");
+                    }
+                }
+                else{
+                    PasswordErrorText.setText("length pass must be < 15");
+                }
+
             }
+            else {
+                UIDErrorText.setText("Must be an int");
+            }
+
         }
         else{
-            System.out.print("Please fill in all the blanks");
+            GeneralErrorText.setText("Please fill in all the blanks");
         }
+
 
     }
 
