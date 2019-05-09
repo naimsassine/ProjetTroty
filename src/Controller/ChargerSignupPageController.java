@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.DBConnect;
 
@@ -40,6 +41,8 @@ public class ChargerSignupPageController implements Initializable {
     private TextField StreetTextfield;
     @FXML
     private TextField NumberTextfield;
+    @FXML
+    private Text ErrorText;
 
 
 
@@ -62,6 +65,8 @@ public class ChargerSignupPageController implements Initializable {
                 && !TNTextfield.getText().isEmpty() && !CityTextfield.getText().isEmpty()
                 && !PCTextfield.getText().isEmpty() && !StreetTextfield.getText().isEmpty()
                 && !NumberTextfield.getText().isEmpty()){
+
+
             DBConnect connect = new DBConnect();
             String ID = UserIdTextfield.getText();
             String FN = FNTextfield.getText();
@@ -73,19 +78,34 @@ public class ChargerSignupPageController implements Initializable {
             String Number = NumberTextfield.getText();
 
 
-            Boolean answer = connect.signupChargerUser(ID,FN,LN,TN,City,PC,Street,Number);
-            if(answer){
-                Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
-                Scene menuscene = new Scene(menu);
+            if (ID.matches("-?\\d+(\\.\\d+)?") && FN.length()<20 && LN.length()<20 && TN.matches("-?\\d+(\\.\\d+)?") &&
+            City.length()<30 && PC.matches("-?\\d+(\\.\\d+)?") && Street.length()<30 && Number.matches("-?\\d+(\\.\\d+)?")){
 
-                // Lets get the stage
-                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-                window.setScene(menuscene);
-                window.show();
+
+
+                Boolean answer = connect.signupChargerUser(ID,FN,LN,TN,City,PC,Street,Number);
+                if(answer){
+                    Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
+                    Scene menuscene = new Scene(menu);
+
+                    // Lets get the stage
+                    Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                    window.setScene(menuscene);
+                    window.show();
+                }
+                else{
+                    ErrorText.setText("Error in signup");
+                }
             }
+            else {
+                ErrorText.setText("Error in the type of data");
+            }
+
+
+
         }
         else{
-            System.out.print("Please fill in all the blanks");
+            ErrorText.setText("Please fill in all the blanks");
         }
     }
 }
