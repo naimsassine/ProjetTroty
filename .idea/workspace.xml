@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="salma">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/RachargeScootController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/RachargeScootController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/View/RechargeScoot.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/View/RechargeScoot.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/ActualUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/ActualUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RachargeScootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RachargeScootController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/RechargeScoot.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/RechargeScoot.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ActualUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ActualUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="salma" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +61,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
+            <state relative-caret-position="226">
               <caret line="666" column="48" selection-start-line="666" selection-start-column="48" selection-end-line="666" selection-end-column="48" />
               <folding>
                 <element signature="method#signupChargerUser#0;class#DBConnect#0" />
@@ -345,7 +333,7 @@
       <workItem from="1557445416339" duration="6569000" />
       <workItem from="1557468443931" duration="323000" />
       <workItem from="1557470068529" duration="3405000" />
-      <workItem from="1557476548714" duration="3967000" />
+      <workItem from="1557476548714" duration="4242000" />
     </task>
     <task id="LOCAL-00001" summary="salma">
       <created>1557417578533</created>
@@ -358,7 +346,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26313000" />
+    <option name="totallyTimeSpent" value="26588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -373,7 +361,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39041096" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22054794" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -389,7 +377,7 @@
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32765958" />
       <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="18" visible="true" weight="0.30273974" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.30273974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -768,7 +756,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
+        <state relative-caret-position="226">
           <caret line="666" column="48" selection-start-line="666" selection-start-column="48" selection-end-line="666" selection-end-column="48" />
           <folding>
             <element signature="method#signupChargerUser#0;class#DBConnect#0" />

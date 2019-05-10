@@ -651,9 +651,7 @@ public class DBConnect {
                 // execute the preparedstatement
                 preparedStmt.execute();
 
-                String query2 = "Insert INTO Reparation values(?, ?, ?, ?, ?, ?)";
-
-
+                /*String query2 = "Insert INTO Reparation values(?, ?, ?, ?, ?, ?)";
                 ActualUser user = new ActualUser();
                 String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(Calendar.getInstance().getTime());
 
@@ -665,14 +663,8 @@ public class DBConnect {
                 preparedStmt2.setString (4, timeStamp);
                 preparedStmt2.setString (5, null);
                 preparedStmt2.setString (6, null);
-
-
-
-
-
-
                 // execute the preparedstatement
-                preparedStmt2.execute();
+                preparedStmt2.execute();*/
 
                 con.close();
                 return  true;
