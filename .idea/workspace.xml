@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="salma">
-      <change afterPath="$PROJECT_DIR$/src/Controller/RachargeScootController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/ActualUser.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/ActualUser.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerMenuPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerMenuPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/View/ChargerMenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/View/ChargerMenuPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/View/RechargeScoot.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/View/RechargeScoot.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RachargeScootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RachargeScootController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ChargerMenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ChargerMenuPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/RechargeScoot.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/RechargeScoot.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
+            <state relative-caret-position="394">
+              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -105,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="253" column="22" selection-start-line="253" selection-start-column="22" selection-end-line="253" selection-end-column="22" />
+            <state relative-caret-position="151">
+              <caret line="258" lean-forward="true" selection-start-line="258" selection-end-line="258" />
             </state>
           </provider>
         </entry>
@@ -114,13 +119,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/RachargeScootController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="89" column="22" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+            <state relative-caret-position="156">
+              <caret line="84" column="81" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/ChargerMenuPage.fxml">
+          <provider selected="true" editor-type-id="text-editor" />
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -151,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/View/TechManagesUsersPage.fxml" />
         <option value="$PROJECT_DIR$/src/Controller/TechManagesUsersController.java" />
         <option value="$PROJECT_DIR$/src/View/MechanicMenuPage.fxml" />
-        <option value="$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java" />
         <option value="$PROJECT_DIR$/request/request1.txt" />
         <option value="$PROJECT_DIR$/src/View/QueriesPage.fxml" />
         <option value="$PROJECT_DIR$/src/Controller/QueriesPageController.java" />
@@ -159,9 +178,11 @@
         <option value="$PROJECT_DIR$/src/Controller/MapsPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/map.html" />
         <option value="$PROJECT_DIR$/src/View/RechargeScoot.fxml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java" />
+        <option value="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql" />
         <option value="$PROJECT_DIR$/src/Controller/RachargeScootController.java" />
       </list>
     </option>
@@ -228,7 +249,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557449140498" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557450625465" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
@@ -303,7 +324,7 @@
       <workItem from="1557254621628" duration="4459000" />
       <workItem from="1557268595751" duration="707000" />
       <workItem from="1557299339428" duration="558000" />
-      <workItem from="1557445416339" duration="3360000" />
+      <workItem from="1557445416339" duration="4611000" />
     </task>
     <task id="LOCAL-00001" summary="salma">
       <created>1557417578533</created>
@@ -316,13 +337,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15409000" />
+    <option name="totallyTimeSpent" value="16660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.25444266" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25444266" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -331,7 +352,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22739726" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22739726" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -347,7 +368,7 @@
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32765958" />
       <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32876712" />
-      <window_info anchor="bottom" id="Database Console" order="18" weight="0.30547947" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.3410959" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -524,13 +545,6 @@
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="80" column="92" selection-start-line="80" selection-start-column="92" selection-end-line="80" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/IDScootPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -668,20 +682,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="253" column="22" selection-start-line="253" selection-start-column="22" selection-end-line="253" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -690,13 +690,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#688#689#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SignupPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
@@ -714,10 +707,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/ChargerMenuPage.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="258" lean-forward="true" selection-start-line="258" selection-end-line="258" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SignupPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/RachargeScootController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="89" column="22" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+        <state relative-caret-position="156">
+          <caret line="84" column="81" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

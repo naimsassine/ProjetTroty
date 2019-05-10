@@ -34,13 +34,20 @@
             </image>
         </ImageView>
         <Button fx:id="MapsButton" layoutX="383.0" layoutY="29.0" mnemonicParsing="false" onAction="#MapsButtonPressed" opacity="0.0" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: White;" />
-        <Button fx:id="BackButton" layoutX="43.0" layoutY="321.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="#fffefe" />
-      <ImageView fitHeight="104.0" fitWidth="122.0" layoutX="262.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+        <Button fx:id="BackButton" layoutX="27.0" layoutY="334.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="#fffefe" />
+      <ImageView fitHeight="104.0" fitWidth="122.0" layoutX="126.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Ressources/emoticon-sad-7-512.png" />
          </image>
       </ImageView>
-      <Button fx:id="ComplaintButton" layoutX="262.0" layoutY="165.0" mnemonicParsing="false" onAction="#loadPagePlainte" opacity="0.0" prefHeight="104.0" prefWidth="104.0" />
-      <Text layoutX="283.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint" />
+      <Button fx:id="ComplaintButton" layoutX="126.0" layoutY="181.0" mnemonicParsing="false" onAction="#loadPagePlainte" opacity="0.0" prefHeight="104.0" prefWidth="104.0" />
+      <Text layoutX="147.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint" />
+      <ImageView fitHeight="111.0" fitWidth="136.0" layoutX="389.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ressources/battery-clipart-portable-charger-1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ChargeScootButton" layoutX="389.0" layoutY="181.0" mnemonicParsing="false" onAction="#ChargeScootButtonPressed" opacity="0.0" prefHeight="111.0" prefWidth="111.0" />
+      <Text layoutX="396.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charge a Scoot" textAlignment="CENTER" />
     </children>
 </AnchorPane>

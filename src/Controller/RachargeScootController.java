@@ -16,6 +16,8 @@ import sample.DBConnect;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class RachargeScootController implements Initializable {
@@ -79,18 +81,25 @@ public class RachargeScootController implements Initializable {
                 String Battery = BatteryTextfieldTocharge.getText();
                 String PosX = PosXTocharge.getText();
                 String PosY = PosYTocharge.getText();
-                Boolean answer = connect.chargeScoot(ID,Battery,PosX,PosY);
 
-                if(answer){
-                    IDTextfieldTocharge.clear();
-                    BatteryTextfieldTocharge.clear();
-                    PosXTocharge.clear();
-                    PosYTocharge.clear();
-                }
-                else {
-                    ErrorCharging.setText("Error from Database");
-                }
+                List<String> list = Arrays.asList(new String[]{"0", "1", "2", "3"});
+                if(list.contains(Battery)){
+                    Boolean answer = connect.chargeScoot(ID,Battery,PosX,PosY);
 
+                    if(answer){
+                        IDTextfieldTocharge.clear();
+                        BatteryTextfieldTocharge.clear();
+                        PosXTocharge.clear();
+                        PosYTocharge.clear();
+                        ErrorCharging.setText(null);
+                    }
+                    else {
+                        ErrorCharging.setText("Error from Database");
+                    }
+                }
+                else{
+                    ErrorCharging.setText("Battery must be from 0 to 3");
+                }
 
             }
             else {

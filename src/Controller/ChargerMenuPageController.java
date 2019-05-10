@@ -69,4 +69,15 @@ public class ChargerMenuPageController implements Initializable {
         window.show();
     }
 
+    @FXML
+    public void ChargeScootButtonPressed(ActionEvent event) throws IOException{
+        Parent ManageUserScoot = FXMLLoader.load(getClass().getResource("../View/RechargeScoot.fxml"));
+        Scene ManageUserScootScene = new Scene(ManageUserScoot);
+
+        // Lets get the stage
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(ManageUserScootScene);
+        window.show();
+    }
+
 }

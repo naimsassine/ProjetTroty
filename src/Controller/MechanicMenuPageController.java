@@ -87,4 +87,6 @@ public class MechanicMenuPageController implements Initializable {
         window.show();
     }
 
+
+
 }
