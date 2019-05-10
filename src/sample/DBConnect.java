@@ -1,5 +1,6 @@
 package sample;
 import com.opencsv.CSVReader;
+import javafx.geometry.Pos;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -10,6 +11,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.io.FileReader;
 import java.sql.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class DBConnect {
 
@@ -868,6 +871,48 @@ public class DBConnect {
         }
 
 
+    }
+
+    public Boolean chargeScoot(String TID, String Battery, String PosX, String PosY){
+        try
+        {
+            // the mysql insert statement
+            String query = "Insert INTO Recharge values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+            // create the mysql insert preparedstatement
+            PreparedStatement preparedStmt = con.prepareStatement(query);
+            ActualUser user = new ActualUser();
+            String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(Calendar.getInstance().getTime());
+
+
+            preparedStmt.setString (1,TID);
+            preparedStmt.setString (2,user.GetUser());
+            preparedStmt.setString (3,Battery);
+            preparedStmt.setString (4,null);
+            preparedStmt.setString (5,PosX);
+            preparedStmt.setString (6,PosY);
+            preparedStmt.setString (7,null);
+            preparedStmt.setString (8,null);
+            preparedStmt.setString (9,timeStamp);
+            preparedStmt.setString (10,null);
+
+
+
+
+
+
+            // execute the preparedstatement
+            preparedStmt.execute();
+
+            con.close();
+            return  true;
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+            return false;
+        }
     }
 
 }
