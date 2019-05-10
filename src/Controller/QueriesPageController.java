@@ -133,9 +133,12 @@ public class QueriesPageController implements Initializable {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "(select distinct u.Nom, u.Prenom\n" +
-                    "from Utilisateur_Recharge u, Recharge r, Voyage t\n" +
-                    "where u.U_ID=r.U_ID and r.T_ID=t.T_ID and u.U_ID=t.U_ID)" ;
+            String SQL = "(select u.Nom, u.Prenom\n" +
+                    "from Utilisateur_Recharge u\n" +
+                    "where (u.U_ID not in(select  t.U_ID\n" +
+                    "                     from Voyage t , Recharge r\n" +
+                    "                     where  r.T_ID != t.T_ID and t.U_ID=r.U_ID\n" +
+                    "                       group by t.U_ID )))" ;
 
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
