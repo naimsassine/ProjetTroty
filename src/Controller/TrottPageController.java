@@ -50,7 +50,7 @@ public class TrottPageController implements Initializable {
 
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
-            SQL= "(select t2.DDestination_y ,t2.Destimation_x from Voyage t2 where  t2.T_f>=all( select t1.T_f from Voyage t1 where t1.T_ID=t2.T_ID ))";
+            SQL= "(select t2.DDestination_y as PosY ,t2.Destimation_x as PosX, T_ID from Voyage t2 where  t2.T_f>=all( select t1.T_f from Voyage t1 where t1.T_ID=t2.T_ID))";
             ResultSet rs1 = c.createStatement().executeQuery(SQL);
             /**
              * ********************************
