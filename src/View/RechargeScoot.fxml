@@ -20,7 +20,7 @@
       <Button fx:id="DoneButton" layoutX="271.0" layoutY="128.0" mnemonicParsing="false" onAction="#DoneCharger" style="-fx-background-color: Grey;" text="Done" textFill="WHITE" />
       <Button fx:id="DoneButtonFinished" layoutX="275.0" layoutY="277.0" mnemonicParsing="false" onAction="#DoneButttonFinishedPressed" style="-fx-background-color: Grey;" text="Done" textFill="WHITE" />
       <Button fx:id="BackButton" layoutX="21.0" layoutY="333.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="WHITE" />
-      <Text fx:id="ErrorCharging" layoutX="342.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="257.2060546875" />
-      <Text fx:id="ErrorFinished" layoutX="342.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="257.2060546875" />
+      <Text fx:id="ErrorCharging" fill="RED" layoutX="342.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="257.2060546875" />
+      <Text fx:id="ErrorFinished" fill="RED" layoutX="342.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="257.2060546875" />
    </children>
 </AnchorPane>

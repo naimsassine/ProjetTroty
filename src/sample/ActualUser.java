@@ -1,8 +1,6 @@
 package sample;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Scanner;
 
 public class ActualUser {
@@ -18,4 +16,5 @@ public class ActualUser {
             String str = reader.nextLine();
             return  str;
     }
+
 }

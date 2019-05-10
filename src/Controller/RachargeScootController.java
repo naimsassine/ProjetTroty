@@ -126,32 +126,32 @@ public class RachargeScootController implements Initializable {
                     String PosX = PosXTextfieldFinished.getText();
                     String PosY = PosYTextfieldFinished.getText();
 
-                    List<String> list = Arrays.asList(new String[]{"0", "1", "2", "3"});
+                    List<String> list = Arrays.asList(new String[]{"4", "1", "2", "3"});
                     if(list.contains(Battery)){
                         Boolean answer = connect.doneChargingScoot(ID,Battery,PosX,PosY);
 
                         if(answer){
-                            IDTextfieldTocharge.clear();
-                            BatteryTextfieldTocharge.clear();
-                            PosXTocharge.clear();
-                            PosYTocharge.clear();
-                            ErrorCharging.setText(null);
+                            IDTextfieldFinished.clear();
+                            BatteryTextfieldFinished.clear();
+                            PosXTextfieldFinished.clear();
+                            PosYTextfieldFinished.clear();
+                            ErrorFinished.setText(null);
                         }
                         else {
-                            ErrorCharging.setText("Error from Database");
+                            ErrorFinished.setText("Error from Database");
                         }
                     }
                     else{
-                        ErrorCharging.setText("Battery must be from 0 to 3");
+                        ErrorFinished.setText("Battery must be from 0 to 3");
                     }
 
                 }
                 else {
-                    ErrorCharging.setText("Invalid values types");
+                    ErrorFinished.setText("Invalid values types");
                 }
             }
             else {
-                ErrorCharging.setText("Please fill in all of the blanks");
+                ErrorFinished.setText("Please fill in all of the blanks");
             }
     }
 
