@@ -651,6 +651,22 @@ public class DBConnect {
                 // execute the preparedstatement
                 preparedStmt.execute();
 
+
+                String query2 = "Insert INTO TrottEnAttente values(?, ?, ?)";
+                ActualUser user = new ActualUser();
+                String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(Calendar.getInstance().getTime());
+
+                // create the mysql insert preparedstatement
+                PreparedStatement preparedStmt2 = con.prepareStatement(query2);
+                preparedStmt2.setString (1, T_ID);
+                preparedStmt2.setString (2, user.GetUser());
+                preparedStmt2.setString (3, timeStamp);
+                // execute the preparedstatement
+                preparedStmt2.execute();
+
+
+
+
                 /*String query2 = "Insert INTO Reparation values(?, ?, ?, ?, ?, ?)";
                 ActualUser user = new ActualUser();
                 String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(Calendar.getInstance().getTime());
@@ -953,6 +969,39 @@ public class DBConnect {
 
             // execute the preparedstatement
             preparedStmt.execute();
+
+            con.close();
+            return  true;
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+            return false;
+        }
+    }
+
+
+    public Boolean resolveComplaint(String TID, String UID, String Datei,String Note){
+        try
+        {
+                String query2 = "Insert INTO Reparation values(?, ?, ?, ?, ?, ?)";
+                ActualUser user = new ActualUser();
+                String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(Calendar.getInstance().getTime());
+
+                // create the mysql insert preparedstatement
+                PreparedStatement preparedStmt2 = con.prepareStatement(query2);
+                preparedStmt2.setString (1, TID);
+                preparedStmt2.setString (2, UID);
+                preparedStmt2.setString (3, user.GetTech());
+                preparedStmt2.setString (4, Datei);
+                preparedStmt2.setString (5, timeStamp);
+                preparedStmt2.setString (6, Note);
+                // execute the preparedstatement
+                preparedStmt2.execute();
+
+                String query3 = "Insert INTO Reparation values(?, ?, ?, ?, ?, ?)";
+
 
             con.close();
             return  true;

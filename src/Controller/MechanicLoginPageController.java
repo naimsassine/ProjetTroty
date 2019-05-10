@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import sample.ActualUser;
 import sample.DBConnect;
 
 import java.io.IOException;
@@ -59,6 +60,9 @@ public class MechanicLoginPageController implements Initializable {
             Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
             window.setScene(menuMecanicscene);
             window.show();
+
+            ActualUser user = new ActualUser();
+            user.SaveTech(MID);
         }
         else{
             ErrorText.setText("No Mechanic found");

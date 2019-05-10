@@ -16,5 +16,16 @@ public class ActualUser {
             String str = reader.nextLine();
             return  str;
     }
+    public void SaveTech(String Numero) throws FileNotFoundException {
+        PrintWriter bw = new PrintWriter("src/Tech.txt");
+        bw.write(Numero);
+        bw.close();
+    }
+    public String GetTech() throws FileNotFoundException {
+        Scanner reader = new Scanner(new File("src/Tech.txt"));
+        String str = reader.nextLine();
+        return  str;
+    }
+
 
 }
