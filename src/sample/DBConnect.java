@@ -915,6 +915,48 @@ public class DBConnect {
         }
     }
 
+    public Boolean doneChargingScoot(String TID, String Battery, String PosX, String PosY){
+        try
+        {
+            // the mysql insert statement
+            String query = "UPDATE Recharge SET Charge_f = ?, Destination_x = ?, Destination_y = ?, T_f = ? WHERE T_ID = ? and U_ID = ? and T_f = null ";
+
+            // create the mysql insert preparedstatement
+            PreparedStatement preparedStmt = con.prepareStatement(query);
+            ActualUser user = new ActualUser();
+            String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(Calendar.getInstance().getTime());
+
+            // problem: je dois lui passe la date pour que sa fonctionne, alors que je ne l ai pas
+            preparedStmt.setString (1,TID);
+            preparedStmt.setString (2,user.GetUser());
+            preparedStmt.setString (3,Battery);
+            preparedStmt.setString (4,null);
+            preparedStmt.setString (5,PosX);
+            preparedStmt.setString (6,PosY);
+            preparedStmt.setString (7,null);
+            preparedStmt.setString (8,null);
+            preparedStmt.setString (9,timeStamp);
+            preparedStmt.setString (10,null);
+
+
+
+
+
+
+            // execute the preparedstatement
+            preparedStmt.execute();
+
+            con.close();
+            return  true;
+        }
+        catch (Exception e)
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+            return false;
+        }
+    }
+
 }
 
 

@@ -68,7 +68,7 @@ public class RachargeScootController implements Initializable {
     }
 
     @FXML
-    public void DoneCharger (ActionEvent event) throws IOException{
+    public void DoneCharger(){
         if(!IDTextfieldTocharge.getText().isEmpty() && !BatteryTextfieldTocharge.getText().isEmpty() &&
                 !PosXTocharge.getText().isEmpty() && !PosYTocharge.getText().isEmpty()){
 
@@ -109,6 +109,50 @@ public class RachargeScootController implements Initializable {
         else {
             ErrorCharging.setText("Please fill in all of the blanks");
         }
+    }
+
+    @FXML
+    public void DoneButttonFinishedPressed(){
+            if(!IDTextfieldFinished.getText().isEmpty() && !BatteryTextfieldFinished.getText().isEmpty() &&
+                    !PosXTextfieldFinished.getText().isEmpty() && !PosYTextfieldFinished.getText().isEmpty()){
+
+                DBConnect connect = new DBConnect();
+
+                if (IDTextfieldFinished.getText().matches("-?\\d+(\\.\\d+)?") && BatteryTextfieldFinished.getText().matches("-?\\d+(\\.\\d+)?")
+                        && PosXTextfieldFinished.getText().matches("-?\\d+(\\.\\d+)?") && PosYTextfieldFinished.getText().matches("-?\\d+(\\.\\d+)?")){
+
+                    String ID = IDTextfieldFinished.getText();
+                    String Battery = BatteryTextfieldFinished.getText();
+                    String PosX = PosXTextfieldFinished.getText();
+                    String PosY = PosYTextfieldFinished.getText();
+
+                    List<String> list = Arrays.asList(new String[]{"0", "1", "2", "3"});
+                    if(list.contains(Battery)){
+                        Boolean answer = connect.doneChargingScoot(ID,Battery,PosX,PosY);
+
+                        if(answer){
+                            IDTextfieldTocharge.clear();
+                            BatteryTextfieldTocharge.clear();
+                            PosXTocharge.clear();
+                            PosYTocharge.clear();
+                            ErrorCharging.setText(null);
+                        }
+                        else {
+                            ErrorCharging.setText("Error from Database");
+                        }
+                    }
+                    else{
+                        ErrorCharging.setText("Battery must be from 0 to 3");
+                    }
+
+                }
+                else {
+                    ErrorCharging.setText("Invalid values types");
+                }
+            }
+            else {
+                ErrorCharging.setText("Please fill in all of the blanks");
+            }
     }
 
 
