@@ -1000,8 +1000,14 @@ public class DBConnect {
                 // execute the preparedstatement
                 preparedStmt2.execute();
 
-                String query3 = "Insert INTO Reparation values(?, ?, ?, ?, ?, ?)";
-
+                String query3 = "Delete from TrottEnAttente WHERE T_ID = ? and U_ID = ? and T_i = ?";
+            // create the mysql insert preparedstatement
+                PreparedStatement preparedStmt3 = con.prepareStatement(query3);
+                preparedStmt3.setString (1, TID);
+                preparedStmt3.setString (2, UID);
+                preparedStmt3.setString (3, Datei);
+            // execute the preparedstatement
+                preparedStmt3.execute();
 
             con.close();
             return  true;

@@ -2,21 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="salma">
-      <change afterPath="$PROJECT_DIR$/src/Controller/MechanicManageComplaintsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25ca792e-71d7-4f7d-80b4-9558ee8a3504.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25ca792e-71d7-4f7d-80b4-9558ee8a3504.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script SQL.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/Script SQL.rtf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MechanicLoginPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MechanicLoginPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MechanicMenuPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MechanicMenuPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Date.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/View/MechanicMenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/View/MechanicMenuPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/ActualUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/ActualUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Date.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MechanicMenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MechanicMenuPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ActualUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ActualUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DBConnect.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -87,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+            <state relative-caret-position="62">
+              <caret line="294" column="24" selection-start-line="294" selection-start-column="24" selection-end-line="294" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -96,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="1002" column="29" selection-start-line="1002" selection-start-column="29" selection-end-line="1002" selection-end-column="29" />
+            <state relative-caret-position="344">
+              <caret line="1009" column="16" selection-start-line="1009" selection-start-column="16" selection-end-line="1009" selection-end-column="16" />
               <folding>
                 <element signature="method#checkRecharger#0;class#DBConnect#0" />
                 <element signature="method#signupAnonymeUser#0;class#DBConnect#0" />
@@ -192,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/sample/ActualUser.java" />
         <option value="$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql" />
         <option value="$PROJECT_DIR$/src/Controller/MechanicManageComplaintsController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
       </list>
     </option>
@@ -260,7 +245,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557486015652" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557491214717" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
@@ -338,7 +323,7 @@
       <workItem from="1557445416339" duration="6569000" />
       <workItem from="1557468443931" duration="323000" />
       <workItem from="1557470068529" duration="3405000" />
-      <workItem from="1557476548714" duration="8444000" />
+      <workItem from="1557476548714" duration="8871000" />
     </task>
     <task id="LOCAL-00001" summary="salma">
       <created>1557417578533</created>
@@ -351,7 +336,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30790000" />
+    <option name="totallyTimeSpent" value="31217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -382,7 +367,7 @@
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32765958" />
       <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="18" visible="true" weight="0.04109589" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="18" visible="true" weight="0.31917807" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -731,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="34" selection-start-line="34" selection-end-line="35" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ActualUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -764,17 +742,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="34" selection-start-line="34" selection-end-line="35" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+        <state relative-caret-position="62">
+          <caret line="294" column="24" selection-start-line="294" selection-start-column="24" selection-end-line="294" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="1002" column="29" selection-start-line="1002" selection-start-column="29" selection-end-line="1002" selection-end-column="29" />
+        <state relative-caret-position="344">
+          <caret line="1009" column="16" selection-start-line="1009" selection-start-column="16" selection-end-line="1009" selection-end-column="16" />
           <folding>
             <element signature="method#checkRecharger#0;class#DBConnect#0" />
             <element signature="method#signupAnonymeUser#0;class#DBConnect#0" />
