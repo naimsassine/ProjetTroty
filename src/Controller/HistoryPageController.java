@@ -23,6 +23,7 @@ import javafx.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -48,8 +49,10 @@ public class HistoryPageController implements Initializable {
         data = FXCollections.observableArrayList();
         try {
             c = DBConnect.connect();
+            ActualUser user2 = new ActualUser();
+            String UID = user2.getUser();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from Voyage";
+            String SQL = "SELECT * from Voyage WHERE U_ID ="+UID;
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
 

@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.DBConnect;
 
@@ -40,6 +41,8 @@ public class TechManagesUsersController implements Initializable {
     private TextField StreetTextfield;
     @FXML
     private TextField NumberTextfield;
+    @FXML
+    private Text ErrorText;
 
 
 
@@ -83,9 +86,12 @@ public class TechManagesUsersController implements Initializable {
                 window.setScene(menuscene);
                 window.show();
             }
+            else {
+                ErrorText.setText("Error from Database");
+            }
         }
         else{
-            System.out.print("Please fill in all the blanks");
+            ErrorText.setText("Please fill in all the blanks");
         }
     }
 }

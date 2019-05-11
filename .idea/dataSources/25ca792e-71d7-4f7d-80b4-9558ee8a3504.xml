@@ -1219,7 +1219,7 @@ T_i</ColNames>
     </column>
     <column id="304" parent="278" name="Note">
       <Position>6</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="305" parent="278" name="T_ID">

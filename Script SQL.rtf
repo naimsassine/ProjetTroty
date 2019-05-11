@@ -81,7 +81,7 @@ Create Table Reparation (\
     FOREIGN KEY (Numero) REFERENCES Technicien(Numero),\
     Date_Plainte TIMESTAMP,\
     Date_Reparation TIMESTAMP,\
-    Note int,\
+    Note VARCHAR(30),\
     PRIMARY KEY (U_ID,T_ID,Date_Plainte,Numero)\
 );\
 \

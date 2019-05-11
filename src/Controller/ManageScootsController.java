@@ -36,7 +36,7 @@ public class ManageScootsController implements Initializable {
     @FXML
     private TextField NewValueTextfield;
     @FXML
-    private ChoiceBox AttributeBox;
+    private ChoiceBox<String> AttributeBox;
 
     ObservableList<String>  ChoiceBoxList = FXCollections.observableArrayList("Mise_en_service", "Model", "Batterie",
             "État");
@@ -59,12 +59,11 @@ public class ManageScootsController implements Initializable {
     public void DoneButtonPressed(){
         DBConnect connect = new DBConnect();
         String TID = TIDTextfield.getText();
-        String Attribute = (String) AttributeBox.getSelectionModel().getSelectedItem();
+        String Attribute = AttributeBox.getSelectionModel().getSelectedItem();
         String NewValue = NewValueTextfield.getText();
         Boolean answer = connect.modifyTrotinette(TID,Attribute,NewValue);
         if(answer){
             TIDTextfield.clear();
-            AttributeBox.setSelectionModel(null);
             NewValueTextfield.clear();
         }
     }

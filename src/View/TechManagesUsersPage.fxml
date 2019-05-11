@@ -5,7 +5,6 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TechManagesUsersController">
     <children>
         <Text layoutX="113.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create new User-Charger" textAlignment="CENTER" wrappingWidth="373.77099609375">
@@ -31,5 +30,6 @@
         <TextField fx:id="StreetTextfield" layoutX="113.0" layoutY="241.0" />
         <TextField fx:id="NumberTextfield" layoutX="419.0" layoutY="241.0" />
         <TextField fx:id="PCTextfield" layoutX="419.0" layoutY="189.0" />
+      <Text fx:id="ErrorText" fill="#ee0808" layoutX="186.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="227.2060546875" />
     </children>
 </AnchorPane>
