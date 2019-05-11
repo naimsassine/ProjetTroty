@@ -2,9 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="salma">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25ca792e-71d7-4f7d-80b4-9558ee8a3504.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25ca792e-71d7-4f7d-80b4-9558ee8a3504.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/ActualUser.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/ActualUser.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerMenuPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerMenuPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerSignupPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerSignupPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerTrottPageController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerTrottPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/HistoryPageController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/HistoryPageController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/HistoryPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/HistoryPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/IDScootPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/IDScootPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/LoginPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/LoginPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MechanicLoginPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MechanicLoginPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/QueriesPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/QueriesPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/SignupPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/SignupPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/TrottPageController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/TrottPageController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/TrottPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/TrottPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/View/ChargerMenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/View/ChargerMenuPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/View/ChargerTrotinettesPage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/View/IDScootPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/View/IDScootPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/View/MenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/View/MenuPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/ActualUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/ActualUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ActualUser.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ActualUser.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ChargerSignupPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChargerSignupPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ChargerTrottPageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HistoryPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HistoryPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IDScootPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IDScootPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/QueriesPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/QueriesPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SignupPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SignupPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/TrottPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TrottPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tech.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ChargerMenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ChargerMenuPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ChargerTrotinettesPage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/IDScootPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/IDScootPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MenuPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MenuPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ActualUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ActualUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DBConnect.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,38 +90,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="45" selection-start-line="45" selection-end-line="54" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="313" selection-start-line="313" selection-end-line="314" />
+            <state relative-caret-position="365">
+              <caret line="332" selection-start-line="332" selection-end-line="332" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/map.html">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ManageScootsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+            <state relative-caret-position="75">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/IDScootPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="113" column="41" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -92,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/MapsPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2090">
+            <state relative-caret-position="582">
               <caret line="161" column="42" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -102,39 +130,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8370">
-              <caret line="1009" column="16" selection-start-line="1009" selection-start-column="16" selection-end-line="1009" selection-end-column="16" />
-              <folding>
-                <element signature="method#checkRecharger#0;class#DBConnect#0" />
-                <element signature="method#signupAnonymeUser#0;class#DBConnect#0" />
-                <element signature="method#signupChargerUser#0;class#DBConnect#0" />
-                <element signature="method#insertComplaint#0;class#DBConnect#0" />
-                <element signature="method#checkTechnicien#0;class#DBConnect#0" />
-                <element signature="method#removeTrotinette#0;class#DBConnect#0" />
-                <element signature="method#addTrotinette#0;class#DBConnect#0" />
-                <element signature="method#modifyTrotinette#0;class#DBConnect#0" />
-                <element signature="method#chargeScoot#0;class#DBConnect#0" />
-                <element signature="method#doneChargingScoot#0;class#DBConnect#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ActualUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/MechanicManageComplaintsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="20">
               <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -144,13 +142,79 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="58" column="15" lean-forward="true" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+            <state relative-caret-position="224">
+              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="729" column="67" selection-start-line="729" selection-start-column="67" selection-end-line="729" selection-end-column="67" />
+              <folding>
+                <element signature="method#checkApostrophe#0;class#DBConnect#0" />
+                <element signature="method#checkDateCorrect#0;class#DBConnect#0" />
+                <element signature="method#DBConnect#0;class#DBConnect#0" />
+                <element signature="method#connect#0;class#DBConnect#0" />
+                <element signature="method#getConnection#0;class#DBConnect#0" />
+                <element signature="method#getData#0;class#DBConnect#0" />
+                <element signature="method#insertDataUtilisateur#0;class#DBConnect#0" />
+                <element signature="method#insertDataMecaniciens#0;class#DBConnect#0" />
+                <element signature="method#insertDataUtilisateurRecharge#0;class#DBConnect#0" />
+                <element signature="method#insertDataReloads#0;class#DBConnect#0" />
+                <element signature="method#insertDataReparation#0;class#DBConnect#0" />
+                <element signature="method#insertDataScooters#0;class#DBConnect#0" />
+                <element signature="method#insertDataTrips#0;class#DBConnect#0" />
+                <element signature="method#Login#0;class#DBConnect#0" />
+                <element signature="method#checkRecharger#0;class#DBConnect#0" />
+                <element signature="method#signupAnonymeUser#0;class#DBConnect#0" />
+                <element signature="method#signupChargerUser#0;class#DBConnect#0" />
+                <element signature="method#insertComplaint#0;class#DBConnect#0" />
+                <element signature="method#checkTechnicien#0;class#DBConnect#0" />
+                <element signature="method#checkTechnicien#1;class#DBConnect#0" />
+                <element signature="method#removeTrotinette#0;class#DBConnect#0" />
+                <element signature="e#26591#27560#0" />
+                <element signature="method#addTrotinette#0;class#DBConnect#0" />
+                <element signature="method#modifyTrotinette#0;class#DBConnect#0" />
+                <element signature="method#chargeScoot#0;class#DBConnect#0" />
+                <element signature="method#doneChargingScoot#0;class#DBConnect#0" />
+                <element signature="method#resolveComplaint#0;class#DBConnect#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="50" column="90" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/QueriesPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="330" selection-start-line="330" selection-end-line="330" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Goback#0;class#QueriesPageController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/TrotinettesPage.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -166,6 +230,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Dele</find>
+      <find>voyage</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,17 +256,19 @@
         <option value="$PROJECT_DIR$/src/Controller/MapsPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/map.html" />
         <option value="$PROJECT_DIR$/src/View/RechargeScoot.fxml" />
-        <option value="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" />
-        <option value="$PROJECT_DIR$/src/Controller/QueriesPageController.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/Controller/RachargeScootController.java" />
-        <option value="$PROJECT_DIR$/src/sample/ActualUser.java" />
         <option value="$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/MechanicManageComplaintsController.java" />
-        <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql" />
+        <option value="$PROJECT_DIR$/src/sample/ActualUser.java" />
+        <option value="$PROJECT_DIR$/src/Controller/HistoryPageController.java" />
+        <option value="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" />
+        <option value="$PROJECT_DIR$/src/Controller/QueriesPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/TrottPageController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql" />
+        <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/Controller/IDScootPageController.java" />
       </list>
     </option>
   </component>
@@ -215,6 +282,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -259,13 +327,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557491214717" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557535690253" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
@@ -345,6 +412,7 @@
       <workItem from="1557470068529" duration="3405000" />
       <workItem from="1557476548714" duration="8871000" />
       <workItem from="1557494748853" duration="904000" />
+      <workItem from="1557529378152" duration="4170000" />
     </task>
     <task id="LOCAL-00001" summary="salma">
       <created>1557417578533</created>
@@ -357,13 +425,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32125000" />
+    <option name="totallyTimeSpent" value="36295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16639742" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16882068" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,8 +438,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32054794" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.05479452" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22739726" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -383,12 +450,12 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32876712" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.14383562" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.33150685" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32739726" />
       <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="18" visible="true" weight="0.1520548" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="18" visible="true" weight="0.30273974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -402,7 +469,7 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.27786753" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16882068" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -410,27 +477,29 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.05479452" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16164383" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32765958" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.32876712" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.33150685" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info anchor="bottom" id="Terminal" order="16" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="16" weight="0.32739726" />
+      <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32876712" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.31643835" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.15503356" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Maven" order="7" />
@@ -565,13 +634,6 @@
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/IDScootPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TechManagesUsersController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -608,13 +670,6 @@
           <folding>
             <element signature="e#0#2052#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerTrottPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -672,24 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/QueriesPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Goback#0;class#QueriesPageController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/request/request2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -704,36 +741,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerSignupPageController.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="615">
+          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8370">
-          <caret line="1009" column="16" selection-start-line="1009" selection-start-column="16" selection-end-line="1009" selection-end-column="16" />
-          <folding>
-            <element signature="method#checkRecharger#0;class#DBConnect#0" />
-            <element signature="method#signupAnonymeUser#0;class#DBConnect#0" />
-            <element signature="method#signupChargerUser#0;class#DBConnect#0" />
-            <element signature="method#insertComplaint#0;class#DBConnect#0" />
-            <element signature="method#checkTechnicien#0;class#DBConnect#0" />
-            <element signature="method#removeTrotinette#0;class#DBConnect#0" />
-            <element signature="method#addTrotinette#0;class#DBConnect#0" />
-            <element signature="method#modifyTrotinette#0;class#DBConnect#0" />
-            <element signature="method#chargeScoot#0;class#DBConnect#0" />
-            <element signature="method#doneChargingScoot#0;class#DBConnect#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ActualUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+        <state relative-caret-position="495">
+          <caret line="45" selection-start-line="45" selection-end-line="54" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -744,9 +762,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerTrottPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/ManageScootsPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/HistoryPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="98" selection-start-line="98" selection-end-line="120" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ActualUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerSignupPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/TrotinettesPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MechanicManageComplaintsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="20">
           <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -755,30 +816,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/QueriesPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+        <state relative-caret-position="182">
+          <caret line="330" selection-start-line="330" selection-end-line="330" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Goback#0;class#QueriesPageController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="45" selection-start-line="45" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="313" selection-start-line="313" selection-end-line="314" />
+        <state relative-caret-position="229">
+          <caret line="50" column="90" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MapsPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
+        <state relative-caret-position="582">
           <caret line="161" column="42" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -786,10 +844,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/ManageScootsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="58" column="15" lean-forward="true" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+        <state relative-caret-position="75">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="729" column="67" selection-start-line="729" selection-start-column="67" selection-end-line="729" selection-end-column="67" />
+          <folding>
+            <element signature="method#checkApostrophe#0;class#DBConnect#0" />
+            <element signature="method#checkDateCorrect#0;class#DBConnect#0" />
+            <element signature="method#DBConnect#0;class#DBConnect#0" />
+            <element signature="method#connect#0;class#DBConnect#0" />
+            <element signature="method#getConnection#0;class#DBConnect#0" />
+            <element signature="method#getData#0;class#DBConnect#0" />
+            <element signature="method#insertDataUtilisateur#0;class#DBConnect#0" />
+            <element signature="method#insertDataMecaniciens#0;class#DBConnect#0" />
+            <element signature="method#insertDataUtilisateurRecharge#0;class#DBConnect#0" />
+            <element signature="method#insertDataReloads#0;class#DBConnect#0" />
+            <element signature="method#insertDataReparation#0;class#DBConnect#0" />
+            <element signature="method#insertDataScooters#0;class#DBConnect#0" />
+            <element signature="method#insertDataTrips#0;class#DBConnect#0" />
+            <element signature="method#Login#0;class#DBConnect#0" />
+            <element signature="method#checkRecharger#0;class#DBConnect#0" />
+            <element signature="method#signupAnonymeUser#0;class#DBConnect#0" />
+            <element signature="method#signupChargerUser#0;class#DBConnect#0" />
+            <element signature="method#insertComplaint#0;class#DBConnect#0" />
+            <element signature="method#checkTechnicien#0;class#DBConnect#0" />
+            <element signature="method#checkTechnicien#1;class#DBConnect#0" />
+            <element signature="method#removeTrotinette#0;class#DBConnect#0" />
+            <element signature="e#26591#27560#0" />
+            <element signature="method#addTrotinette#0;class#DBConnect#0" />
+            <element signature="method#modifyTrotinette#0;class#DBConnect#0" />
+            <element signature="method#chargeScoot#0;class#DBConnect#0" />
+            <element signature="method#doneChargingScoot#0;class#DBConnect#0" />
+            <element signature="method#resolveComplaint#0;class#DBConnect#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/IDScootPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="113" column="41" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
         </state>
       </provider>
     </entry>

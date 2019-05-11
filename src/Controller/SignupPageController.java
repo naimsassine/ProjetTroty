@@ -72,7 +72,7 @@ public class SignupPageController implements Initializable {
                         Boolean answer = connect.signupAnonymeUser(ID,Password,CC);
                         if(answer){
 
-                            user.SaveUser(ID);
+                            user.saveUser(ID);
                             Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
                             Scene menuscene = new Scene(menu);
 

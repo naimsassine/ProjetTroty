@@ -5,7 +5,6 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.IDScootPageController">
    <children>
       <Text layoutX="35.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#Type here the Scoot Id you want to remove from the system : " />
@@ -22,5 +21,7 @@
       <Button fx:id="AddButton" layoutX="522.0" layoutY="292.0" mnemonicParsing="false" onAction="#AddButtonPressed" text="Add" />
       <Button fx:id="BackButton" layoutX="22.0" layoutY="345.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="#fffbfb" />
       <TextField fx:id="YPosTextfield" layoutX="315.0" layoutY="292.0" promptText="Y-Position" />
+      <Text fx:id="ErrorTextRemove" fill="#e80000" layoutX="224.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="152.2060546875" />
+      <Text fx:id="ErrorTextAdd" fill="#e80000" layoutX="224.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="152.2060546875" />
    </children>
 </AnchorPane>

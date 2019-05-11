@@ -58,7 +58,7 @@ public class QueriesPageController implements Initializable {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "(select t2.DDestination_y ,t2.Destimation_x,t2.T_ID,t2.T_f\n" +
+            String SQL = "(select t2.DestinationY ,t2.DestinationX,t2.T_ID,t2.T_f\n" +
                     "                        from Voyage t2\n" +
                     "                        where  t2.T_f>=all\n" +
                     "                        ( select t1.T_f\n" +
@@ -189,7 +189,7 @@ public class QueriesPageController implements Initializable {
             //SQL FOR SELECTING ALL OF CUSTOMER
             String SQL = "(select z.tr,z.ui\n" +
                     "from (select d.h as tr,SUM(d.g) as ui\n" +
-                    "from(select t.T_ID as h,ST_Distance_Sphere(point(t.Source_x,t.Source_y),point(t.Destimation_x,t.DDestination_y)) as g\n" +
+                    "from(select t.T_ID as h,ST_Distance_Sphere(point(t.Source_x,t.Source_y),point(t.DestinationX,t.DestinationY)) as g\n" +
                     "from Voyage t) as d\n" +
                     "group by d.h) as z\n" +
                     "order by z.ui desc\n" +

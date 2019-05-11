@@ -15,15 +15,16 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import sample.ActualUser;
 import sample.DBConnect;
 
 import javafx.event.ActionEvent;
-import sun.rmi.runtime.Log;
 
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class HistoryPageController implements Initializable {
@@ -94,14 +95,30 @@ public class HistoryPageController implements Initializable {
     }
 
     @FXML
-    public void GoBack(ActionEvent event) throws IOException {
-        Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
-        Scene menuscene = new Scene(menu);
+    public void GoBack(ActionEvent event) throws IOException, SQLException {
+        ActualUser user = new ActualUser();
+        DBConnect connect = new DBConnect();
+        String UID = user.getUser();
+        Boolean answer = connect.checkRecharger(UID);
+        if(answer){
+            Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
+            Scene menuscene = new Scene(menu);
 
-        // Lets get the stage
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window.setScene(menuscene);
-        window.show();
+            // Lets get the stage
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setScene(menuscene);
+            window.show();
+        }
+
+        else {
+            Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+            Scene menuscene = new Scene(menu);
+
+            // Lets get the stage
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setScene(menuscene);
+            window.show();
+        }
     }
 
 

@@ -1,6 +1,5 @@
 package sample;
 import com.opencsv.CSVReader;
-import javafx.geometry.Pos;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -659,7 +658,7 @@ public class DBConnect {
                 // create the mysql insert preparedstatement
                 PreparedStatement preparedStmt2 = con.prepareStatement(query2);
                 preparedStmt2.setString (1, T_ID);
-                preparedStmt2.setString (2, user.GetUser());
+                preparedStmt2.setString (2, user.getUser());
                 preparedStmt2.setString (3, timeStamp);
                 // execute the preparedstatement
                 preparedStmt2.execute();
@@ -674,7 +673,7 @@ public class DBConnect {
                 // create the mysql insert preparedstatement
                 PreparedStatement preparedStmt2 = con.prepareStatement(query2);
                 preparedStmt2.setString (1, T_ID);
-                preparedStmt2.setString (2, user.GetUser());
+                preparedStmt2.setString (2, user.getUser());
                 preparedStmt2.setString (3, null);
                 preparedStmt2.setString (4, timeStamp);
                 preparedStmt2.setString (5, null);
@@ -727,9 +726,40 @@ public class DBConnect {
         }
     }
 
+
+    public Boolean checkTrotinette(String TID) throws SQLException {
+        String selectSQL = "SELECT T_ID FROM Trotinette WHERE T_ID = ?";
+        String trottfound = "No Scoots found";
+
+
+        PreparedStatement pstmt = con.prepareStatement(selectSQL);
+        pstmt.setString(1, TID);
+
+        ResultSet rs = pstmt.executeQuery();
+
+        try {
+            while (rs.next()) {
+                trottfound = rs.getString("T_ID");
+            }
+
+        } catch (SQLException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+            return false;
+        }
+
+        if (TID.equals(trottfound)){
+            return  true;
+        }
+        else {
+            return false;
+        }
+    }
+
     public Boolean removeTrotinette(String TID) {
         try
         {
+
             String query = "Delete from Reparation Where T_ID = ?";
             PreparedStatement preparedStmt = con.prepareStatement(query);
             preparedStmt.setString (1, TID);
@@ -917,7 +947,7 @@ public class DBConnect {
 
 
             preparedStmt.setString (1,TID);
-            preparedStmt.setString (2,user.GetUser());
+            preparedStmt.setString (2,user.getUser());
             preparedStmt.setString (3,Battery);
             preparedStmt.setString (4,null);
             preparedStmt.setString (5,PosX);
@@ -964,7 +994,7 @@ public class DBConnect {
             preparedStmt.setString (3,PosY);
             preparedStmt.setString (4, timeStamp);
             preparedStmt.setString (5,TID);
-            preparedStmt.setString (6,user.GetUser());
+            preparedStmt.setString (6,user.getUser());
 
 
             // execute the preparedstatement
@@ -993,7 +1023,7 @@ public class DBConnect {
                 PreparedStatement preparedStmt2 = con.prepareStatement(query2);
                 preparedStmt2.setString (1, TID);
                 preparedStmt2.setString (2, UID);
-                preparedStmt2.setString (3, user.GetTech());
+                preparedStmt2.setString (3, user.getTech());
                 preparedStmt2.setString (4, Datei);
                 preparedStmt2.setString (5, timeStamp);
                 preparedStmt2.setString (6, Note);
@@ -1019,6 +1049,7 @@ public class DBConnect {
             return false;
         }
     }
+
 
 }
 

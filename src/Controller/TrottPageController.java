@@ -15,6 +15,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import sample.ActualUser;
 import sample.DBConnect;
 
 import javafx.event.ActionEvent;
@@ -46,19 +47,17 @@ public class TrottPageController implements Initializable {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "(SELECT * from Trotinette) " ;
-
             //ResultSet
+            String SQL= "(select Trotinette.T_ID, t2.DestinationX as PosY, t2.DestinationY as PosX, Trotinette.État, Trotinette.Batterie\n" +
+                    "from Voyage t2, Trotinette\n" +
+                    "where Trotinette.T_ID = t2.T_ID and t2.T_f>=all( select t1.T_f from Voyage t1 where t1.T_ID=t2.T_ID))";
             ResultSet rs = c.createStatement().executeQuery(SQL);
-            SQL= "(select t2.DDestination_y as PosY ,t2.Destimation_x as PosX, T_ID from Voyage t2 where  t2.T_f>=all( select t1.T_f from Voyage t1 where t1.T_ID=t2.T_ID))";
-            ResultSet rs1 = c.createStatement().executeQuery(SQL);
             /**
              * ********************************
              * TABLE COLUMN ADDED DYNAMICALLY *
              *********************************
              */
             setTable(rs);
-            setTable(rs1);
 
 
             /**
@@ -101,15 +100,30 @@ public class TrottPageController implements Initializable {
     }
 
     @FXML
-    public void GoBack(ActionEvent event) throws IOException {
-        Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
-        Scene menuscene = new Scene(menu);
+    public void GoBack(ActionEvent event) throws IOException, SQLException {
+        ActualUser user = new ActualUser();
+        DBConnect connect = new DBConnect();
+        String UID = user.getUser();
+        Boolean answer = connect.checkRecharger(UID);
+        if(answer){
+            Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
+            Scene menuscene = new Scene(menu);
 
-        // Lets get the stage
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window.setScene(menuscene);
-        window.show();
-    }
+            // Lets get the stage
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setScene(menuscene);
+            window.show();
+        }
+
+        else {
+            Parent menu = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+            Scene menuscene = new Scene(menu);
+
+            // Lets get the stage
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setScene(menuscene);
+            window.show();
+        }}
 
 
 }

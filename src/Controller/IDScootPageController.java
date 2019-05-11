@@ -9,11 +9,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.DBConnect;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class IDScootPageController implements Initializable {
@@ -45,19 +47,31 @@ public class IDScootPageController implements Initializable {
     private Button RemoveButton;
     @FXML
     private Button BackButton;
+    @FXML
+    private Text ErrorTextRemove;
+    @FXML
+    private Text ErrorTextAdd;
 
     @FXML
-    public void RemoveButtonPressed(){
+    public void RemoveButtonPressed() throws SQLException {
         if(!T_IDTextfield.getText().isEmpty()){
             DBConnect connect = new DBConnect();
             String TID = T_IDTextfield.getText();
+            Boolean answer1 = connect.checkTrotinette(TID);
             Boolean answer = connect.removeTrotinette(TID);
-            if (answer){
+            if (answer && answer1){
                 T_IDTextfield.clear();
+                ErrorTextRemove.setText("");
+            }
+            else if (answer && !answer1){
+                ErrorTextRemove.setText("Trott not found");
+            }
+            else {
+                ErrorTextRemove.setText("Error from database");
             }
         }
         else {
-            System.out.print("Please fill in the blanks");
+            ErrorTextRemove.setText("Please fill in the blanks");
         }
     }
 
@@ -97,10 +111,15 @@ public class IDScootPageController implements Initializable {
                 DispoTextfield.clear();
                 XPosTextfield.clear();
                 YPosTextfield.clear();
+                ErrorTextAdd.setText("");
+            }
+            else {
+                ErrorTextAdd.setText("Error from Database");
+
             }
         }
         else {
-            System.out.print("Please fill in the blanks");
+            ErrorTextAdd.setText("Please fill in the blanks");
         }
 
     }

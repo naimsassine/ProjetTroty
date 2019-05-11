@@ -50,19 +50,19 @@
          </image>
       </ImageView>
       <Button fx:id="StartChargingButton" layoutX="442.0" layoutY="29.0" mnemonicParsing="false" onAction="#pageCharging" opacity="0.0" prefHeight="104.0" prefWidth="112.0" />
-      <ImageView fitHeight="98.0" fitWidth="122.0" layoutX="251.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="98.0" fitWidth="122.0" layoutX="150.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Ressources/emoticon-sad-7-512.png" />
          </image>
       </ImageView>
-      <Button fx:id="PlainteButton" layoutX="251.0" layoutY="189.0" mnemonicParsing="false" onAction="#loadPagePlainte" opacity="0.0" prefHeight="98.0" prefWidth="98.0" />
-      <Text layoutX="255.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint" textAlignment="CENTER" wrappingWidth="90.0" />
-      <ImageView fitHeight="104.0" fitWidth="116.0" layoutX="442.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="PlainteButton" layoutX="150.0" layoutY="186.0" mnemonicParsing="false" onAction="#loadPagePlainte" opacity="0.0" prefHeight="98.0" prefWidth="98.0" />
+      <Text layoutX="154.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint" textAlignment="CENTER" wrappingWidth="90.0" />
+      <ImageView fitHeight="104.0" fitWidth="116.0" layoutX="361.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Ressources/Sab.png" />
          </image>
       </ImageView>
-      <Button layoutX="442.0" layoutY="189.0" mnemonicParsing="false" onAction="#HistoryButtonPressed" opacity="0.0" prefHeight="91.0" prefWidth="104.0" />
-      <Text layoutX="472.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History" textAlignment="CENTER" />
+      <Button layoutX="362.0" layoutY="190.0" mnemonicParsing="false" onAction="#HistoryButtonPressed" opacity="0.0" prefHeight="91.0" prefWidth="104.0" />
+      <Text layoutX="391.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History" textAlignment="CENTER" />
    </children>
 </AnchorPane>

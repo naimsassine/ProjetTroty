@@ -33,7 +33,7 @@ public class ChargerMenuPageController implements Initializable {
 
     @FXML
     public void TrottButtonPressed(ActionEvent event) throws IOException {
-        Parent trott = FXMLLoader.load(getClass().getResource("../View/ChargerTrotinettesPage.fxml"));
+        Parent trott = FXMLLoader.load(getClass().getResource("../View/TrotinettesPage.fxml"));
         Scene trottscene = new Scene(trott);
 
         // Lets get the stage
@@ -72,6 +72,17 @@ public class ChargerMenuPageController implements Initializable {
     @FXML
     public void ChargeScootButtonPressed(ActionEvent event) throws IOException{
         Parent ManageUserScoot = FXMLLoader.load(getClass().getResource("../View/RechargeScoot.fxml"));
+        Scene ManageUserScootScene = new Scene(ManageUserScoot);
+
+        // Lets get the stage
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(ManageUserScootScene);
+        window.show();
+    }
+
+    @FXML
+    public void HistoryButtonPressed(ActionEvent event) throws IOException{
+        Parent ManageUserScoot = FXMLLoader.load(getClass().getResource("../View/HistoryPage.fxml"));
         Scene ManageUserScootScene = new Scene(ManageUserScoot);
 
         // Lets get the stage

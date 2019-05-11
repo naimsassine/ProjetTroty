@@ -86,7 +86,7 @@ public class ChargerSignupPageController implements Initializable {
 
                 Boolean answer = connect.signupChargerUser(ID,FN,LN,TN,City,PC,Street,Number);
                 if(answer){
-                    user.SaveUser(ID);
+                    user.saveUser(ID);
                     Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
                     Scene menuscene = new Scene(menu);
 

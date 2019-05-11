@@ -17,7 +17,6 @@ import sample.DBConnect;
 import java.io.*;
 import java.net.URL;
 import java.sql.SQLException;
-import java.util.EventObject;
 import java.util.ResourceBundle;
 
 public class LoginPageController  implements Initializable {
@@ -68,7 +67,7 @@ public class LoginPageController  implements Initializable {
         Boolean answer = connect.checkRecharger(UserId);
 
         if (PasswordReturned.equals(PasswordTextfield.getText()) && answer){
-            savedUser.SaveUser(UserId);
+            savedUser.saveUser(UserId);
             Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
             Scene menuscene = new Scene(menu);
 
@@ -79,7 +78,7 @@ public class LoginPageController  implements Initializable {
 
         }
         else if (PasswordReturned.equals(PasswordTextfield.getText()) && !answer){
-            savedUser.SaveUser(UserId);
+            savedUser.saveUser(UserId);
            Parent menu1 = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
             Scene menuscene1 = new Scene(menu1);
 

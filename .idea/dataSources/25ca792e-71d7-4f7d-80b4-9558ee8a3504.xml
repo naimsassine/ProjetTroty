@@ -1486,12 +1486,12 @@ U_ID</ColNames>
       <DataType>decimal(12,7 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="355" parent="284" name="Destimation_x">
+    <column id="355" parent="284" name="DestinationX">
       <Position>5</Position>
       <DataType>decimal(12,7 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="356" parent="284" name="DDestination_y">
+    <column id="356" parent="284" name="DestinationY">
       <Position>6</Position>
       <DataType>decimal(12,7 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>

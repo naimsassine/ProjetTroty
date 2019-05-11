@@ -62,7 +62,7 @@ public class MechanicLoginPageController implements Initializable {
             window.show();
 
             ActualUser user = new ActualUser();
-            user.SaveTech(MID);
+            user.saveTech(MID);
         }
         else{
             ErrorText.setText("No Mechanic found");
