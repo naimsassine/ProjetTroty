@@ -48,7 +48,7 @@ public class TrottPageController implements Initializable {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
             //ResultSet
-            String SQL= "(select Trotinette.T_ID, t2.DestinationX as PosY, t2.DestinationY as PosX, Trotinette.État, Trotinette.Batterie\n" +
+            String SQL= "(select Trotinette.T_ID, t2.DestinationX as PosY, t2.DestinationY as PosX, Trotinette.État, Trotinette.Batterie, Trotinette.Mise_en_service\n" +
                     "from Voyage t2, Trotinette\n" +
                     "where Trotinette.T_ID = t2.T_ID and t2.T_f>=all( select t1.T_f from Voyage t1 where t1.T_ID=t2.T_ID))";
             ResultSet rs = c.createStatement().executeQuery(SQL);

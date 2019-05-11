@@ -123,7 +123,7 @@ public class DBConnect {
                     NodeList textLNList = PasswordElement.getChildNodes();
                     String password = ((Node)textLNList.item(0)).getNodeValue().trim();
 
-                    NodeList CreditCartList = firstUserElement.getElementsByTagName("password");
+                    NodeList CreditCartList = firstUserElement.getElementsByTagName("bankaccount");
                     Element CreditCardElement = (Element)CreditCartList.item(0);
 
                     NodeList CCList = CreditCardElement.getChildNodes();
