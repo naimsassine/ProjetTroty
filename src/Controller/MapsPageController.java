@@ -4,6 +4,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -125,6 +126,19 @@ public class MapsPageController implements Initializable {
         public MyBrowser() {
             final URL urlGoogleMaps = getClass().getResource("map.html");
             webEngine.load(urlGoogleMaps.toExternalForm());
+            int lat=50;
+            int longd=5;
+
+            Task task = new Task<Void>() {
+                @Override public Void call() {
+
+                    webEngine.executeScript("initialize()");
+                    notify();
+                    return null;
+                }
+            };
+
+            new Thread(task).start();
             webEngine.setOnAlert(new EventHandler<WebEvent<String>>() {
                 @Override
                 public void handle(WebEvent<String> e) {
@@ -133,6 +147,23 @@ public class MapsPageController implements Initializable {
             });
 
 
+
+            //getChildren().add(webView);
+            final TextField city = new TextField("" + "Guntur");
+            //final TextField latitude = new TextField("" + 17.387140 * 1.00007);
+            //final TextField longitude = new TextField("" + 78.491684 * 1.00007);
+            Button update = new Button("Update");
+            update.setOnAction(new EventHandler<ActionEvent>() {
+
+                @Override
+                public void handle(ActionEvent arg0) {
+                    //  lat = Double.parseDouble(latitude.getText());
+                    //  lon = Double.parseDouble(longitude.getText());
+                    String cityname = city.getText();
+                    /*System.out.printf("%.2f %.2f%n", lat, lon);*/
+                    webEngine.executeScript("getCityname(' " + cityname + " ') ");
+                }
+            });
 
             SplitPane toolbar = new SplitPane();
             HBox hb = new HBox();

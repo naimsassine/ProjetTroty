@@ -10,10 +10,11 @@
     </script>
 
     <script type="text/javascript">
-        var map;
-        var latLng1=new google.maps.LatLng(50.8504500,4.3487800);
-        var latLng2=new google.maps.LatLng(50.86,4.35);
+
         function initialize() {
+            var map;
+            var latLng1=new google.maps.LatLng(50.8504500,4.3487800);
+            var latLng2=new google.maps.LatLng(50.86,4.35);
             var mapProp = {
                 center:latLng1,
                 zoom:7,
@@ -40,10 +41,46 @@
             var map=new google.maps.Map(document.getElementById("mapcanvas"), mapProp);
             marker.setMap(map);
             marker1.setMap(map);
+            var mysql = require('mysql');
+
+            var con = mysql.createConnection({
+                host: "localhost",
+                user: "root",
+                password: "03331655",
+                database: "ProjetDbb"
+            });
+
+            con.connect(function(err) {
+                if (err) throw err;
+                console.log("Connected!");
+            });
+            con.query("select t2.DDestimation_y ,t2.Destimation_x,t2.T_ID,t2.T_f\n" +
+                "                         from Voyage t2\n" +
+                "                        where  t2.T_f>=all\n" +
+                "                        ( select t1.T_f\n" +
+                "                        from Voyage t1\n" +
+                "                        where t1.T_ID=t2.T_ID )",[MSFT],function (err,rows) {
+                if(err){
+                    console.log(err);
+                    return;
+                }
+                rows.forEach(function (result) {
+                    var latLng1=new google.maps.LatLng(result.DDestimation_y,result.DDestimation_x);
+                    var marker = new google.maps.Marker({
+                        position: latLng1,
+                        draggable: true,
+                        title: ""
+                    });
+                    marker.setMap(map);
+                })
+
+            })
+            con.close();
+            process.exit();
         }
         google.maps.event.addDomListener(window, 'load', initialize);
 
-        function getCityname(city) {
+        /*function getCityname(city) {
             geocoder = new google.maps.Geocoder();
             var address = city;
             alert("cityname: " +address);
@@ -61,7 +98,7 @@
                     alert("Geocode was not successful for the following reason: " + status);
                 }
             });
-        }
+        }*/
     </script>
     <style>
         #mapcanvas {

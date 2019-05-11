@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="salma">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25ca792e-71d7-4f7d-80b4-9558ee8a3504.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25ca792e-71d7-4f7d-80b4-9558ee8a3504.xml" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="salma map réglé">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script SQL.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/Script SQL.rtf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerMenuPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerMenuPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/HistoryPageController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/HistoryPageController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/HistoryPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/HistoryPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ManageScootsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/ManageScootsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/TechManagesUsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/TechManagesUsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/ActualUser.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/ActualUser.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$MyBrowser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$MyBrowser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$MyBrowser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$MyBrowser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Tech.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/View/TechManagesUsersPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/View/TechManagesUsersPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HistoryPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HistoryPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ManageScootsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ManageScootsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TechManagesUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TechManagesUsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/TechManagesUsersPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/TechManagesUsersPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MapsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MapsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,94 +58,49 @@
     </expand>
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="862544448">
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="JAVA" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="355" />
+          <entry key="JAVA" value="247" />
+          <entry key="PLAIN_TEXT" value="10" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="332" column="34" selection-start-line="332" selection-start-column="34" selection-end-line="332" selection-end-column="34" />
+            <state relative-caret-position="204">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TechManagesUsersController.java">
+        <entry file="file://$PROJECT_DIR$/src/Controller/MapsPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="89" column="54" selection-start-line="89" selection-start-column="54" selection-end-line="89" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/ManageScootsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="56" column="80" lean-forward="true" selection-start-line="56" selection-start-column="80" selection-end-line="56" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/HistoryPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="54" column="65" lean-forward="true" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/ChargerSignupPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/MenuPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="50" selection-start-line="50" selection-end-line="56" selection-end-column="22" />
+            <state relative-caret-position="187">
+              <caret line="134" column="56" lean-forward="true" selection-start-line="134" selection-start-column="56" selection-end-line="134" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/MechanicManageComplaintsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-970">
-              <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#setTable#0;class#MechanicManageComplaintsController#0" />
+                <element signature="e#4559#4764#0" expanded="true" />
+                <element signature="e#4763#4764#0" expanded="true" />
+                <element signature="e#5210#5211#0" expanded="true" />
+                <element signature="e#5282#5283#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,35 +109,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="763" column="1" selection-start-line="763" selection-start-column="1" selection-end-line="765" selection-end-column="35" />
-              <folding>
-                <element signature="method#checkApostrophe#0;class#DBConnect#0" />
-                <element signature="method#checkDateCorrect#0;class#DBConnect#0" />
-                <element signature="method#DBConnect#0;class#DBConnect#0" />
-                <element signature="method#connect#0;class#DBConnect#0" />
-                <element signature="method#getConnection#0;class#DBConnect#0" />
-                <element signature="method#getData#0;class#DBConnect#0" />
-                <element signature="method#insertDataUtilisateur#0;class#DBConnect#0" />
-                <element signature="method#insertDataMecaniciens#0;class#DBConnect#0" />
-                <element signature="method#insertDataUtilisateurRecharge#0;class#DBConnect#0" />
-                <element signature="method#insertDataReloads#0;class#DBConnect#0" />
-                <element signature="method#insertDataReparation#0;class#DBConnect#0" />
-                <element signature="method#insertDataScooters#0;class#DBConnect#0" />
-                <element signature="method#insertDataTrips#0;class#DBConnect#0" />
-                <element signature="method#Login#0;class#DBConnect#0" />
-                <element signature="method#checkRecharger#0;class#DBConnect#0" />
-                <element signature="method#signupAnonymeUser#0;class#DBConnect#0" />
-                <element signature="method#signupChargerUser#0;class#DBConnect#0" />
-                <element signature="method#insertComplaint#0;class#DBConnect#0" />
-                <element signature="method#checkTechnicien#0;class#DBConnect#0" />
-                <element signature="method#checkTechnicien#1;class#DBConnect#0" />
-                <element signature="method#addTrotinette#0;class#DBConnect#0" />
-                <element signature="method#modifyTrotinette#0;class#DBConnect#0" />
-                <element signature="method#chargeScoot#0;class#DBConnect#0" />
-                <element signature="method#doneChargingScoot#0;class#DBConnect#0" />
-                <element signature="method#resolveComplaint#0;class#DBConnect#0" />
-              </folding>
+            <state relative-caret-position="519">
+              <caret line="485" selection-start-line="485" selection-end-line="485" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/request/request1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="5" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/map.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="67" column="98" selection-start-line="67" selection-start-column="98" selection-end-line="67" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="56" column="47" lean-forward="true" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -224,10 +186,7 @@
         <option value="$PROJECT_DIR$/request/request1.txt" />
         <option value="$PROJECT_DIR$/src/View/QueriesPage.fxml" />
         <option value="$PROJECT_DIR$/src/View/MapsPage.fxml" />
-        <option value="$PROJECT_DIR$/src/Controller/MapsPageController.java" />
-        <option value="$PROJECT_DIR$/src/Controller/map.html" />
         <option value="$PROJECT_DIR$/src/View/RechargeScoot.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/Controller/RachargeScootController.java" />
         <option value="$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" />
@@ -235,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/sample/ActualUser.java" />
         <option value="$PROJECT_DIR$/src/Controller/QueriesPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/TrottPageController.java" />
-        <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/Controller/IDScootPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/MenuPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java" />
@@ -243,12 +201,24 @@
         <option value="$PROJECT_DIR$/src/Controller/ManageScootsController.java" />
         <option value="$PROJECT_DIR$/src/Controller/TechManagesUsersController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql" />
+        <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/Controller/MapsPageController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/Controller/map.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-93" />
+    <option name="y" value="18" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -257,7 +227,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,6 +254,12 @@
               <item name="ProjetTroty" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjetTroty" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Ressources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetTroty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetTroty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -301,14 +276,204 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557538403890" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557573422326" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources/25ca792e-71d7-4f7d-80b4-9558ee8a3504.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Script SQL.rtf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/ActualUser.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerMenuPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerSignupPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/HistoryPageController$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/HistoryPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/IDScootPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/LoginPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/ManageScootsController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$2.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/MechanicLoginPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/MechanicMenuPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/QueriesPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/SignupPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/TechManagesUsersController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/TrottPageController$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/TrottPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/View/ChargerMenuPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/View/IDScootPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/View/MapsPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/View/MechanicMenuPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/View/MenuPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/View/TechManagesUsersPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/sample/Main.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/.DS_Store</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ActualUser.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/ChargerSignupPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/HistoryPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/IDScootPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/LoginPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/ManageScootsController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/MapsPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/QueriesPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/SignupPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/TechManagesUsersController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/TrottPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Ressources/.DS_Store</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/View/ChargerMenuPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/View/IDScootPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/View/MapsPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/View/MechanicMenuPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/View/MenuPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/View/TechManagesUsersPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/DBConnect.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/Main.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$MyBrowser$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$MyBrowser$2.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$MyBrowser.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/MechanicManageComplaintsController$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/MechanicManageComplaintsController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/RachargeScootController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/map.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Ressources/battery-clipart-portable-charger-1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Ressources/kisspng-battery-charger-computer-icons-clip-art-charging-5ad8f03ca908b3.8927908515241667166924.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Tech.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/View/MechanicManageComplaints.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/View/RechargeScoot.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/sample/ActualUser.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/MechanicManageComplaintsController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/RachargeScootController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/map.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Ressources/battery-clipart-portable-charger-1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Ressources/kisspng-battery-charger-computer-icons-clip-art-charging-5ad8f03ca908b3.8927908515241667166924.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Tech.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/View/MechanicManageComplaints.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/View/RechargeScoot.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/ActualUser.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerTrottPageController$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/Controller/ChargerTrottPageController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ProjetTroty/View/ChargerTrotinettesPage.fxml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Controller/ChargerTrottPageController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/View/ChargerTrotinettesPage.fxml</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -395,16 +560,24 @@
       <option name="project" value="LOCAL" />
       <updated>1557417578533</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="salma map réglé">
+      <created>1557563136598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557563136598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38602000" />
+    <option name="totallyTimeSpent" value="46656000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16882068" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.13825503" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -413,7 +586,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.05479452" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -443,7 +616,7 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16882068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.13959731" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -452,7 +625,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.05479452" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16164383" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -468,7 +641,7 @@
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32739726" />
       <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32876712" />
-      <window_info anchor="bottom" id="Database Console" order="18" weight="0.31643835" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.360274" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -521,32 +694,13 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="maps" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="salma" />
-    <option name="LAST_COMMIT_MESSAGE" value="salma" />
+    <MESSAGE value="salma map réglé" />
+    <option name="LAST_COMMIT_MESSAGE" value="salma map réglé" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -564,17 +718,11 @@
     <entry file="file://$PROJECT_DIR$/data2019/reloads.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/projetdbb/table/utilisateur">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/projetdbb/table/utilisateur" />
     <entry file="file://$PROJECT_DIR$/src/Controller/LoginPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="340">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -623,18 +771,14 @@
     <entry file="file://$PROJECT_DIR$/out/production/ProjetTroty/Controller/AcceuilPage.class" />
     <entry file="file://$PROJECT_DIR$/out/production/ProjetTroty/Controller/AcceuilPageController.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <folding>
-            <element signature="e#0#2052#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-14" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/LoginPage.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="357">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -650,27 +794,10 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/request/request1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/RachargeScootController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="137" column="41" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -693,25 +820,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+        <state relative-caret-position="697">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerTrottPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerTrottPageController.java" />
     <entry file="file://$PROJECT_DIR$/src/View/ManageScootsPage.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -738,23 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="50" column="90" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MapsPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="161" column="42" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/IDScootPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -764,15 +861,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/SignupPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerSignupPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="918">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -787,50 +877,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="50" selection-start-line="50" selection-end-line="56" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="763" column="1" selection-start-line="763" selection-start-column="1" selection-end-line="765" selection-end-column="35" />
-          <folding>
-            <element signature="method#checkApostrophe#0;class#DBConnect#0" />
-            <element signature="method#checkDateCorrect#0;class#DBConnect#0" />
-            <element signature="method#DBConnect#0;class#DBConnect#0" />
-            <element signature="method#connect#0;class#DBConnect#0" />
-            <element signature="method#getConnection#0;class#DBConnect#0" />
-            <element signature="method#getData#0;class#DBConnect#0" />
-            <element signature="method#insertDataUtilisateur#0;class#DBConnect#0" />
-            <element signature="method#insertDataMecaniciens#0;class#DBConnect#0" />
-            <element signature="method#insertDataUtilisateurRecharge#0;class#DBConnect#0" />
-            <element signature="method#insertDataReloads#0;class#DBConnect#0" />
-            <element signature="method#insertDataReparation#0;class#DBConnect#0" />
-            <element signature="method#insertDataScooters#0;class#DBConnect#0" />
-            <element signature="method#insertDataTrips#0;class#DBConnect#0" />
-            <element signature="method#Login#0;class#DBConnect#0" />
-            <element signature="method#checkRecharger#0;class#DBConnect#0" />
-            <element signature="method#signupAnonymeUser#0;class#DBConnect#0" />
-            <element signature="method#signupChargerUser#0;class#DBConnect#0" />
-            <element signature="method#insertComplaint#0;class#DBConnect#0" />
-            <element signature="method#checkTechnicien#0;class#DBConnect#0" />
-            <element signature="method#checkTechnicien#1;class#DBConnect#0" />
-            <element signature="method#addTrotinette#0;class#DBConnect#0" />
-            <element signature="method#modifyTrotinette#0;class#DBConnect#0" />
-            <element signature="method#chargeScoot#0;class#DBConnect#0" />
-            <element signature="method#doneChargingScoot#0;class#DBConnect#0" />
-            <element signature="method#resolveComplaint#0;class#DBConnect#0" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -868,8 +921,64 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="332" column="34" selection-start-line="332" selection-start-column="34" selection-end-line="332" selection-end-column="34" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerSignupPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MapsPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="134" column="56" lean-forward="true" selection-start-line="134" selection-start-column="56" selection-end-line="134" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4559#4764#0" expanded="true" />
+            <element signature="e#4763#4764#0" expanded="true" />
+            <element signature="e#5210#5211#0" expanded="true" />
+            <element signature="e#5282#5283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="56" column="47" lean-forward="true" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/request/request1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="485" selection-start-line="485" selection-end-line="485" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="67" column="98" selection-start-line="67" selection-start-column="98" selection-end-line="67" selection-end-column="98" />
         </state>
       </provider>
     </entry>

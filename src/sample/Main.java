@@ -19,6 +19,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         window = primaryStage;
+
         Parent root = FXMLLoader.load(getClass().getResource("../View/Acceuilpage.fxml"));
         window.setTitle("Troty");
         window.setScene(new Scene(root, 750, 500));
