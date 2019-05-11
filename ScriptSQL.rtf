@@ -1,0 +1,15 @@
+CREATE TABLE Trotinette (T_ID int PRIMARY KEY, Mise_en_service TIMESTAMP, Model VARCHAR(14), État Varchar(6),Batterie int);
+
+CREATE TABLE Utilisateur (U_ID int PRIMARY KEY, Mot_De_Passe VARCHAR(15),Numero_Carte VARCHAR(20));
+
+CREATE TABLE Utilisateur_Recharge (U_ID int PRIMARY KEY,Nom VARCHAR(20),Prenom VARCHAR(20), Numero_Telephone int,FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),Adresse_City VARCHAR(30),Adresse_Cp int, Adresse_Street VARCHAR(50), Adresse_Number int);
+
+Create Table Recharge (T_ID int,FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),U_ID int,FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID), Charge_i int, Charge_f int, Source_x DECIMAL(12,8),Source_y DECIMAL(12,8),Destination_x DECIMAL(12,8),Destination_y DECIMAL(12,8),T_i TIMESTAMP,T_f TIMESTAMP,PRIMARY KEY (T_ID,U_ID,T_i));
+
+CREATE TABLE Technicien (Numero VARCHAR(20) PRIMARY KEY,Nom VARCHAR(20),Prenom VARCHAR(20),Mot_de_Pass int,Numero_Telephone int,Adresse_City VARCHAR(15),Adresse_Cp int,Adresse_Street VARCHAR(30),Adresse_Number int,Date_Embauche DATE,Bank_Account real);
+
+Create Table Reparation (T_ID int,U_ID int,FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID),FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),Numero VARCHAR(20),FOREIGN KEY (Numero) REFERENCES Technicien(Numero),Date_Plainte TIMESTAMP,Date_Reparation TIMESTAMP,Note VARCHAR(30),PRIMARY KEY (U_ID,T_ID,Date_Plainte,Numero));
+
+Create Table Voyage (T_ID int, U_ID int,FOREIGN KEY (U_ID) REFERENCES Utilisateur(U_ID), FOREIGN KEY (T_ID) REFERENCES Trotinette(T_ID),Source_x DECIMAL(12,7),Source_y DECIMAL(12,7),DestinationX DECIMAL(12,7),DestinationY DECIMAL(12,7),T_i TIMESTAMP,T_f TIMESTAMP,PRIMARY KEY (T_ID,U_ID,T_i));
+
+Create Table  TrottEnAttente (T_ID int , U_ID  int, FOREIGN KEY  (U_ID) REFERENCES Utilisateur(U_ID) , FOREIGN KEY  (T_ID)  REFERENCES Trotinette(T_ID) ,T_i TIMESTAMP , PRIMARY KEY (T_i ,T_ID, U_ID));

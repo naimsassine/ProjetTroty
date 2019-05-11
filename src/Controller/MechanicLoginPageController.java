@@ -33,6 +33,8 @@ public class MechanicLoginPageController implements Initializable {
     private TextField IDTextField;
     @FXML
     private Text ErrorText;
+    @FXML
+    private TextField PasswordTextfield;
 
 
 
@@ -51,8 +53,9 @@ public class MechanicLoginPageController implements Initializable {
     public void LoginButtonPressed(ActionEvent event) throws SQLException, IOException {
         DBConnect connect = new DBConnect();
         String MID = IDTextField.getText();
-        Boolean answer = connect.checkTechnicien(MID);
-        if(answer){
+        String answer = connect.checkTechnicien(MID);
+        String password = PasswordTextfield.getText();
+        if(answer.equals(password)){
             Parent menuMecanic = FXMLLoader.load(getClass().getResource("../View/MechanicMenuPage.fxml"));
             Scene menuMecanicscene = new Scene(menuMecanic);
 
@@ -65,7 +68,7 @@ public class MechanicLoginPageController implements Initializable {
             user.saveTech(MID);
         }
         else{
-            ErrorText.setText("No Mechanic found");
+            ErrorText.setText("Incorrect ID or Password");
         }
     }
 

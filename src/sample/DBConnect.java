@@ -103,7 +103,7 @@ public class DBConnect {
         try{
             DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-            Document doc = docBuilder.parse (new File("Ressources/anonyme_users.xml"));
+            Document doc = docBuilder.parse (new File("src/Ressources/anonyme_users.xml"));
             doc.getDocumentElement().normalize();
             System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
             NodeList listOfUsers = doc.getElementsByTagName("user");
@@ -247,7 +247,7 @@ public class DBConnect {
         try{
             DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-            Document doc = docBuilder.parse (new File("Ressources/registeredUsers.xml"));
+            Document doc = docBuilder.parse (new File("src/Ressources/registeredUsers.xml"));
             doc.getDocumentElement().normalize();
             System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
             NodeList listOfUsers = doc.getElementsByTagName("user");
@@ -697,9 +697,9 @@ public class DBConnect {
 
     }
 
-    public Boolean checkTechnicien(String MID) throws SQLException {
-        String selectSQL = "SELECT Numero FROM Technicien WHERE Numero = ?";
-        String mechfound = "No Scoots found";
+    public String checkTechnicien(String MID) throws SQLException {
+        String selectSQL = "SELECT Mot_de_Pass FROM Technicien WHERE Numero = ?";
+        String password = "No password found";
 
 
         PreparedStatement pstmt = con.prepareStatement(selectSQL);
@@ -709,21 +709,17 @@ public class DBConnect {
 
         try {
             while (rs.next()) {
-                mechfound = rs.getString("Numero");
+                password = rs.getString("Mot_de_Pass");
             }
 
         } catch (SQLException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
-            return false;
+        } finally {
+            pstmt.close();
         }
 
-        if (MID.equals(mechfound)){
-                return  true;
-        }
-        else {
-            return false;
-        }
+        return password;
     }
 
 

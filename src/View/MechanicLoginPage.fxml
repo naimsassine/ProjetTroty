@@ -7,10 +7,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MechanicLoginPageController">
    <children>
-      <Text layoutX="174.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your MechanicID to Login :  " textAlignment="CENTER" />
-      <TextField fx:id="IDTextField" layoutX="174.0" layoutY="168.0" prefHeight="31.0" prefWidth="251.0" />
+      <Text layoutX="178.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your MechanicID and password to Login :  " textAlignment="CENTER" wrappingWidth="244.5517578125" />
+      <TextField fx:id="IDTextField" layoutX="174.0" layoutY="168.0" prefHeight="31.0" prefWidth="251.0" promptText="ID" />
       <Button fx:id="BackButton" layoutX="35.0" layoutY="305.0" mnemonicParsing="false" onAction="#Goback" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Back" textFill="WHITE" />
       <Button fx:id="LoginButton" layoutX="477.0" layoutY="305.0" mnemonicParsing="false" onAction="#LoginButtonPressed" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: Grey;" text="Log In" textFill="WHITE" />
-      <Text fx:id="ErrorText" fill="#dd0b0b" layoutX="183.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.2060546875" />
+      <Text fx:id="ErrorText" fill="#dd0b0b" layoutX="183.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.2060546875" />
+      <TextField fx:id="PasswordTextfield" layoutX="174.0" layoutY="232.0" prefHeight="31.0" prefWidth="251.0" promptText="Password" />
    </children>
 </AnchorPane>

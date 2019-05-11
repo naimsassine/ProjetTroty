@@ -1202,7 +1202,7 @@ T_i</ColNames>
     </column>
     <column id="301" parent="278" name="Numero">
       <Position>3</Position>
-      <DataType>varchar(22)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1258,7 +1258,7 @@ Numero</ColNames>
     </foreign-key>
     <column id="311" parent="279" name="Numero">
       <Position>1</Position>
-      <DataType>varchar(22)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1417,6 +1417,7 @@ U_ID</ColNames>
     <column id="341" parent="283" name="U_ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="342" parent="283" name="Nom">
@@ -1446,7 +1447,7 @@ U_ID</ColNames>
     </column>
     <column id="347" parent="283" name="Adresse_Street">
       <Position>7</Position>
-      <DataType>varchar(60)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="348" parent="283" name="Adresse_Number">
@@ -1454,10 +1455,11 @@ U_ID</ColNames>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="349" parent="283" name="U_ID">
+    <key id="349" parent="283" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>U_ID</ColNames>
-      <Type>btree</Type>
-    </index>
+      <Primary>1</Primary>
+    </key>
     <foreign-key id="350" parent="283" name="utilisateur_recharge_ibfk_1">
       <ColNames>U_ID</ColNames>
       <RefSchemaName>projetdbb</RefSchemaName>

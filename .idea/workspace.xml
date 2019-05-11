@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="salma map réglé" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="salma map réglé">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25ca792e-71d7-4f7d-80b4-9558ee8a3504.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25ca792e-71d7-4f7d-80b4-9558ee8a3504.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Script SQL.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/ActualUser.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/ActualUser.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$MyBrowser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/Controller/MapsPageController$MyBrowser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/DBConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetTroty/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetTroty/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tech.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tech.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MechanicLoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MechanicLoginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/DBConnect.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +46,6 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="ProjetDbb@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="projetdbb: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="ProjetDbb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
@@ -52,31 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/MapsPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="170" column="39" selection-start-line="170" selection-start-column="37" selection-end-line="170" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#initialize#0;class#MapsPageController#0" />
-                <element signature="method#buildData#0;class#MapsPageController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/map.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+            <state relative-caret-position="315">
+              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -84,35 +68,75 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7095">
-              <caret line="485" selection-start-line="485" selection-end-line="485" />
+            <state relative-caret-position="235">
+              <caret line="711" column="52" selection-start-line="711" selection-start-column="52" selection-end-line="711" selection-end-column="52" />
+              <folding>
+                <element signature="method#insertDataMecaniciens#0;class#DBConnect#0" />
+                <element signature="method#insertDataUtilisateurRecharge#0;class#DBConnect#0" />
+                <element signature="method#insertDataReloads#0;class#DBConnect#0" />
+                <element signature="method#insertDataReparation#0;class#DBConnect#0" />
+                <element signature="method#insertDataScooters#0;class#DBConnect#0" />
+                <element signature="method#insertDataTrips#0;class#DBConnect#0" />
+                <element signature="method#checkRecharger#0;class#DBConnect#0" />
+                <element signature="method#signupAnonymeUser#0;class#DBConnect#0" />
+                <element signature="method#signupChargerUser#0;class#DBConnect#0" />
+                <element signature="method#insertComplaint#0;class#DBConnect#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/request/request1.txt">
+        <entry file="file://$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+            <state relative-caret-position="293">
+              <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/LoginPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-178">
+              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1370" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScriptSQL.rtf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TrottPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
+            <state relative-caret-position="170">
+              <caret line="363" column="25" selection-start-line="363" selection-start-column="25" selection-end-line="363" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -131,6 +155,7 @@
     <findStrings>
       <find>Dele</find>
       <find>voyage</find>
+      <find>set</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,7 +180,6 @@
         <option value="$PROJECT_DIR$/src/View/RechargeScoot.fxml" />
         <option value="$PROJECT_DIR$/src/Controller/RachargeScootController.java" />
         <option value="$PROJECT_DIR$/src/Controller/MechanicMenuPageController.java" />
-        <option value="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/MechanicManageComplaintsController.java" />
         <option value="$PROJECT_DIR$/src/sample/ActualUser.java" />
         <option value="$PROJECT_DIR$/src/Controller/QueriesPageController.java" />
@@ -166,11 +190,13 @@
         <option value="$PROJECT_DIR$/src/Controller/HistoryPageController.java" />
         <option value="$PROJECT_DIR$/src/Controller/ManageScootsController.java" />
         <option value="$PROJECT_DIR$/src/Controller/TechManagesUsersController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql" />
-        <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/Controller/map.html" />
         <option value="$PROJECT_DIR$/src/Controller/MapsPageController.java" />
+        <option value="$PROJECT_DIR$/ScriptSQL.rtf" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java" />
+        <option value="$PROJECT_DIR$/src/sample/DBConnect.java" />
       </list>
     </option>
   </component>
@@ -185,7 +211,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,14 +260,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557573422326" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557607581426" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -323,6 +352,7 @@
       <workItem from="1557529378152" duration="6477000" />
       <workItem from="1557583067204" duration="1214000" />
       <workItem from="1557588261905" duration="650000" />
+      <workItem from="1557596946991" duration="4853000" />
     </task>
     <task id="LOCAL-00001" summary="salma">
       <created>1557417578533</created>
@@ -342,13 +372,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48520000" />
+    <option name="totallyTimeSpent" value="53373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1359375" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14054927" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -356,8 +385,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.05479452" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.043941412" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.53150684" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,12 +402,12 @@
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32739726" />
       <window_info anchor="bottom" id="Duplicate detector" order="17" weight="0.32876712" />
-      <window_info anchor="bottom" id="Database Console" order="18" weight="0.360274" />
+      <window_info active="true" anchor="bottom" x="0" y="345" width="1280" height="109" id="Database Console" order="18" visible="true" weight="0.40684932" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.15503356" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2819063" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Maven" order="7" />
@@ -504,16 +533,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="das://25ca792e-71d7-4f7d-80b4-9558ee8a3504/schema/projetdbb/table/utilisateur" />
-    <entry file="file://$PROJECT_DIR$/src/Controller/LoginPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-776">
@@ -595,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ChargerTrottPageController.java" />
     <entry file="file://$PROJECT_DIR$/src/View/ManageScootsPage.fxml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -657,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/HistoryPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -703,24 +708,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+    <entry file="file://$PROJECT_DIR$/src/View/MapsPage.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
+    <entry file="file://$PROJECT_DIR$/request/request1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7095">
-          <caret line="485" selection-start-line="485" selection-end-line="485" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="75">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -731,37 +730,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/request/request1.txt">
+    <entry file="file://$USER_HOME$/Downloads/ScriptSQL.rtf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MapsPage.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
+        <state relative-caret-position="565">
           <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MapsPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="170" column="39" selection-start-line="170" selection-start-column="37" selection-end-line="170" selection-end-column="39" />
+        <state relative-caret-position="270">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initialize#0;class#MapsPageController#0" />
             <element signature="method#buildData#0;class#MapsPageController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ChargerMenuPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1370" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScriptSQL.rtf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MechanicLoginPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/LoginPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DBConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="711" column="52" selection-start-line="711" selection-start-column="52" selection-end-line="711" selection-end-column="52" />
+          <folding>
+            <element signature="method#insertDataMecaniciens#0;class#DBConnect#0" />
+            <element signature="method#insertDataUtilisateurRecharge#0;class#DBConnect#0" />
+            <element signature="method#insertDataReloads#0;class#DBConnect#0" />
+            <element signature="method#insertDataReparation#0;class#DBConnect#0" />
+            <element signature="method#insertDataScooters#0;class#DBConnect#0" />
+            <element signature="method#insertDataTrips#0;class#DBConnect#0" />
+            <element signature="method#checkRecharger#0;class#DBConnect#0" />
+            <element signature="method#signupAnonymeUser#0;class#DBConnect#0" />
+            <element signature="method#signupChargerUser#0;class#DBConnect#0" />
+            <element signature="method#insertComplaint#0;class#DBConnect#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25ca792e-71d7-4f7d-80b4-9558ee8a3504/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="363" column="25" selection-start-line="363" selection-start-column="25" selection-end-line="363" selection-end-column="25" />
         </state>
       </provider>
     </entry>
