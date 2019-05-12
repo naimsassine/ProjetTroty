@@ -23,8 +23,8 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Date;
-import java.util.ResourceBundle;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class MechanicManageComplaintsController implements Initializable {
     @Override
@@ -122,46 +122,55 @@ public class MechanicManageComplaintsController implements Initializable {
 
     @FXML
     public void DoneButtonPressed(ActionEvent event) throws IOException {
-        if(!ScootTextfield.getText().isEmpty() && !UserTextfield.getText().isEmpty() && !Datei.getText().isEmpty()){
-            String note = "null";
-            if (Note.getText().isEmpty()){
-                 note = "null";
-            }
-            else {
-                 note = Note.getText();
-            }
-            DBConnect connect = new DBConnect();
-            String TID = ScootTextfield.getText();
-            String UID = UserTextfield.getText();
-            String T_I = Datei.getText();
-
-
-            if (TID.matches("-?\\d+(\\.\\d+)?") && UID.matches("-?\\d+(\\.\\d+)?")){
-                // Il reste a comparer les deux dates ici
-
-
-                Boolean answer = connect.resolveComplaint(TID,UID,T_I,note);
-                if(answer){
-                    ScootTextfield.clear();
-                    UserTextfield.clear();
-                    Datei.clear();
-                    Note.clear();
-                    ErrorText.setText("");
+        String timeStamp = new SimpleDateFormat("HH").format(Calendar.getInstance().getTime());
+        List<String> hours = Arrays.asList(new String[]{"22", "23", "00", "1", "2", "3", "4", "5", "6"});
+        if(hours.contains(timeStamp)){
+            if(!ScootTextfield.getText().isEmpty() && !UserTextfield.getText().isEmpty() && !Datei.getText().isEmpty()){
+                String note = "null";
+                if (Note.getText().isEmpty()){
+                    note = "null";
                 }
-                else{
-                    ErrorText.setText("Error in databse");
+                else {
+                    note = Note.getText();
                 }
+                DBConnect connect = new DBConnect();
+                String TID = ScootTextfield.getText();
+                String UID = UserTextfield.getText();
+                String T_I = Datei.getText();
+
+
+                if (TID.matches("-?\\d+(\\.\\d+)?") && UID.matches("-?\\d+(\\.\\d+)?")){
+                    // Il reste a comparer les deux dates ici
+
+
+                    Boolean answer = connect.resolveComplaint(TID,UID,T_I,note);
+                    if(answer){
+                        ScootTextfield.clear();
+                        UserTextfield.clear();
+                        Datei.clear();
+                        Note.clear();
+                        ErrorText.setText("");
+                    }
+                    else{
+                        ErrorText.setText("Error in databse");
+                    }
+                }
+                else {
+                    ErrorText.setText("Error in the type of data");
+                }
+
+
+
             }
-            else {
-                ErrorText.setText("Error in the type of data");
+            else{
+                ErrorText.setText("Please fill in all the blanks");
             }
-
-
-
         }
         else{
-            ErrorText.setText("Please fill in all the blanks");
+            ErrorText.setText("You can only repair between 10PM and 7AM");
         }
+
+
     }
 
     @FXML

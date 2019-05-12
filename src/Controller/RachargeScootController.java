@@ -16,7 +16,9 @@ import sample.DBConnect;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -69,46 +71,55 @@ public class RachargeScootController implements Initializable {
 
     @FXML
     public void DoneCharger(){
-        if(!IDTextfieldTocharge.getText().isEmpty() && !BatteryTextfieldTocharge.getText().isEmpty() &&
-                !PosXTocharge.getText().isEmpty() && !PosYTocharge.getText().isEmpty()){
+        String timeStamp = new SimpleDateFormat("HH").format(Calendar.getInstance().getTime());
+        List<String> hours = Arrays.asList(new String[]{"22", "23", "00", "1", "2", "3", "4", "5", "6"});
+        if (hours.contains(timeStamp)){
+            if(!IDTextfieldTocharge.getText().isEmpty() && !BatteryTextfieldTocharge.getText().isEmpty() &&
+                    !PosXTocharge.getText().isEmpty() && !PosYTocharge.getText().isEmpty()){
 
-            DBConnect connect = new DBConnect();
+                DBConnect connect = new DBConnect();
 
-            if (IDTextfieldTocharge.getText().matches("-?\\d+(\\.\\d+)?") && BatteryTextfieldTocharge.getText().matches("-?\\d+(\\.\\d+)?")
-             && PosXTocharge.getText().matches("-?\\d+(\\.\\d+)?") && PosYTocharge.getText().matches("-?\\d+(\\.\\d+)?")){
+                if (IDTextfieldTocharge.getText().matches("-?\\d+(\\.\\d+)?") && BatteryTextfieldTocharge.getText().matches("-?\\d+(\\.\\d+)?")
+                        && PosXTocharge.getText().matches("-?\\d+(\\.\\d+)?") && PosYTocharge.getText().matches("-?\\d+(\\.\\d+)?")){
 
-                String ID = IDTextfieldTocharge.getText();
-                String Battery = BatteryTextfieldTocharge.getText();
-                String PosX = PosXTocharge.getText();
-                String PosY = PosYTocharge.getText();
+                    String ID = IDTextfieldTocharge.getText();
+                    String Battery = BatteryTextfieldTocharge.getText();
+                    String PosX = PosXTocharge.getText();
+                    String PosY = PosYTocharge.getText();
 
-                List<String> list = Arrays.asList(new String[]{"0", "1", "2", "3"});
-                if(list.contains(Battery)){
-                    Boolean answer = connect.chargeScoot(ID,Battery,PosX,PosY);
+                    List<String> list = Arrays.asList(new String[]{"0", "1", "2", "3"});
+                    if(list.contains(Battery)){
+                        Boolean answer = connect.chargeScoot(ID,Battery,PosX,PosY);
 
-                    if(answer){
-                        IDTextfieldTocharge.clear();
-                        BatteryTextfieldTocharge.clear();
-                        PosXTocharge.clear();
-                        PosYTocharge.clear();
-                        ErrorCharging.setText(null);
+                        if(answer){
+                            IDTextfieldTocharge.clear();
+                            BatteryTextfieldTocharge.clear();
+                            PosXTocharge.clear();
+                            PosYTocharge.clear();
+                            ErrorCharging.setText(null);
+                        }
+                        else {
+                            ErrorCharging.setText("Error from Database");
+                        }
                     }
-                    else {
-                        ErrorCharging.setText("Error from Database");
+                    else{
+                        ErrorCharging.setText("Battery must be from 0 to 3");
                     }
-                }
-                else{
-                    ErrorCharging.setText("Battery must be from 0 to 3");
-                }
 
+                }
+                else {
+                    ErrorCharging.setText("Invalid values types");
+                }
             }
             else {
-                ErrorCharging.setText("Invalid values types");
+                ErrorCharging.setText("Please fill in all of the blanks");
             }
         }
-        else {
-            ErrorCharging.setText("Please fill in all of the blanks");
+        else{
+            ErrorCharging.setText("You can only charge between 10PM and 7AM");
         }
+
+
     }
 
     @FXML

@@ -37,6 +37,8 @@ public class Main extends Application {
         connect.insertDataReparation();
         connect.insertDataTrips();
         connect.insertDataReloads();*/
+
+
     }
 
 

@@ -1,11 +1,21 @@
-
 select case
-       when r.T_f>t2.T_F
-       then r.Destination_y ,r.Destination_x
-       else t2.DestinationY ,t2.DestinationX
-       from Voyage t2 , rechage r
-       where  (t2.T_f>=all select t1.T_f
-                           from Voyage t1
-                           where t1.T_ID=t2.T_ID ) and (r.T_f >= all( select r1.T_f
-                                                                      from rechage r1
-                                                                      where r1.T_ID=r2.T_ID ))
+         when r.T_f>t2.T_F
+           then r.Destination_y
+         else t2.DestinationY
+         end as PositionY,
+       case
+         when r.T_f>t2.T_F
+           then r.Destination_x
+         else   t2.DestinationX
+         end as PositionX,
+       case
+         when r.T_f>t2.T_F
+          then r.T_ID
+         else   t2.T_ID
+         end as TID
+from Voyage t2 , Recharge r
+where t2.T_ID=r.T_ID and (t2.T_f>=all (select t1.T_f
+  from Voyage t1
+  where t1.T_ID=t2.T_ID) ) and (r.T_f >= all( select r1.T_f
+                                             from Recharge r1
+                                             where r1.T_ID=r.T_ID ));
