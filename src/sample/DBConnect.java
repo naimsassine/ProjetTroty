@@ -1042,6 +1042,17 @@ public class DBConnect {
             // execute the preparedstatement
                 preparedStmt3.execute();
 
+
+
+                String query = " UPDATE Trotinette SET État = 'False'  WHERE T_ID = ?";
+
+                 // create the mysql insert preparedstatement
+                PreparedStatement preparedStmt = con.prepareStatement(query);
+                preparedStmt.setString (1, TID);
+
+                // execute the preparedstatement
+                preparedStmt.execute();
+
             con.close();
             return  true;
         }
