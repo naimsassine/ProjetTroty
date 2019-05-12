@@ -58,12 +58,16 @@ public class QueriesPageController implements Initializable {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "(select t2.DestinationY ,t2.DestinationX,t2.T_ID,t2.T_f\n" +
-                    "                        from Voyage t2\n" +
-                    "                        where  t2.T_f>=all\n" +
-                    "                        ( select t1.T_f\n" +
-                    "                        from Voyage t1\n" +
-                    "                        where t1.T_ID=t2.T_ID )) " ;
+            String SQL = "select case\n" +
+                    "       when r.T_f>t2.T_F\n" +
+                    "       then r.Destination_y ,r.Destination_x\n" +
+                    "       else t2.DDestination_y ,t2.Destimation_x\n" +
+                    "       from Voyage t2 , rechage r\n" +
+                    "       where  (t2.T_f>=all select t1.T_f\n" +
+                    "                           from Voyage t1\n" +
+                    "                           where t1.T_ID=t2.T_ID ) and (r.T_f >= all( select r1.T_f\n" +
+                    "                                                                      from rechage r1\n" +
+                    "                                                                      where r1.T_ID=r2.T_ID ))" ;
 
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);

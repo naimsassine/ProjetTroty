@@ -8,4 +8,4 @@ select case
                            from Voyage t1
                            where t1.T_ID=t2.T_ID ) and (r.T_f >= all( select r1.T_f
                                                                       from rechage r1
-                                                                      where r1.T_ID=r2.T_ID )))
+                                                                      where r1.T_ID=r2.T_ID ))
