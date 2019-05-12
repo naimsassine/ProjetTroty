@@ -53,45 +53,50 @@ public class LoginPageController  implements Initializable {
 
     @FXML
     public void Ride(ActionEvent event) throws IOException, SQLException {
-        String PasswordReturned = "";
-        String UserId = "";
-        UserId = IdTextfield.getText();
+        if(IdTextfield.getText().matches("-?\\d+(\\.\\d+)?")){
+            String PasswordReturned = "";
+            String UserId = "";
+            UserId = IdTextfield.getText();
 
-        //saving the actual user in a txt file (each time the code is run, the file is overwrite)
-        ActualUser savedUser = new ActualUser();
+            //saving the actual user in a txt file (each time the code is run, the file is overwrite)
+            ActualUser savedUser = new ActualUser();
+
+            DBConnect connect = new DBConnect();
+            PasswordReturned = connect.Login(UserId);
+            Boolean answer = connect.checkRecharger(UserId);
 
 
+            if (PasswordReturned.equals(PasswordTextfield.getText()) && answer){
+                savedUser.saveUser(UserId);
+                Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
+                Scene menuscene = new Scene(menu);
 
-        DBConnect connect = new DBConnect();
-        PasswordReturned = connect.Login(UserId);
-        Boolean answer = connect.checkRecharger(UserId);
+                // Lets get the stage
+                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                window.setScene(menuscene);
+                window.show();
 
-        if (PasswordReturned.equals(PasswordTextfield.getText()) && answer){
-            savedUser.saveUser(UserId);
-            Parent menu = FXMLLoader.load(getClass().getResource("../View/ChargerMenuPage.fxml"));
-            Scene menuscene = new Scene(menu);
+            }
+            else if (PasswordReturned.equals(PasswordTextfield.getText()) && !answer){
+                savedUser.saveUser(UserId);
+                Parent menu1 = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
+                Scene menuscene1 = new Scene(menu1);
 
-            // Lets get the stage
-            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-            window.setScene(menuscene);
-            window.show();
+                // Lets get the stage
+                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                window.setScene(menuscene1);
+                window.show();
+            }
+            else{
 
+                ErrorTextfield.setText("User not found");
+
+            }
         }
-        else if (PasswordReturned.equals(PasswordTextfield.getText()) && !answer){
-            savedUser.saveUser(UserId);
-           Parent menu1 = FXMLLoader.load(getClass().getResource("../View/MenuPage.fxml"));
-            Scene menuscene1 = new Scene(menu1);
-
-            // Lets get the stage
-            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-            window.setScene(menuscene1);
-            window.show();
+        else {
+            ErrorTextfield.setText("ID must be an integer");
         }
-        else{
 
-            ErrorTextfield.setText("User not found");
-
-        }
 
     }
 }

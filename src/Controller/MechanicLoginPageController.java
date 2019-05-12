@@ -51,25 +51,31 @@ public class MechanicLoginPageController implements Initializable {
 
     @FXML
     public void LoginButtonPressed(ActionEvent event) throws SQLException, IOException {
-        DBConnect connect = new DBConnect();
-        String MID = IDTextField.getText();
-        String answer = connect.checkTechnicien(MID);
-        String password = PasswordTextfield.getText();
-        if(answer.equals(password)){
-            Parent menuMecanic = FXMLLoader.load(getClass().getResource("../View/MechanicMenuPage.fxml"));
-            Scene menuMecanicscene = new Scene(menuMecanic);
+        if(IDTextField.getText().matches("-?\\d+(\\.\\d+)?")){
+            DBConnect connect = new DBConnect();
+            String MID = IDTextField.getText();
+            String answer = connect.checkTechnicien(MID);
+            String password = PasswordTextfield.getText();
+            if(answer.equals(password)){
+                Parent menuMecanic = FXMLLoader.load(getClass().getResource("../View/MechanicMenuPage.fxml"));
+                Scene menuMecanicscene = new Scene(menuMecanic);
 
-            // Lets get the stage
-            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-            window.setScene(menuMecanicscene);
-            window.show();
+                // Lets get the stage
+                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+                window.setScene(menuMecanicscene);
+                window.show();
 
-            ActualUser user = new ActualUser();
-            user.saveTech(MID);
+                ActualUser user = new ActualUser();
+                user.saveTech(MID);
+            }
+            else{
+                ErrorText.setText("Incorrect ID or Password");
+            }
         }
         else{
-            ErrorText.setText("Incorrect ID or Password");
+            ErrorText.setText("ID must be a number");
         }
+
     }
 
 
