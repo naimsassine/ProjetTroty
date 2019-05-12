@@ -37,10 +37,11 @@ public class MapsPageController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         myBrowser= new MyBrowser();
-        pane.setPrefSize(820,800);
+        pane.setPrefSize(700,1200);
+        myBrowser.setMaxSize(100,100);
+        myBrowser.setMinSize(100,100);
         pane.getChildren().add(myBrowser);
         //this.buildData();
-
     }
     @FXML
     private ObservableList<ObservableList> data;
