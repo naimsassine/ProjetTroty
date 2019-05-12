@@ -37,7 +37,8 @@ public class MapsPageController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         myBrowser= new MyBrowser();
-
+        pane.setPrefSize(820,800);
+        pane.getChildren().add(myBrowser);
         //this.buildData();
 
     }
@@ -146,35 +147,7 @@ public class MapsPageController implements Initializable {
                 }
             });
 
-
-
-            //getChildren().add(webView);
-            final TextField city = new TextField("" + "Guntur");
-            //final TextField latitude = new TextField("" + 17.387140 * 1.00007);
-            //final TextField longitude = new TextField("" + 78.491684 * 1.00007);
-            Button update = new Button("Update");
-            update.setOnAction(new EventHandler<ActionEvent>() {
-
-                @Override
-                public void handle(ActionEvent arg0) {
-                    //  lat = Double.parseDouble(latitude.getText());
-                    //  lon = Double.parseDouble(longitude.getText());
-                    String cityname = city.getText();
-                    /*System.out.printf("%.2f %.2f%n", lat, lon);*/
-                    webEngine.executeScript("getCityname(' " + cityname + " ') ");
-                }
-            });
-
-            SplitPane toolbar = new SplitPane();
-            HBox hb = new HBox();
-
-            hb.setPadding(new Insets(15, 12, 15, 12));
-            hb.setSpacing(10);
-            toolbar.setOrientation(Orientation.VERTICAL);
-            toolbar.setDividerPositions(new double[] {.1});
-            toolbar.getItems().addAll(hb,webView);
-            hb.getChildren().addAll(toolbar);
-            pane.getChildren().addAll(toolbar);
+            this.getChildren().addAll(webView);
 
 
         }

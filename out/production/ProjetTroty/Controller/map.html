@@ -10,11 +10,11 @@
     </script>
 
     <script type="text/javascript">
-
-        function initialize() {
-            var map;
+        var map;
+         function initialize() {
             var latLng1=new google.maps.LatLng(50.8504500,4.3487800);
             var latLng2=new google.maps.LatLng(50.86,4.35);
+            var latLng3=new google.maps.LatLng(51,4.8);
             var mapProp = {
                 center:latLng1,
                 zoom:7,
@@ -38,47 +38,95 @@
                 infobulle.open(map, marker);
             });
 
-            var map=new google.maps.Map(document.getElementById("mapcanvas"), mapProp);
+            map=new google.maps.Map(document.getElementById("mapcanvas"), mapProp);
             marker.setMap(map);
             marker1.setMap(map);
-            var mysql = require('mysql');
+            var destx= []
+            var desty=[]
+            result=[]
+            var getinfo=async function (callback){
+                var mysql = require('mysql');
+                var con = mysql.createConnection({
+                    host: "localhost",
+                    database: "ProjetDbb",
+                    user: "root",
+                    password: "03331655"
+                });
 
-            var con = mysql.createConnection({
-                host: "localhost",
-                user: "root",
-                password: "03331655",
-                database: "ProjetDbb"
-            });
 
-            con.connect(function(err) {
-                if (err) throw err;
-                console.log("Connected!");
-            });
-            con.query("select t2.DDestimation_y ,t2.Destimation_x,t2.T_ID,t2.T_f\n" +
-                "                         from Voyage t2\n" +
-                "                        where  t2.T_f>=all\n" +
-                "                        ( select t1.T_f\n" +
-                "                        from Voyage t1\n" +
-                "                        where t1.T_ID=t2.T_ID )",[MSFT],function (err,rows) {
-                if(err){
-                    console.log(err);
-                    return;
+                 con.connect();
+
+                con.query("SELECT Destimation_x,DDestination_y FROM voyage", function(err, res,fields){
+                    if (err)  return callback(err);
+                    if(res.length){
+                        for(var i = 0; i<res.length; i++ ){
+                            result.push(res[i]);
+                            destx.push(res[i].Destimation_x);
+                            desty.push(res[i].DDestination_y);
+
+                            var marker1 = new google.maps.Marker({
+                                position: latLng3,
+                                draggable: true,
+                                title: ""
+                            });
+                            marker1.setMap(map);
+
+
+
+                        }
+                        google.maps.event.trigger(map, 'resize');
+                        map.pan(0,0);
+                        window.location.reload();
+                    }
+                    callback(null, result);
+                    callback(null,destx);
+                    callback(null,desty);
+
+                });
+
+                con.end();
+
+            }
+            getinfo(function (err, result) {
+                if (err) console.log("Database error!");
+                else{
+                    console.log(result);
+
                 }
-                rows.forEach(function (result) {
-                    var latLng1=new google.maps.LatLng(result.DDestimation_y,result.DDestimation_x);
-                    var marker = new google.maps.Marker({
-                        position: latLng1,
-                        draggable: true,
-                        title: ""
-                    });
-                    marker.setMap(map);
-                })
+            });
 
-            })
-            con.close();
+
             process.exit();
+
+
         }
         google.maps.event.addDomListener(window, 'load', initialize);
+        async function databaseconnect(){
+            var mysql = require('mysql');
+            var con = mysql.createConnection({
+                host: "localhost",
+                database: "ProjetDbb",
+                user: "root",
+                password: "03331655"
+            });
+            var someVar = [];
+
+            await con.connect();
+
+            await con.query("SELECT Destimation_x,DDestination_y FROM voyage", function(err, rows){
+                if(err) {
+                    throw err;
+                } else {
+                    setValue(rows.Destimation_x);
+                }
+            });
+            function setValue(value) {
+                someVar = value;
+                console.log(someVar);
+            }
+            con.end();
+            return someVar
+        }
 
         /*function getCityname(city) {
             geocoder = new google.maps.Geocoder();

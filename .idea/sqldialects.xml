@@ -3,6 +3,5 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/ScriptSQL.rtf" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/updateDB_Trotinette_1.0.rtf" dialect="MySQL" />
-    <file url="file://$USER_HOME$/Downloads/ScriptSQL.rtf" dialect="MySQL" />
   </component>
 </project>

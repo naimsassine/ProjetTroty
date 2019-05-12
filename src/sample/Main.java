@@ -30,13 +30,13 @@ public class Main extends Application {
     public static void main(String[] args) throws IOException {
         launch(args);
         DBConnect connect = new DBConnect();
-        connect.insertDataMecaniciens();
+        /*connect.insertDataMecaniciens();
         connect.insertDataUtilisateur();
         connect.insertDataUtilisateurRecharge();
         connect.insertDataScooters();
         connect.insertDataReparation();
         connect.insertDataTrips();
-        connect.insertDataReloads();
+        connect.insertDataReloads();*/
     }
 
 

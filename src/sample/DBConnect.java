@@ -459,6 +459,7 @@ public class DBConnect {
 
 
 
+
     } // Check en principe
 
     public void insertDataTrips(){

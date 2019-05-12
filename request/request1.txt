@@ -1,6 +1,11 @@
-select t2.DDestination_y ,t2.Destimation_x,t2.T_ID,t2.T_f
-                        from Voyage t2
-                        where  t2.T_f>=all
-                        ( select t1.T_f
-                        from Voyage t1
-                        where t1.T_ID=t2.T_ID )
+
+select case
+       when r.T_f>t2.T_F
+       then r.Destination_y ,r.Destination_x
+       else t2.DDestination_y ,t2.Destimation_x
+       from Voyage t2 , rechage r
+       where  (t2.T_f>=all select t1.T_f
+                           from Voyage t1
+                           where t1.T_ID=t2.T_ID ) and (r.T_f >= all( select r1.T_f
+                                                                      from rechage r1
+                                                                      where r1.T_ID=r2.T_ID )))
