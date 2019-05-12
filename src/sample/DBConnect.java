@@ -773,10 +773,16 @@ public class DBConnect {
             preparedStmt2.setString (1, TID);
             preparedStmt2.execute();
 
+            String query4 = "Delete from TrottEnAttente Where T_ID = ?";
+            PreparedStatement preparedStmt4 = con.prepareStatement(query4);
+            preparedStmt4.setString (1, TID);
+            preparedStmt4.execute();
+
             String query3 = "Delete from Trotinette Where T_ID = ?";
             PreparedStatement preparedStmt3 = con.prepareStatement(query3);
             preparedStmt3.setString (1, TID);
             preparedStmt3.execute();
+
 
 
             con.close();
