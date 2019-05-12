@@ -1,3 +1,6 @@
-select distinct u.lastname, u.firstname
-                                                         from User u, Reloads r, Trips t
-                                                         where u.ID=r.user and r.scooter=t.scooter and u.ID=t.user
+select u.Nom, u.Prenom
+        from Utilisateur_Recharge u
+        where (u.U_ID not in(select  t.U_ID
+                             from Voyage t , Recharge r
+                             where  r.T_ID != t.T_ID and t.U_ID=r.U_ID
+                               group by t.U_ID ))
